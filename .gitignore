@@ -1,0 +1,31 @@
+# Secrets & tokens
+.env
+.env.*
+*.env
+config/settings_data.json
+secrets.*
+*secret*
+*token*
+*credentials*
+
+# Shopify CLI
+.shopify/
+shopify.app.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Logs
+*.log

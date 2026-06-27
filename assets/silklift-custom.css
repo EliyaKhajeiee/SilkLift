@@ -1,0 +1,311 @@
+/* ============================================================
+   SilkLift — Custom Brand Stylesheet
+   K-Beauty premium aesthetic overrides
+   ============================================================ */
+
+/* Google Fonts Import — Cormorant Garamond + DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap');
+
+/* ── Brand Typography Overrides ─────────────────────────── */
+:root {
+  --font-primary--family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-heading--family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body--family: 'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-subheading--family: 'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* ── Brand Color Accents ────────────────────────────────── */
+:root {
+  --color-rose-gold: #C9956A;
+  --color-warm-beige: #E8DDD0;
+  --color-cream: #FAF8F5;
+  --color-charcoal: #2C2C2C;
+  --color-taupe: #8A7F78;
+}
+
+/* ── Global Base ────────────────────────────────────────── */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+/* ── Headings — Cormorant Garamond ─────────────────────── */
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-family: var(--font-primary--family);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.05; }
+h2 { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.1; }
+h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.15; }
+
+/* ── Navigation ─────────────────────────────────────────── */
+.header a,
+nav a {
+  font-family: var(--font-body--family);
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* ── Announcement Bar — white text on dark bg ──────────── */
+.announcement-bar {
+  font-family: var(--font-body--family);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: #FAF8F5 !important;
+}
+
+.announcement-bar * {
+  color: #FAF8F5 !important;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.button,
+[class*="button"] {
+  font-family: var(--font-body--family);
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: opacity 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+}
+
+.button:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+/* Primary button — charcoal */
+.button[style*="background: #2C2C2C"],
+.button[style*="background:#2C2C2C"],
+button.button--primary {
+  background: var(--color-charcoal);
+  color: var(--color-cream);
+  border: none;
+}
+
+/* ── Hero Section ────────────────────────────────────────── */
+.section--hero,
+[data-section-type="hero"] {
+  position: relative;
+}
+
+/* ── Marquee / Trust Bar ────────────────────────────────── */
+marquee-component {
+  font-family: var(--font-body--family);
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  color: var(--color-charcoal);
+}
+
+/* ── Product Page ───────────────────────────────────────── */
+
+/* Product title on PDP */
+[data-section-type="product-information"] h1 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 500;
+}
+
+/* Price styling */
+.price {
+  font-family: var(--font-body--family);
+  font-weight: 400;
+}
+
+.price--on-sale .price__sale {
+  color: var(--color-charcoal);
+}
+
+.price__compare {
+  color: var(--color-taupe);
+  text-decoration: line-through;
+}
+
+/* Accelerated checkout buttons */
+.shopify-payment-button {
+  margin-top: 12px;
+}
+
+.shopify-payment-button__button {
+  border-radius: 2px !important;
+}
+
+/* Add to cart button */
+.product-form__submit,
+[name="add"] {
+  width: 100%;
+  border-radius: 2px;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 16px 24px;
+  min-height: 52px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.product-form__submit:hover {
+  transform: translateY(-1px);
+}
+
+/* ── Accordion / Collapsible ─────────────────────────────── */
+details > summary {
+  font-family: var(--font-body--family);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  padding: 16px 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > summary {
+  color: var(--color-charcoal);
+}
+
+details .accordion__content,
+details > div {
+  padding-bottom: 16px;
+}
+
+/* ── Reviews / Stars ─────────────────────────────────────── */
+.review-stars,
+[class*="star"] {
+  color: var(--color-rose-gold);
+}
+
+/* ── Collection / Product Cards ─────────────────────────── */
+.product-card {
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card .product-card__image {
+  overflow: hidden;
+}
+
+.product-card .product-card__image img {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card__image img {
+  transform: scale(1.04);
+}
+
+/* ── Trust Badges ─────────────────────────────────────────── */
+.trust-badge,
+[class*="trust"] {
+  font-family: var(--font-body--family);
+  font-size: 0.8125rem;
+  color: var(--color-taupe);
+}
+
+/* ── Section Padding — Breathe More ─────────────────────── */
+@media (min-width: 990px) {
+  .section {
+    --section-padding-top: 80px;
+    --section-padding-bottom: 80px;
+  }
+}
+
+/* ── Media With Content — text padding ─────────────────── */
+.media-with-content__content {
+  padding: 48px !important;
+}
+
+@media (max-width: 989px) {
+  .media-with-content__content {
+    padding: 32px 24px !important;
+  }
+}
+
+/* ── FAQ Section ─────────────────────────────────────────── */
+.faq-section details {
+  border-bottom: 1px solid var(--color-warm-beige);
+}
+
+/* ── Email Signup Section ────────────────────────────────── */
+.email-signup input[type="email"] {
+  font-family: var(--font-body--family);
+  font-size: 0.9375rem;
+  border: 1px solid var(--color-charcoal);
+  border-radius: 2px;
+  padding: 14px 18px;
+  background: transparent;
+}
+
+.email-signup input[type="email"]::placeholder {
+  color: var(--color-taupe);
+}
+
+/* ── Cart Drawer ─────────────────────────────────────────── */
+.cart-drawer {
+  font-family: var(--font-body--family);
+}
+
+.cart-drawer__title {
+  font-family: var(--font-primary--family);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-warm-beige);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-taupe);
+}
+
+/* ── Smooth Transitions ──────────────────────────────────── */
+a, button, input, select, textarea, details, summary {
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* ── Mobile Optimizations ────────────────────────────────── */
+@media (max-width: 749px) {
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.875rem; }
+  h3 { font-size: 1.5rem; }
+
+  .section {
+    --section-padding-top: 48px;
+    --section-padding-bottom: 48px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+    min-height: 52px;
+  }
+}
+
+/* ── Utility: Rose Gold Accent ───────────────────────────── */
+.accent-rose-gold { color: var(--color-rose-gold); }
+.bg-warm-beige { background-color: var(--color-warm-beige); }
+.bg-cream { background-color: var(--color-cream); }

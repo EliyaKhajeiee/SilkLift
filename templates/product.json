@@ -11,25 +11,6 @@
     "main": {
       "type": "product-information",
       "blocks": {
-        "disclosures_g9mWze": {
-          "type": "disclosures",
-          "name": "t:names.disclosures",
-          "settings": {
-            "heading": "Disclosures",
-            "heading_preset": "h5",
-            "open_by_default": false,
-            "icon": "caret",
-            "disclosure_heading_preset": "h6",
-            "text_color": "",
-            "dividers": true,
-            "divider_color": "{{ settings.color_palette.color2 }}",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "media-gallery": {
           "type": "_product-media-gallery",
           "static": true,
@@ -37,21 +18,21 @@
             "media_presentation": "grid",
             "media_columns": "two",
             "image_gap": 4,
-            "large_first_image": false,
+            "large_first_image": true,
             "icons_style": "none",
             "slideshow_controls_style": "counter",
             "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "right",
-            "thumbnail_width": 44,
+            "thumbnail_position": "left",
+            "thumbnail_width": 60,
             "thumbnail_radius": 0,
             "aspect_ratio": "adapt",
             "constrain_to_viewport": true,
-            "media_fit": "contain",
+            "media_fit": "cover",
             "media_radius": 0,
             "extend_media": false,
             "zoom": true,
-            "video_loop": false,
-            "hide_variants": true,
+            "video_loop": true,
+            "hide_variants": false,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -69,7 +50,7 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "details_position": "flex-start",
-            "gap": 28,
+            "gap": 20,
             "sticky_details_desktop": true,
             "background_media": "none",
             "background_color": "",
@@ -86,113 +67,120 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_icgrde": {
-              "type": "group",
-              "name": "Header",
+            "eyebrow_text": {
+              "type": "text",
+              "name": "Eyebrow",
               "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "background_media": "none",
-                "background_color": "",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "open_in_new_tab": false,
-                "placeholder": "",
+                "text": "<p>Korean RF Technology</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h6",
+                "font": "var(--font-subheading--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "0.12em",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "#C9956A",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 4,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title": {
+              "type": "text",
+              "name": "Product title",
+              "settings": {
+                "text": "<h1>{{ closest.product.title }}</h1>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-primary--family)",
+                "font_size": "1rem",
+                "line_height": "display-tight",
+                "letter_spacing": "heading-normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Product title",
-                  "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price_tVjtKg": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "paragraph",
-                    "width": "100%",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "text_color": "",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xrnftG",
-                "price_tVjtKg"
-              ]
+              "blocks": {}
             },
-            "divider_VJhene": {
+            "reviews_line": {
+              "type": "text",
+              "name": "Reviews line",
+              "settings": {
+                "text": "<p>★★★★★&nbsp;&nbsp;847 Reviews</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#8A7F78",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 8,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_block": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": true,
+                "show_tax_info": false,
+                "type_preset": "h3",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "text_color": "",
+                "padding-block-start": 12,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "divider_1": {
               "type": "_divider",
-              "name": "t:names.divider",
+              "name": "Divider",
               "settings": {
                 "thickness": 1,
                 "corner_radius": "square",
                 "divider_color": "{{ settings.color_palette.color2 }}",
                 "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
+                "padding-block-start": 16,
+                "padding-block-end": 16
               },
               "blocks": {}
             },
-            "variant_picker_R3rGDr": {
+            "variant_picker": {
               "type": "variant-picker",
               "settings": {
                 "variant_style": "buttons",
@@ -214,13 +202,13 @@
               },
               "blocks": {}
             },
-            "buy_buttons_eYQEYi": {
+            "buy_buttons": {
               "type": "buy-buttons",
               "settings": {
                 "stacking": true,
                 "text_color": "",
                 "show_pickup_availability": false,
-                "gift_card_form": true,
+                "gift_card_form": false,
                 "recipient_button_style": "default",
                 "recipient_button_background": "{{ settings.color_palette.background }}",
                 "recipient_button_text": "{{ settings.color_palette.foreground }}",
@@ -235,7 +223,7 @@
                 "input_border_color": "{{ settings.color_palette.foreground }}",
                 "border_width": 1,
                 "border_radius": 0,
-                "padding-block-start": 0,
+                "padding-block-start": 16,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -274,69 +262,269 @@
               },
               "block_order": []
             },
-            "text_aEtTtq": {
+            "trust_badges": {
               "type": "text",
-              "name": "Product description",
+              "name": "Trust badges",
               "settings": {
-                "text": "{{ closest.product.description }}",
+                "text": "<p>✅ Free Shipping Over $50 &nbsp;|&nbsp; ✅ 30-Day Money-Back &nbsp;|&nbsp; ✅ 1-Year Warranty</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "0.8125rem",
+                "line_height": "body-loose",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "",
+                "text_color": "#8A7F78",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 0,
+                "padding-block-start": 12,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "divider_2": {
+              "type": "_divider",
+              "name": "Divider 2",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "divider_color": "{{ settings.color_palette.color2 }}",
+                "width_percent": 100,
+                "padding-block-start": 20,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "accordion_benefits": {
+              "type": "accordion",
+              "name": "Benefits",
+              "settings": {
+                "heading": "Skin Benefits",
+                "heading_preset": "h5",
+                "open_by_default": true,
+                "icon": "caret",
+                "disclosure_heading_preset": "h6",
+                "text_color": "",
+                "dividers": true,
+                "divider_color": "{{ settings.color_palette.color2 }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "benefits_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<ul><li>Visibly firms &amp; lifts skin in 4 weeks</li><li>Reduces appearance of fine lines and wrinkles</li><li>Defines jawline and cheekbones</li><li>Enhances serum absorption by up to 3×</li><li>Stimulates collagen and elastin production</li><li>Boosts circulation for natural radiance</li></ul>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "body-loose",
+                    "padding-block-start": 12,
+                    "padding-block-end": 16,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["benefits_text"]
+            },
+            "accordion_how_to_use": {
+              "type": "accordion",
+              "name": "How to Use",
+              "settings": {
+                "heading": "How to Use",
+                "heading_preset": "h5",
+                "open_by_default": false,
+                "icon": "caret",
+                "disclosure_heading_preset": "h6",
+                "text_color": "",
+                "dividers": true,
+                "divider_color": "{{ settings.color_palette.color2 }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "how_to_use_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<ol><li><strong>Cleanse your face</strong> and apply a water-based serum or our Conductive Gel.</li><li><strong>Power on SilkLift</strong> and select your preferred intensity (start with Level 1).</li><li><strong>Glide upward</strong> in slow, lifting motions across cheeks, jawline, forehead, and neck.</li><li><strong>Use for 10 minutes</strong>, 3–5 times per week for best results.</li><li>Follow with your moisturiser to lock in the benefits.</li></ol>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "body-loose",
+                    "padding-block-start": 12,
+                    "padding-block-end": 16,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["how_to_use_text"]
+            },
+            "accordion_whats_in_box": {
+              "type": "accordion",
+              "name": "What's in the Box",
+              "settings": {
+                "heading": "What's in the Box",
+                "heading_preset": "h5",
+                "open_by_default": false,
+                "icon": "caret",
+                "disclosure_heading_preset": "h6",
+                "text_color": "",
+                "dividers": true,
+                "divider_color": "{{ settings.color_palette.color2 }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "box_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<ul><li>SilkLift RF Pro Device</li><li>USB-C Charging Cable</li><li>Protective Cap</li><li>Quick-Start Guide (English + Korean)</li><li>30-Day Skincare Journal</li></ul>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "body-loose",
+                    "padding-block-start": 12,
+                    "padding-block-end": 16,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["box_text"]
+            },
+            "accordion_tech_specs": {
+              "type": "accordion",
+              "name": "Tech Specs",
+              "settings": {
+                "heading": "Tech Specs",
+                "heading_preset": "h5",
+                "open_by_default": false,
+                "icon": "caret",
+                "disclosure_heading_preset": "h6",
+                "text_color": "",
+                "dividers": true,
+                "divider_color": "{{ settings.color_palette.color2 }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "specs_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Technology:</strong> RF + Microcurrent + EMS + Therapeutic Heat<br><strong>RF Frequency:</strong> 1MHz<br><strong>Temperature:</strong> 40–42°C<br><strong>Battery:</strong> 1000mAh, 90-min session life<br><strong>Charge Time:</strong> 2 hours via USB-C<br><strong>Waterproof:</strong> IPX4 splash-proof<br><strong>Intensity Levels:</strong> 3 modes (Low / Medium / High)</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "body-loose",
+                    "padding-block-start": 12,
+                    "padding-block-end": 16,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["specs_text"]
+            },
+            "accordion_faq": {
+              "type": "accordion",
+              "name": "FAQ",
+              "settings": {
+                "heading": "FAQ",
+                "heading_preset": "h5",
+                "open_by_default": false,
+                "icon": "caret",
+                "disclosure_heading_preset": "h6",
+                "text_color": "",
+                "dividers": true,
+                "divider_color": "{{ settings.color_palette.color2 }}",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "faq_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Is it safe for sensitive skin?</strong><br>Yes — start on the lowest intensity setting and increase gradually.</p><p><strong>How long until I see results?</strong><br>Most customers see visible changes within 2–4 weeks of consistent use.</p><p><strong>Can I use it around my eyes?</strong><br>Yes, using the lowest setting. Avoid direct contact with the eyeball.</p><p><strong>Does it work without conductive gel?</strong><br>A water-based serum or gel is required for optimal conductivity and results.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "body-loose",
+                    "padding-block-start": 12,
+                    "padding-block-end": 16,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["faq_text"]
             }
           },
           "block_order": [
-            "group_icgrde",
-            "divider_VJhene",
-            "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi",
-            "text_aEtTtq"
+            "eyebrow_text",
+            "product_title",
+            "reviews_line",
+            "price_block",
+            "divider_1",
+            "variant_picker",
+            "buy_buttons",
+            "trust_badges",
+            "divider_2",
+            "accordion_benefits",
+            "accordion_how_to_use",
+            "accordion_whats_in_box",
+            "accordion_tech_specs",
+            "accordion_faq"
           ]
         }
       },
-      "block_order": [
-        "disclosures_g9mWze"
-      ],
+      "block_order": [],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
         "equal_columns": false,
         "limit_details_width": false,
-        "gap": 48,
+        "gap": 60,
         "enable_sticky_add_to_cart": true,
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
     },
-    "product_recommendations_qggXJq": {
+    "product_recommendations_main": {
       "type": "product-recommendations",
       "blocks": {
-        "text_cbcgyb": {
+        "rec_heading": {
           "type": "text",
-          "name": "t:names.header",
+          "name": "Heading",
           "settings": {
-            "text": "<h3>You may also like </h3>",
+            "text": "<h3>Complete Your Ritual</h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h4",
+            "type_preset": "h3",
             "font": "var(--font-primary--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -356,7 +544,7 @@
         },
         "static-product-card": {
           "type": "_product-card",
-          "name": "t:names.product_card",
+          "name": "Product card",
           "static": true,
           "settings": {
             "product_card_gap": 8,
@@ -372,11 +560,11 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_card_gallery_DNizbJ": {
+            "rec_card_gallery": {
               "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
+              "name": "Media",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "4 / 5",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -389,9 +577,9 @@
               },
               "blocks": {}
             },
-            "product_title_M7MJkb": {
+            "rec_title": {
               "type": "product-title",
-              "name": "t:names.product_title",
+              "name": "Title",
               "settings": {
                 "width": "100%",
                 "max_width": "normal",
@@ -407,14 +595,14 @@
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 4,
+                "padding-block-start": 8,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "price_gLWgA6": {
+            "rec_price": {
               "type": "price",
               "settings": {
                 "show_sale_price_first": true,
@@ -429,7 +617,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "text_color": "",
-                "padding-block-start": 0,
+                "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -438,38 +626,38 @@
             }
           },
           "block_order": [
-            "product_card_gallery_DNizbJ",
-            "product_title_M7MJkb",
-            "price_gLWgA6"
+            "rec_card_gallery",
+            "rec_title",
+            "rec_price"
           ]
         }
       },
       "block_order": [
-        "text_cbcgyb"
+        "rec_heading"
       ],
-      "name": "t:names.product_recommendations",
+      "name": "Product Recommendations",
       "settings": {
         "product": "{{ closest.product }}",
         "recommendation_type": "related",
         "layout_type": "grid",
-        "carousel_on_mobile": false,
+        "carousel_on_mobile": true,
         "max_products": 4,
         "columns": 4,
         "mobile_columns": "2",
-        "columns_gap": 12,
+        "columns_gap": 16,
         "rows_gap": 24,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
-        "gap": 28,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "gap": 32,
+        "background_color": "#FAF8F5",
+        "padding-block-start": 64,
+        "padding-block-end": 64
       }
     }
   },
   "order": [
     "main",
-    "product_recommendations_qggXJq"
+    "product_recommendations_main"
   ]
 }
