@@ -1,0 +1,57 @@
+<div class="sl-showcase sl-showcase--dark">
+  <div class="sl-showcase__media">
+    <img
+      src="{{ 'silklift-model-3.png' | asset_url }}"
+      alt="SilkLift RF Pro device"
+      loading="lazy"
+      class="sl-showcase__img"
+      width="1086"
+      height="1448"
+    >
+  </div>
+  <div class="sl-showcase__content">
+    <p class="sl-showcase__eyebrow">How It Works</p>
+    <h2 class="sl-showcase__heading">Your 10-Minute<br><em>Glass Skin<br>Ritual</em></h2>
+    <p class="sl-showcase__steps">
+      <strong>01</strong> &nbsp;Cleanse &amp; apply serum<br>
+      <strong>02</strong> &nbsp;Glide SilkLift upward<br>
+      <strong>03</strong> &nbsp;See results in 4 weeks
+    </p>
+    <a href="/collections/all" class="sl-btn sl-btn--light">Get Yours Now</a>
+  </div>
+</div>
+
+<style>
+.sl-btn--light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 17px 32px;
+  background: #FAF8F5;
+  color: #2C2C2C;
+  border: 1px solid #FAF8F5;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.sl-btn--light:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+@media screen and (max-width: 749px) {
+  .sl-btn--light { width: 100%; }
+}
+</style>
+
+{% schema %}
+{
+  "name": "SilkLift Showcase 2",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift Showcase 2"}]
+}
+{% endschema %}

@@ -1,0 +1,149 @@
+<div class="sl-showcase sl-showcase--light">
+  <div class="sl-showcase__content">
+    <p class="sl-showcase__eyebrow">Real Results</p>
+    <h2 class="sl-showcase__heading">4 Weeks.<br><em>Your Skin<br>Transformed.</em></h2>
+    <p class="sl-showcase__body">RF energy heats deep skin tissue to trigger collagen production. Microcurrent tones and sculpts facial muscles. Together they deliver visible firming, lifting, and jawline definition — all in 10 minutes a day.</p>
+    <a href="/collections/all" class="sl-btn sl-btn--dark">Shop SilkLift — $179</a>
+  </div>
+  <div class="sl-showcase__media">
+    <img
+      src="{{ 'silklift-model-2.png' | asset_url }}"
+      alt="Model using SilkLift RF Pro"
+      loading="lazy"
+      class="sl-showcase__img"
+      width="1086"
+      height="1448"
+    >
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80svh;
+}
+
+.sl-showcase--light {
+  background: #FAF8F5;
+}
+
+.sl-showcase--dark {
+  background: #2C2C2C;
+}
+
+.sl-showcase__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 56px;
+  gap: 0;
+}
+
+.sl-showcase--dark .sl-showcase__content {
+  order: 1;
+}
+
+.sl-showcase--dark .sl-showcase__media {
+  order: 0;
+}
+
+.sl-showcase__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 18px;
+}
+
+.sl-showcase__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.0;
+  color: #2C2C2C;
+  margin: 0 0 24px;
+}
+
+.sl-showcase--dark .sl-showcase__heading {
+  color: #FAF8F5;
+}
+
+.sl-showcase__heading em {
+  font-style: italic;
+}
+
+.sl-showcase__body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #8A7F78;
+  margin: 0 0 32px;
+  max-width: 420px;
+}
+
+.sl-showcase--dark .sl-showcase__body {
+  color: #E8DDD0;
+}
+
+.sl-showcase__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.sl-showcase__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.sl-showcase__steps {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  color: #E8DDD0;
+  margin: 0 0 32px;
+}
+
+.sl-showcase__steps strong {
+  color: #C9956A;
+}
+
+@media screen and (max-width: 749px) {
+  .sl-showcase {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  .sl-showcase__media {
+    height: 70vw;
+    order: -1 !important;
+  }
+
+  .sl-showcase--dark .sl-showcase__media {
+    order: -1 !important;
+  }
+
+  .sl-showcase__content {
+    padding: 40px 24px 48px;
+    order: 1 !important;
+  }
+
+  .sl-btn {
+    width: 100%;
+  }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift Showcase 1",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift Showcase 1"}]
+}
+{% endschema %}

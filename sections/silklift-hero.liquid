@@ -1,0 +1,176 @@
+<div class="sl-hero">
+  <div class="sl-hero__media">
+    <img
+      src="{{ 'silklift-model-1.png' | asset_url }}"
+      alt="SilkLift RF Pro device in use"
+      loading="eager"
+      fetchpriority="high"
+      class="sl-hero__img"
+      width="1086"
+      height="1448"
+    >
+  </div>
+  <div class="sl-hero__content">
+    <p class="sl-hero__eyebrow">RF · Microcurrent · EMS · Heat</p>
+    <h1 class="sl-hero__title">SilkLift<br><em>RF Pro</em></h1>
+    <p class="sl-hero__tagline">Clinic-grade lifting at home.<br>10 minutes. Real results.</p>
+    <p class="sl-hero__price"><strong>$179</strong> &nbsp;<s>$249</s></p>
+    <div class="sl-hero__actions">
+      <a href="/collections/all" class="sl-btn sl-btn--dark">Shop Now</a>
+      <a href="/collections/all" class="sl-btn sl-btn--outline">Bundle Deal — Save $60</a>
+    </div>
+    <p class="sl-hero__reviews">★★★★★ &nbsp;Loved by 4,800+ customers</p>
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-hero {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  min-height: 100svh;
+  background: #FAF8F5;
+}
+
+.sl-hero__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.sl-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.sl-hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 56px 64px 52px;
+  gap: 0;
+}
+
+.sl-hero__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 20px;
+}
+
+.sl-hero__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  color: #2C2C2C;
+  margin: 0 0 24px;
+}
+
+.sl-hero__title em {
+  font-style: italic;
+}
+
+.sl-hero__tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #8A7F78;
+  margin: 0 0 28px;
+}
+
+.sl-hero__price {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0 0 28px;
+}
+
+.sl-hero__price s {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #8A7F78;
+}
+
+.sl-hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 20px;
+}
+
+.sl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 17px 32px;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.sl-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.sl-btn--dark {
+  background: #2C2C2C;
+  color: #FAF8F5;
+  border: 1px solid #2C2C2C;
+}
+
+.sl-btn--outline {
+  background: transparent;
+  color: #2C2C2C;
+  border: 1px solid #2C2C2C;
+}
+
+.sl-hero__reviews {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .sl-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60svh auto;
+    min-height: unset;
+  }
+
+  .sl-hero__content {
+    padding: 40px 24px 48px;
+  }
+
+  .sl-hero__title {
+    font-size: clamp(3rem, 13vw, 4rem);
+  }
+
+  .sl-btn {
+    width: 100%;
+    padding: 18px 24px;
+  }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift Hero",
+  "tag": "section",
+  "class": "sl-hero-section",
+  "settings": [],
+  "presets": [{"name": "SilkLift Hero"}]
+}
+{% endschema %}
