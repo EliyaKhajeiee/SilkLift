@@ -1,311 +1,189 @@
-/* ============================================================
-   SilkLift — Custom Brand Stylesheet
-   K-Beauty premium aesthetic overrides
-   ============================================================ */
+/* SilkLift — Custom Brand CSS */
 
-/* Google Fonts Import — Cormorant Garamond + DM Sans */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
 
-/* ── Brand Typography Overrides ─────────────────────────── */
+/* ─── Font overrides ──────────────────────────────────────────── */
 :root {
-  --font-primary--family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-heading--family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-body--family: 'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --font-subheading--family: 'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-}
+  --font-primary--family: 'Cormorant Garamond', Georgia, serif;
+  --font-heading--family: 'Cormorant Garamond', Georgia, serif;
+  --font-body--family: 'DM Sans', -apple-system, sans-serif;
 
-/* ── Brand Color Accents ────────────────────────────────── */
-:root {
-  --color-rose-gold: #C9956A;
-  --color-warm-beige: #E8DDD0;
-  --color-cream: #FAF8F5;
+  /* Brand palette */
   --color-charcoal: #2C2C2C;
+  --color-off-white: #FAF8F5;
   --color-taupe: #8A7F78;
+  --color-warm-beige: #E8DDD0;
+  --color-rose-gold: #C9956A;
+  --color-dark: #1a1a1a;
 }
 
-/* ── Global Base ────────────────────────────────────────── */
+/* ─── Base ────────────────────────────────────────────────────── */
 body {
+  font-family: var(--font-body--family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'kern' 1, 'liga' 1;
 }
 
-/* ── Headings — Cormorant Garamond ─────────────────────── */
-h1, h2, h3, h4,
-.h1, .h2, .h3, .h4 {
+/* ─── Headings ────────────────────────────────────────────────── */
+h1, .h1 {
   font-family: var(--font-primary--family);
-  font-weight: 500;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 300;
+  line-height: 0.95;
   letter-spacing: -0.01em;
+  font-style: italic;
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.05; }
-h2 { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.1; }
-h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.15; }
+h2, .h2 {
+  font-family: var(--font-primary--family);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-style: italic;
+}
 
-/* ── Navigation ─────────────────────────────────────────── */
-.header a,
-nav a {
-  font-family: var(--font-body--family);
-  font-size: 0.875rem;
-  letter-spacing: 0.04em;
+h3, .h3 {
+  font-family: var(--font-primary--family);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 400;
-  text-transform: none;
+  line-height: 1.1;
+  font-style: italic;
 }
 
-/* ── Announcement Bar — white text on dark bg ──────────── */
-.announcement-bar {
+h4, h5, h6 {
   font-family: var(--font-body--family);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  color: #FAF8F5 !important;
-}
-
-.announcement-bar * {
-  color: #FAF8F5 !important;
-}
-
-/* ── Buttons ─────────────────────────────────────────────── */
-.button,
-[class*="button"] {
-  font-family: var(--font-body--family);
-  font-size: 0.875rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   font-weight: 500;
-  transition: opacity 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
 }
 
-.button:hover {
+/* ─── Announcement bar ────────────────────────────────────────── */
+.announcement-bar,
+.announcement-bar__text,
+.announcement-bar a,
+[class*="announcement"] {
+  color: #ffffff !important;
+}
+
+/* ─── Buttons ─────────────────────────────────────────────────── */
+.button,
+.shopify-payment-button__button,
+button[type="submit"],
+.cart__checkout-button {
+  font-family: var(--font-body--family) !important;
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  padding: 16px 32px !important;
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+}
+
+.button:hover,
+.shopify-payment-button__button:hover {
   opacity: 0.88;
   transform: translateY(-1px);
 }
 
-/* Primary button — charcoal */
-.button[style*="background: #2C2C2C"],
-.button[style*="background:#2C2C2C"],
-button.button--primary {
-  background: var(--color-charcoal);
-  color: var(--color-cream);
-  border: none;
+/* Block buttons in media-with-content sections */
+.block-button a,
+a.button {
+  font-family: var(--font-body--family) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  min-height: 52px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 36px !important;
+  font-size: 0.8125rem !important;
+  transition: opacity 0.2s ease, transform 0.15s ease !important;
 }
 
-/* ── Hero Section ────────────────────────────────────────── */
-.section--hero,
-[data-section-type="hero"] {
-  position: relative;
-}
-
-/* ── Marquee / Trust Bar ────────────────────────────────── */
-marquee-component {
-  font-family: var(--font-body--family);
-  font-size: 0.8125rem;
-  letter-spacing: 0.06em;
-  color: var(--color-charcoal);
-}
-
-/* ── Product Page ───────────────────────────────────────── */
-
-/* Product title on PDP */
-[data-section-type="product-information"] h1 {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  font-weight: 500;
-}
-
-/* Price styling */
-.price {
-  font-family: var(--font-body--family);
-  font-weight: 400;
-}
-
-.price--on-sale .price__sale {
-  color: var(--color-charcoal);
-}
-
-.price__compare {
-  color: var(--color-taupe);
-  text-decoration: line-through;
-}
-
-/* Accelerated checkout buttons */
-.shopify-payment-button {
-  margin-top: 12px;
-}
-
-.shopify-payment-button__button {
-  border-radius: 2px !important;
-}
-
-/* Add to cart button */
-.product-form__submit,
-[name="add"] {
-  width: 100%;
-  border-radius: 2px;
-  font-size: 0.875rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 16px 24px;
-  min-height: 52px;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.product-form__submit:hover {
+.block-button a:hover,
+a.button:hover {
+  opacity: 0.88;
   transform: translateY(-1px);
 }
 
-/* ── Accordion / Collapsible ─────────────────────────────── */
-details > summary {
-  font-family: var(--font-body--family);
-  font-size: 0.9375rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  padding: 16px 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* ─── Marquee trust bar ───────────────────────────────────────── */
+.marquee-section,
+.marquee-section p,
+.marquee-section span {
+  color: #E8DDD0 !important;
 }
 
-details > summary::-webkit-details-marker {
-  display: none;
+/* ─── Cards: hover effect ─────────────────────────────────────── */
+.product-card,
+.card {
+  transition: transform 0.3s ease;
 }
 
-details[open] > summary {
-  color: var(--color-charcoal);
-}
-
-details .accordion__content,
-details > div {
-  padding-bottom: 16px;
-}
-
-/* ── Reviews / Stars ─────────────────────────────────────── */
-.review-stars,
-[class*="star"] {
-  color: var(--color-rose-gold);
-}
-
-/* ── Collection / Product Cards ─────────────────────────── */
-.product-card {
-  transition: transform 0.25s ease;
-}
-
-.product-card:hover {
+.product-card:hover,
+.card:hover {
   transform: translateY(-4px);
 }
 
-.product-card .product-card__image {
-  overflow: hidden;
-}
-
-.product-card .product-card__image img {
+.product-card img,
+.card img {
   transition: transform 0.4s ease;
 }
 
-.product-card:hover .product-card__image img {
-  transform: scale(1.04);
+.product-card:hover img,
+.card:hover img {
+  transform: scale(1.03);
 }
 
-/* ── Trust Badges ─────────────────────────────────────────── */
-.trust-badge,
-[class*="trust"] {
+/* ─── FAQ accordions ──────────────────────────────────────────── */
+details summary {
   font-family: var(--font-body--family);
-  font-size: 0.8125rem;
-  color: var(--color-taupe);
-}
-
-/* ── Section Padding — Breathe More ─────────────────────── */
-@media (min-width: 990px) {
-  .section {
-    --section-padding-top: 80px;
-    --section-padding-bottom: 80px;
-  }
-}
-
-/* ── Media With Content — text padding ─────────────────── */
-.media-with-content__content {
-  padding: 48px !important;
-}
-
-@media (max-width: 989px) {
-  .media-with-content__content {
-    padding: 32px 24px !important;
-  }
-}
-
-/* ── FAQ Section ─────────────────────────────────────────── */
-.faq-section details {
-  border-bottom: 1px solid var(--color-warm-beige);
-}
-
-/* ── Email Signup Section ────────────────────────────────── */
-.email-signup input[type="email"] {
-  font-family: var(--font-body--family);
-  font-size: 0.9375rem;
-  border: 1px solid var(--color-charcoal);
-  border-radius: 2px;
-  padding: 14px 18px;
-  background: transparent;
-}
-
-.email-signup input[type="email"]::placeholder {
-  color: var(--color-taupe);
-}
-
-/* ── Cart Drawer ─────────────────────────────────────────── */
-.cart-drawer {
-  font-family: var(--font-body--family);
-}
-
-.cart-drawer__title {
-  font-family: var(--font-primary--family);
-  font-size: 1.5rem;
   font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0;
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
 }
 
-/* ── Scrollbar ───────────────────────────────────────────── */
-::-webkit-scrollbar {
-  width: 4px;
+details summary::-webkit-details-marker {
+  display: none;
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-cream);
+/* ─── Email signup input ──────────────────────────────────────── */
+input[type="email"] {
+  border-radius: 0 !important;
+  font-family: var(--font-body--family) !important;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-warm-beige);
-  border-radius: 2px;
+/* ─── Header: minimal border ──────────────────────────────────── */
+.site-header,
+.header-section {
+  border-bottom: 1px solid rgba(44, 44, 44, 0.12) !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-taupe);
+/* ─── Remove gaps between sections ───────────────────────────── */
+.shopify-section + .shopify-section {
+  margin-top: 0;
 }
 
-/* ── Smooth Transitions ──────────────────────────────────── */
-a, button, input, select, textarea, details, summary {
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-/* ── Mobile Optimizations ────────────────────────────────── */
-@media (max-width: 749px) {
-  h1 { font-size: 2.25rem; }
-  h2 { font-size: 1.875rem; }
-  h3 { font-size: 1.5rem; }
-
-  .section {
-    --section-padding-top: 48px;
-    --section-padding-bottom: 48px;
+/* ─── Mobile ──────────────────────────────────────────────────── */
+@media screen and (max-width: 749px) {
+  h1, .h1 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 0.97;
   }
 
-  .button {
-    width: 100%;
-    text-align: center;
-    min-height: 52px;
+  h2, .h2 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .button,
+  .block-button a,
+  a.button {
+    width: 100% !important;
+    min-height: 56px !important;
+    font-size: 0.875rem !important;
   }
 }
-
-/* ── Utility: Rose Gold Accent ───────────────────────────── */
-.accent-rose-gold { color: var(--color-rose-gold); }
-.bg-warm-beige { background-color: var(--color-warm-beige); }
-.bg-cream { background-color: var(--color-cream); }

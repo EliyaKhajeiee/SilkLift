@@ -1,626 +1,24 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */{
+{
   "sections": {
-    "hero_main": {
-      "type": "hero",
-      "blocks": {
-        "hero_eyebrow": {
-          "type": "text",
-          "name": "Eyebrow",
-          "settings": {
-            "text": "<p>Korean RF Technology</p>",
-            "text_color": "#C9956A",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h6",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
-            "line_height": "normal",
-            "letter_spacing": "0.15em",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 8,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "hero_headline": {
-          "type": "text",
-          "name": "Headline",
-          "settings": {
-            "text": "<h1>Clinic-Grade RF Lifting.<br>At Home. Every Day.</h1>",
-            "text_color": "#FAF8F5",
-            "width": "fit-content",
-            "max_width": "560px",
-            "alignment": "left",
-            "type_preset": "h1",
-            "font": "var(--font-primary--family)",
-            "font_size": "1rem",
-            "line_height": "display-tight",
-            "letter_spacing": "heading-normal",
-            "case": "none",
-            "wrap": "pretty",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 16,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "hero_subtext": {
-          "type": "text",
-          "name": "Subtext",
-          "settings": {
-            "text": "<p>Firm, lift and sculpt with professional-grade RF + Microcurrent + EMS technology — in 10 minutes a day.</p>",
-            "text_color": "#FAF8F5",
-            "width": "fit-content",
-            "max_width": "440px",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "body-loose",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 24,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "hero_cta_primary": {
-          "type": "button",
-          "name": "CTA Primary",
-          "settings": {
-            "label": "Shop Now",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-custom",
-            "custom_button_background": "#FAF8F5",
-            "custom_button_text": "#2C2C2C",
-            "custom_button_border": "#FAF8F5",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        },
-        "hero_stars": {
-          "type": "text",
-          "name": "Social proof",
-          "settings": {
-            "text": "<p>★★★★★&nbsp;&nbsp;Loved by 4,800+ customers</p>",
-            "text_color": "#FAF8F5",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.875rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 16,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "hero_eyebrow",
-        "hero_headline",
-        "hero_subtext",
-        "hero_cta_primary",
-        "hero_stars"
-      ],
-      "name": "Hero",
-      "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "flex-end",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 0,
-        "section_width": "full-width",
-        "section_height": "large",
-        "section_height_custom": 85,
-        "background_color": "rgba(0,0,0,0)",
-        "toggle_overlay": true,
-        "overlay_color": "#1a1a1a",
-        "overlay_style": "gradient",
-        "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 0,
-        "padding-block-end": 80
-      }
-    },
-    "marquee_trust": {
-      "type": "marquee",
-      "blocks": {
-        "marquee_item_1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>★★★★★&nbsp;&nbsp;4.9 / 5 Rating</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.8125rem",
-            "line_height": "normal",
-            "letter_spacing": "0.05em",
-            "case": "none",
-            "wrap": "nowrap",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {}
-        },
-        "marquee_item_2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✦&nbsp;&nbsp;Free Shipping Over $50</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.8125rem",
-            "line_height": "normal",
-            "letter_spacing": "0.05em",
-            "case": "none",
-            "wrap": "nowrap",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {}
-        },
-        "marquee_item_3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✦&nbsp;&nbsp;30-Day Money-Back Guarantee</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.8125rem",
-            "line_height": "normal",
-            "letter_spacing": "0.05em",
-            "case": "none",
-            "wrap": "nowrap",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {}
-        },
-        "marquee_item_4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✦&nbsp;&nbsp;4,800+ Happy Customers</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.8125rem",
-            "line_height": "normal",
-            "letter_spacing": "0.05em",
-            "case": "none",
-            "wrap": "nowrap",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {}
-        },
-        "marquee_item_5": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✦&nbsp;&nbsp;1-Year Warranty Included</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.8125rem",
-            "line_height": "normal",
-            "letter_spacing": "0.05em",
-            "case": "none",
-            "wrap": "nowrap",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "marquee_item_1",
-        "marquee_item_2",
-        "marquee_item_3",
-        "marquee_item_4",
-        "marquee_item_5"
-      ],
-      "name": "Trust Bar",
-      "settings": {
-        "movement_direction": "left",
-        "gap_between_elements": 0,
-        "section_width": "full-width",
-        "background_color": "#E8DDD0",
-        "padding-block-start": 14,
-        "padding-block-end": 14
-      }
-    },
-    "featured_product_hero": {
-      "type": "featured-product",
-      "blocks": {
-        "fp_eyebrow": {
-          "type": "text",
-          "name": "Eyebrow",
-          "settings": {
-            "text": "<p>Bestseller</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h6",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
-            "line_height": "normal",
-            "letter_spacing": "0.12em",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "text_color": "#C9956A",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "fp_title": {
-          "type": "product-title",
-          "name": "Product title",
-          "settings": {
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "1rem",
-            "line_height": "display-tight",
-            "letter_spacing": "heading-normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 8,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "fp_tagline": {
-          "type": "text",
-          "name": "Tagline",
-          "settings": {
-            "text": "<p>Firm. Lift. Sculpt. — Professional RF technology in the palm of your hand.</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "body-loose",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#8A7F78",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 12,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "fp_price": {
-          "type": "price",
-          "settings": {
-            "show_sale_price_first": true,
-            "show_installments": true,
-            "show_tax_info": false,
-            "type_preset": "h4",
-            "width": "100%",
-            "alignment": "left",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "text_color": "",
-            "padding-block-start": 16,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "fp_reviews_line": {
-          "type": "text",
-          "name": "Reviews line",
-          "settings": {
-            "text": "<p>★★★★★&nbsp;&nbsp;847 Reviews</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.875rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#8A7F78",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 8,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "fp_divider": {
-          "type": "_divider",
-          "name": "Divider",
-          "settings": {
-            "thickness": 1,
-            "corner_radius": "square",
-            "divider_color": "{{ settings.color_palette.color2 }}",
-            "width_percent": 100,
-            "padding-block-start": 16,
-            "padding-block-end": 16
-          },
-          "blocks": {}
-        },
-        "fp_variant": {
-          "type": "variant-picker",
-          "settings": {
-            "variant_style": "buttons",
-            "show_swatches": false,
-            "option_label_text_color": "",
-            "variant_style_class": "default",
-            "custom_variant_background": "{{ settings.color_palette.background }}",
-            "custom_variant_text": "{{ settings.color_palette.foreground }}",
-            "custom_variant_border": "{{ settings.color_palette.foreground }}",
-            "selected_variant_style_class": "default",
-            "custom_selected_variant_background": "{{ settings.color_palette.foreground }}",
-            "custom_selected_variant_text": "{{ settings.color_palette.background }}",
-            "custom_selected_variant_border": "{{ settings.color_palette.foreground }}",
-            "alignment": "left",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "fp_buy_buttons": {
-          "type": "buy-buttons",
-          "settings": {
-            "stacking": true,
-            "text_color": "",
-            "show_pickup_availability": false,
-            "gift_card_form": false,
-            "recipient_button_style": "default",
-            "recipient_button_background": "{{ settings.color_palette.background }}",
-            "recipient_button_text": "{{ settings.color_palette.foreground }}",
-            "recipient_button_border": "{{ settings.color_palette.foreground }}",
-            "selected_recipient_button_style": "default",
-            "selected_recipient_button_background": "{{ settings.color_palette.foreground }}",
-            "selected_recipient_button_text": "{{ settings.color_palette.background }}",
-            "selected_recipient_button_border": "{{ settings.color_palette.foreground }}",
-            "input_style": "default",
-            "input_background_color": "{{ settings.color_palette.background }}",
-            "input_text_color": "{{ settings.color_palette.foreground }}",
-            "input_border_color": "{{ settings.color_palette.foreground }}",
-            "border_width": 1,
-            "border_radius": 0,
-            "padding-block-start": 16,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "quantity": {
-              "type": "quantity",
-              "static": true,
-              "settings": {
-                "input_style": "default",
-                "input_background_color": "{{ settings.color_palette.background }}",
-                "input_text_color": "{{ settings.color_palette.foreground }}",
-                "input_border_color": "{{ settings.color_palette.foreground }}",
-                "border_width": 1,
-                "border_radius": 0
-              },
-              "blocks": {}
-            },
-            "add-to-cart": {
-              "type": "add-to-cart",
-              "static": true,
-              "settings": {
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}"
-              },
-              "blocks": {}
-            },
-            "accelerated-checkout": {
-              "type": "accelerated-checkout",
-              "static": true,
-              "settings": {},
-              "blocks": {}
-            }
-          },
-          "block_order": []
-        },
-        "fp_trust": {
-          "type": "text",
-          "name": "Trust badges",
-          "settings": {
-            "text": "<p>✅ Free Shipping &nbsp; ✅ 30-Day Returns &nbsp; ✅ 1-Year Warranty</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.8125rem",
-            "line_height": "body-loose",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#8A7F78",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 16,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "fp_eyebrow",
-        "fp_title",
-        "fp_tagline",
-        "fp_price",
-        "fp_reviews_line",
-        "fp_divider",
-        "fp_variant",
-        "fp_buy_buttons",
-        "fp_trust"
-      ],
-      "name": "Featured Product",
-      "settings": {
-        "product": "",
-        "media_presentation": "grid",
-        "media_columns": "two",
-        "image_gap": 4,
-        "large_first_image": true,
-        "icons_style": "none",
-        "slideshow_controls_style": "counter",
-        "slideshow_mobile_controls_style": "dots",
-        "thumbnail_position": "left",
-        "thumbnail_width": 60,
-        "thumbnail_radius": 0,
-        "aspect_ratio": "adapt",
-        "media_fit": "cover",
-        "media_radius": 0,
-        "zoom": false,
-        "video_loop": true,
-        "hide_variants": false,
-        "content_width": "content-center-aligned",
-        "desktop_media_position": "left",
-        "equal_columns": false,
-        "gap": 60,
-        "enable_sticky_add_to_cart": true,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
-    "media_benefits": {
+
+    "product_hero": {
       "type": "media-with-content",
       "blocks": {
-        "media_benefits_media": {
+        "product_hero_media": {
           "type": "_media-without-appearance",
           "static": true,
           "id": "media",
           "settings": {
             "media_type": "image",
             "video_loop": true,
-            "aspect_ratio": "3 / 4",
+            "aspect_ratio": "auto",
             "media_fit": "cover",
             "media_radius": 0,
-            "extend_media": false
+            "extend_media": true
           },
           "blocks": {}
         },
-        "media_benefits_content": {
+        "product_hero_content": {
           "type": "_content-without-appearance",
           "static": true,
           "id": "content",
@@ -629,28 +27,28 @@
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
-            "gap": 24,
+            "gap": 20,
             "width": "fill",
             "custom_width": 100,
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
+            "padding-block-start": 64,
+            "padding-block-end": 64,
+            "padding-inline-start": 56,
+            "padding-inline-end": 56
           },
           "blocks": {
-            "benefits_eyebrow": {
+            "hero_eyebrow": {
               "type": "text",
               "name": "Eyebrow",
               "settings": {
-                "text": "<p>The Technology</p>",
+                "text": "<p>RF · Microcurrent · EMS · Heat</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "h6",
-                "font": "var(--font-subheading--family)",
+                "font": "var(--font-body--family)",
                 "font_size": "0.75rem",
                 "line_height": "normal",
-                "letter_spacing": "0.12em",
+                "letter_spacing": "0.15em",
                 "case": "uppercase",
                 "wrap": "pretty",
                 "text_color": "#C9956A",
@@ -664,15 +62,15 @@
               },
               "blocks": {}
             },
-            "benefits_headline": {
+            "hero_title": {
               "type": "text",
-              "name": "Headline",
+              "name": "Product name",
               "settings": {
-                "text": "<h2>The Science Behind the Glow</h2>",
+                "text": "<h1>SilkLift<br>RF Pro</h1>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h2",
+                "type_preset": "h1",
                 "font": "var(--font-primary--family)",
                 "font_size": "1rem",
                 "line_height": "display-tight",
@@ -680,139 +78,6 @@
                 "case": "none",
                 "wrap": "pretty",
                 "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 8,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "benefits_body": {
-              "type": "text",
-              "name": "Body",
-              "settings": {
-                "text": "<p><strong>RF (Radio Frequency)</strong> — Heats deep skin layers to stimulate collagen production and visibly firm the skin.</p><p><strong>Microcurrent</strong> — Mimics the body's natural bioelectric field to sculpt and tone facial muscles, defining your jawline and cheekbones.</p><p><strong>EMS + Therapeutic Heat</strong> — Boosts circulation and enhances serum absorption by up to 3×, accelerating visible results.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "body-loose",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 16,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "benefits_cta": {
-              "type": "button",
-              "name": "CTA",
-              "settings": {
-                "label": "Shop the Device",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "rgba(0,0,0,0)",
-                "custom_button_text": "{{ settings.color_palette.foreground }}",
-                "custom_button_border": "{{ settings.color_palette.foreground }}",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "benefits_eyebrow",
-            "benefits_headline",
-            "benefits_body",
-            "benefits_cta"
-          ]
-        }
-      },
-      "block_order": [
-        "media_benefits_media",
-        "media_benefits_content"
-      ],
-      "name": "Benefits",
-      "settings": {
-        "media_position": "left",
-        "media_width": "medium",
-        "extend_media": false,
-        "media_height": "auto",
-        "section_width": "page-width",
-        "background_color": "#FAF8F5",
-        "border": "none",
-        "border_width": 0,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "media_how_to_use": {
-      "type": "media-with-content",
-      "blocks": {
-        "howto_media": {
-          "type": "_media-without-appearance",
-          "static": true,
-          "id": "media",
-          "settings": {
-            "media_type": "image",
-            "video_loop": true,
-            "aspect_ratio": "3 / 4",
-            "media_fit": "cover",
-            "media_radius": 0
-          },
-          "blocks": {}
-        },
-        "howto_content": {
-          "type": "_content-without-appearance",
-          "static": true,
-          "id": "content",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "gap": 24,
-            "width": "fill",
-            "custom_width": 100,
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
-          },
-          "blocks": {
-            "howto_eyebrow": {
-              "type": "text",
-              "name": "Eyebrow",
-              "settings": {
-                "text": "<p>Simple Ritual</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h6",
-                "font": "var(--font-subheading--family)",
-                "font_size": "0.75rem",
-                "line_height": "normal",
-                "letter_spacing": "0.12em",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "text_color": "#C9956A",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -823,233 +88,113 @@
               },
               "blocks": {}
             },
-            "howto_headline": {
+            "hero_tagline": {
               "type": "text",
-              "name": "Headline",
+              "name": "Tagline",
               "settings": {
-                "text": "<h2>Your 10-Minute Glass Skin Ritual</h2>",
+                "text": "<p>Clinic-grade lifting at home.<br>10 minutes. Real results.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-primary--family)",
-                "font_size": "1rem",
-                "line_height": "display-tight",
-                "letter_spacing": "heading-normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 8,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "howto_steps": {
-              "type": "text",
-              "name": "Steps",
-              "settings": {
-                "text": "<p><strong>01 — Cleanse &amp; Apply Serum</strong><br>Start with a clean face. Apply your favourite water-based serum or our Conductive Gel.</p><p><strong>02 — Glide SilkLift Upward</strong><br>Use gentle upward strokes across cheeks, jawline, forehead, and neck. 10 minutes is all you need.</p><p><strong>03 — See Results in 4 Weeks</strong><br>Firmer, lifted skin with regular use. Visible results backed by thousands of customers.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "paragraph",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "body-loose",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "",
+                "text_color": "#8A7F78",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 16,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
-            }
-          },
-          "block_order": [
-            "howto_eyebrow",
-            "howto_headline",
-            "howto_steps"
-          ]
-        }
-      },
-      "block_order": [
-        "howto_media",
-        "howto_content"
-      ],
-      "name": "How To Use",
-      "settings": {
-        "media_position": "right",
-        "media_width": "medium",
-        "extend_media": false,
-        "media_height": "auto",
-        "section_width": "page-width",
-        "background_color": "#E8DDD0",
-        "border": "none",
-        "border_width": 0,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "product_list_main": {
-      "type": "product-list",
-      "blocks": {
-        "static-header": {
-          "type": "_product-list-content",
-          "name": "Header",
-          "static": true,
-          "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": false,
-            "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
-            "align_baseline": true,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "list_heading": {
-              "type": "_product-list-text",
-              "name": "Heading",
+            },
+            "hero_price": {
+              "type": "text",
+              "name": "Price",
               "settings": {
-                "text": "<h3>The SilkLift Collection</h3>",
-                "width": "fit-content",
+                "text": "<p><strong>$179</strong> &nbsp;<s style=\"color:#8A7F78;font-weight:400\">$249</s></p>",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "h3",
-                "font": "var(--font-primary--family)",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "list_view_all": {
-              "type": "_product-list-button",
-              "name": "View all",
-              "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "list_heading",
-            "list_view_all"
-          ]
-        },
-        "static-product-card": {
-          "type": "_product-card",
-          "name": "Product card",
-          "static": true,
-          "settings": {
-            "product_card_gap": 8,
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "product_card_gallery": {
-              "type": "_product-card-gallery",
-              "name": "Media",
-              "settings": {
-                "image_ratio": "4 / 5",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_title": {
-              "type": "product-title",
-              "name": "Title",
-              "settings": {
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 12,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "product_price": {
-              "type": "price",
-              "name": "Price",
+            "hero_cta": {
+              "type": "button",
+              "name": "Shop Now",
               "settings": {
-                "show_sale_price_first": true,
-                "show_installments": false,
-                "show_tax_info": false,
-                "type_preset": "h6",
+                "label": "SHOP NOW",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "#2C2C2C",
+                "custom_button_text": "#FAF8F5",
+                "custom_button_border": "#2C2C2C",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "hero_bundle_cta": {
+              "type": "button",
+              "name": "Bundle deal",
+              "settings": {
+                "label": "VIEW BUNDLE DEAL — SAVE $60",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "rgba(0,0,0,0)",
+                "custom_button_text": "#2C2C2C",
+                "custom_button_border": "#2C2C2C",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "hero_reviews": {
+              "type": "text",
+              "name": "Reviews",
+              "settings": {
+                "text": "<p>★★★★★ &nbsp;Loved by 4,800+ customers</p>",
                 "width": "100%",
+                "max_width": "normal",
                 "alignment": "left",
+                "type_preset": "paragraph",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "0.875rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
+                "wrap": "pretty",
+                "text_color": "#8A7F78",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
                 "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -1059,37 +204,671 @@
             }
           },
           "block_order": [
-            "product_card_gallery",
-            "product_title",
-            "product_price"
+            "hero_eyebrow",
+            "hero_title",
+            "hero_tagline",
+            "hero_price",
+            "hero_cta",
+            "hero_bundle_cta",
+            "hero_reviews"
           ]
         }
       },
-      "name": "Product Collection",
+      "block_order": [
+        "product_hero_media",
+        "product_hero_content"
+      ],
+      "name": "Product Hero",
       "settings": {
-        "collection": "all",
-        "layout_type": "grid",
-        "carousel_on_mobile": true,
-        "max_products": 6,
-        "columns": 3,
-        "mobile_columns": "2",
-        "mobile_card_size": "70cqw",
-        "columns_gap": 16,
-        "rows_gap": 32,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "horizontal_alignment": "flex-start",
-        "gap": 32,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 80,
-        "padding-block-end": 80
+        "media_position": "left",
+        "media_width": "wide",
+        "extend_media": true,
+        "media_height": "100svh",
+        "section_width": "full-width",
+        "background_color": "#FAF8F5",
+        "border": "none",
+        "border_width": 0,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
-    "carousel_reviews": {
+
+    "marquee_trust": {
+      "type": "marquee",
+      "blocks": {
+        "m1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>★★★★★ &nbsp;4.9 / 5 Rating</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "normal",
+            "letter_spacing": "0.08em",
+            "case": "none",
+            "wrap": "nowrap",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {}
+        },
+        "m2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ &nbsp;Free Shipping Over $50</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "normal",
+            "letter_spacing": "0.08em",
+            "case": "none",
+            "wrap": "nowrap",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {}
+        },
+        "m3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ &nbsp;30-Day Money-Back Guarantee</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "normal",
+            "letter_spacing": "0.08em",
+            "case": "none",
+            "wrap": "nowrap",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {}
+        },
+        "m4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ &nbsp;Authentic Korean RF Technology</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "normal",
+            "letter_spacing": "0.08em",
+            "case": "none",
+            "wrap": "nowrap",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {}
+        },
+        "m5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✦ &nbsp;1-Year Warranty Included</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "normal",
+            "letter_spacing": "0.08em",
+            "case": "none",
+            "wrap": "nowrap",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["m1","m2","m3","m4","m5"],
+      "name": "Trust Marquee",
+      "settings": {
+        "movement_direction": "left",
+        "gap_between_elements": 0,
+        "section_width": "full-width",
+        "background_color": "#2C2C2C",
+        "padding-block-start": 13,
+        "padding-block-end": 13
+      }
+    },
+
+    "showcase_model1": {
+      "type": "media-with-content",
+      "blocks": {
+        "s1_media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "id": "media",
+          "settings": {
+            "media_type": "image",
+            "video_loop": false,
+            "aspect_ratio": "auto",
+            "media_fit": "cover",
+            "media_radius": 0,
+            "extend_media": true
+          },
+          "blocks": {}
+        },
+        "s1_content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "id": "content",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "gap": 24,
+            "width": "fill",
+            "custom_width": 100,
+            "padding-block-start": 64,
+            "padding-block-end": 64,
+            "padding-inline-start": 56,
+            "padding-inline-end": 56
+          },
+          "blocks": {
+            "s1_label": {
+              "type": "text",
+              "name": "Label",
+              "settings": {
+                "text": "<p>Real Results</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "0.15em",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "#C9956A",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "s1_heading": {
+              "type": "text",
+              "name": "Heading",
+              "settings": {
+                "text": "<h2>4 Weeks.<br>Your Skin Transformed.</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-primary--family)",
+                "font_size": "1rem",
+                "line_height": "display-tight",
+                "letter_spacing": "heading-normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "s1_body": {
+              "type": "text",
+              "name": "Body",
+              "settings": {
+                "text": "<p>RF energy heats deep skin tissue to trigger collagen production. Microcurrent tones and sculpts facial muscles. Together they deliver visible firming, lifting, and jawline definition — all in 10 minutes a day.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "body-loose",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#8A7F78",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "s1_cta": {
+              "type": "button",
+              "name": "CTA",
+              "settings": {
+                "label": "SHOP SILKLIFT — $179",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "#2C2C2C",
+                "custom_button_text": "#FAF8F5",
+                "custom_button_border": "#2C2C2C",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": ["s1_label","s1_heading","s1_body","s1_cta"]
+        }
+      },
+      "block_order": ["s1_media","s1_content"],
+      "name": "Showcase 1",
+      "settings": {
+        "media_position": "right",
+        "media_width": "medium",
+        "extend_media": true,
+        "media_height": "80svh",
+        "section_width": "full-width",
+        "background_color": "#FAF8F5",
+        "border": "none",
+        "border_width": 0,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+
+    "showcase_model2": {
+      "type": "media-with-content",
+      "blocks": {
+        "s2_media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "id": "media",
+          "settings": {
+            "media_type": "image",
+            "video_loop": false,
+            "aspect_ratio": "auto",
+            "media_fit": "cover",
+            "media_radius": 0,
+            "extend_media": true
+          },
+          "blocks": {}
+        },
+        "s2_content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "id": "content",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "gap": 24,
+            "width": "fill",
+            "custom_width": 100,
+            "padding-block-start": 64,
+            "padding-block-end": 64,
+            "padding-inline-start": 56,
+            "padding-inline-end": 56
+          },
+          "blocks": {
+            "s2_label": {
+              "type": "text",
+              "name": "Label",
+              "settings": {
+                "text": "<p>How It Works</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "0.15em",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "#C9956A",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "s2_heading": {
+              "type": "text",
+              "name": "Heading",
+              "settings": {
+                "text": "<h2>Your 10-Minute<br>Glass Skin Ritual</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-primary--family)",
+                "font_size": "1rem",
+                "line_height": "display-tight",
+                "letter_spacing": "heading-normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#FAF8F5",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "s2_steps": {
+              "type": "text",
+              "name": "Steps",
+              "settings": {
+                "text": "<p><strong style=\"color:#C9956A\">01</strong> &nbsp;Cleanse &amp; apply serum<br><strong style=\"color:#C9956A\">02</strong> &nbsp;Glide SilkLift upward<br><strong style=\"color:#C9956A\">03</strong> &nbsp;See results in 4 weeks</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1.0625rem",
+                "line_height": "body-loose",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#E8DDD0",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "s2_cta": {
+              "type": "button",
+              "name": "CTA",
+              "settings": {
+                "label": "GET YOURS NOW",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "#FAF8F5",
+                "custom_button_text": "#2C2C2C",
+                "custom_button_border": "#FAF8F5",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": ["s2_label","s2_heading","s2_steps","s2_cta"]
+        }
+      },
+      "block_order": ["s2_media","s2_content"],
+      "name": "Showcase 2",
+      "settings": {
+        "media_position": "left",
+        "media_width": "medium",
+        "extend_media": true,
+        "media_height": "80svh",
+        "section_width": "full-width",
+        "background_color": "#2C2C2C",
+        "border": "none",
+        "border_width": 0,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+
+    "bundle_section": {
+      "type": "section",
+      "blocks": {
+        "bundle_eyebrow": {
+          "type": "text",
+          "name": "Eyebrow",
+          "settings": {
+            "text": "<p>Limited Offer</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h6",
+            "font": "var(--font-body--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "0.15em",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "text_color": "#C9956A",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "bundle_heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h2>The Glass Skin Bundle</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "1rem",
+            "line_height": "display-tight",
+            "letter_spacing": "heading-normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#FAF8F5",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "bundle_sub": {
+          "type": "text",
+          "name": "Sub",
+          "settings": {
+            "text": "<p>SilkLift RF Pro + Conductive Peptide Gel + Glass Skin Serum</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "body-loose",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#E8DDD0",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 16,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "bundle_price": {
+          "type": "text",
+          "name": "Price",
+          "settings": {
+            "text": "<p><strong style=\"font-size:2rem\">$219</strong> &nbsp;<s style=\"color:#8A7F78\">$279</s> &nbsp;<span style=\"background:#C9956A;color:#FAF8F5;padding:4px 12px;border-radius:2px;font-size:0.875rem;letter-spacing:0.05em\">SAVE $60</span></p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#FAF8F5",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 20,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "bundle_includes": {
+          "type": "text",
+          "name": "Includes",
+          "settings": {
+            "text": "<p style=\"color:#8A7F78;font-size:0.875rem\">✓ SilkLift RF Pro Device &nbsp; ✓ Conductive Peptide Gel (60ml) &nbsp; ✓ Glass Skin Serum (30ml)</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "body-loose",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#8A7F78",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 16,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "bundle_cta": {
+          "type": "button",
+          "name": "Bundle CTA",
+          "settings": {
+            "label": "ADD BUNDLE TO CART — $219",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-custom",
+            "custom_button_background": "#C9956A",
+            "custom_button_text": "#FAF8F5",
+            "custom_button_border": "#C9956A",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
+        "bundle_device_only": {
+          "type": "button",
+          "name": "Device only",
+          "settings": {
+            "label": "Device Only — $179",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-custom",
+            "custom_button_background": "rgba(0,0,0,0)",
+            "custom_button_text": "#E8DDD0",
+            "custom_button_border": "#E8DDD0",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "bundle_eyebrow",
+        "bundle_heading",
+        "bundle_sub",
+        "bundle_price",
+        "bundle_includes",
+        "bundle_cta",
+        "bundle_device_only"
+      ],
+      "name": "Bundle Deal",
+      "settings": {
+        "section_width": "content-center-aligned",
+        "background_color": "#1a1a1a",
+        "padding-block-start": 96,
+        "padding-block-end": 96
+      }
+    },
+
+    "reviews_section": {
       "type": "carousel",
       "blocks": {
-        "review_1": {
+        "r1": {
           "type": "_carousel-content",
           "name": "Review 1",
           "settings": {
@@ -1103,17 +882,16 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
+            "padding-block-start": 40,
+            "padding-block-end": 40,
+            "padding-inline-start": 36,
+            "padding-inline-end": 36
           },
           "blocks": {
-            "stars_1": {
+            "r1_stars": {
               "type": "text",
               "settings": {
-                "text": "<p>★★★★★</p>",
-                "text_color": "#C9956A",
+                "text": "<p style=\"color:#C9956A;letter-spacing:2px\">★★★★★</p>",
                 "width": "100%",
                 "alignment": "left",
                 "type_preset": "paragraph",
@@ -1126,7 +904,7 @@
               },
               "blocks": {}
             },
-            "quote_1": {
+            "r1_quote": {
               "type": "text",
               "settings": {
                 "text": "<p>\"My skin hasn't looked this good since my 20s. After 4 weeks of daily use, my jawline is visibly tighter and my friends keep asking what I'm doing differently.\"</p>",
@@ -1143,10 +921,10 @@
               },
               "blocks": {}
             },
-            "author_1": {
+            "r1_author": {
               "type": "text",
               "settings": {
-                "text": "<p>— Jennifer L., 38 &nbsp; ✓ Verified Purchase</p>",
+                "text": "<p>— Jennifer L., 38 &nbsp; ✓ Verified</p>",
                 "text_color": "#8A7F78",
                 "width": "100%",
                 "alignment": "left",
@@ -1161,9 +939,9 @@
               "blocks": {}
             }
           },
-          "block_order": ["stars_1", "quote_1", "author_1"]
+          "block_order": ["r1_stars","r1_quote","r1_author"]
         },
-        "review_2": {
+        "r2": {
           "type": "_carousel-content",
           "name": "Review 2",
           "settings": {
@@ -1177,17 +955,16 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
+            "padding-block-start": 40,
+            "padding-block-end": 40,
+            "padding-inline-start": 36,
+            "padding-inline-end": 36
           },
           "blocks": {
-            "stars_2": {
+            "r2_stars": {
               "type": "text",
               "settings": {
-                "text": "<p>★★★★★</p>",
-                "text_color": "#C9956A",
+                "text": "<p style=\"color:#C9956A;letter-spacing:2px\">★★★★★</p>",
                 "width": "100%",
                 "alignment": "left",
                 "type_preset": "paragraph",
@@ -1200,10 +977,10 @@
               },
               "blocks": {}
             },
-            "quote_2": {
+            "r2_quote": {
               "type": "text",
               "settings": {
-                "text": "<p>\"Better than my $300 spa facial treatments. I use it every morning while my coffee brews. My skin is firmer, my pores look smaller, and I genuinely look more rested.\"</p>",
+                "text": "<p>\"Better than my $300 spa facial. I use it every morning while my coffee brews. Skin is firmer, pores look smaller, and I genuinely look more rested.\"</p>",
                 "width": "100%",
                 "alignment": "left",
                 "type_preset": "paragraph",
@@ -1217,10 +994,10 @@
               },
               "blocks": {}
             },
-            "author_2": {
+            "r2_author": {
               "type": "text",
               "settings": {
-                "text": "<p>— Michelle T., 44 &nbsp; ✓ Verified Purchase</p>",
+                "text": "<p>— Michelle T., 44 &nbsp; ✓ Verified</p>",
                 "text_color": "#8A7F78",
                 "width": "100%",
                 "alignment": "left",
@@ -1235,9 +1012,9 @@
               "blocks": {}
             }
           },
-          "block_order": ["stars_2", "quote_2", "author_2"]
+          "block_order": ["r2_stars","r2_quote","r2_author"]
         },
-        "review_3": {
+        "r3": {
           "type": "_carousel-content",
           "name": "Review 3",
           "settings": {
@@ -1251,17 +1028,16 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
+            "padding-block-start": 40,
+            "padding-block-end": 40,
+            "padding-inline-start": 36,
+            "padding-inline-end": 36
           },
           "blocks": {
-            "stars_3": {
+            "r3_stars": {
               "type": "text",
               "settings": {
-                "text": "<p>★★★★★</p>",
-                "text_color": "#C9956A",
+                "text": "<p style=\"color:#C9956A;letter-spacing:2px\">★★★★★</p>",
                 "width": "100%",
                 "alignment": "left",
                 "type_preset": "paragraph",
@@ -1274,10 +1050,10 @@
               },
               "blocks": {}
             },
-            "quote_3": {
+            "r3_quote": {
               "type": "text",
               "settings": {
-                "text": "<p>\"I was sceptical at first, but the before/after photos don't lie. Three weeks in and my husband noticed before I even told him I was using it. This is my forever product.\"</p>",
+                "text": "<p>\"My husband noticed before I even told him I was using it. Three weeks in and my skin is genuinely different. This is my forever product.\"</p>",
                 "width": "100%",
                 "alignment": "left",
                 "type_preset": "paragraph",
@@ -1291,10 +1067,10 @@
               },
               "blocks": {}
             },
-            "author_3": {
+            "r3_author": {
               "type": "text",
               "settings": {
-                "text": "<p>— Sarah K., 35 &nbsp; ✓ Verified Purchase</p>",
+                "text": "<p>— Sarah K., 35 &nbsp; ✓ Verified</p>",
                 "text_color": "#8A7F78",
                 "width": "100%",
                 "alignment": "left",
@@ -1309,17 +1085,13 @@
               "blocks": {}
             }
           },
-          "block_order": ["stars_3", "quote_3", "author_3"]
+          "block_order": ["r3_stars","r3_quote","r3_author"]
         }
       },
-      "block_order": [
-        "review_1",
-        "review_2",
-        "review_3"
-      ],
-      "name": "Customer Reviews",
+      "block_order": ["r1","r2","r3"],
+      "name": "Reviews",
       "settings": {
-        "heading": "<h2>What Our Customers Say</h2>",
+        "heading": "<h2>Real People. Real Results.</h2>",
         "heading_preset": "h2",
         "heading_font": "var(--font-primary--family)",
         "heading_alignment": "center",
@@ -1333,22 +1105,23 @@
         "icons_shape": "none",
         "gap": 24,
         "section_width": "page-width",
-        "background_color": "{{ settings.color_palette.background }}",
+        "background_color": "#FAF8F5",
         "padding-block-start": 80,
         "padding-block-end": 80
       }
     },
-    "section_faq": {
+
+    "faq_section": {
       "type": "section",
       "blocks": {
-        "faq_heading": {
+        "faq_head": {
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<h2>Frequently Asked Questions</h2>",
+            "text": "<h2>Questions? Answered.</h2>",
             "width": "100%",
             "max_width": "normal",
-            "alignment": "center",
+            "alignment": "left",
             "type_preset": "h2",
             "font": "var(--font-primary--family)",
             "font_size": "1rem",
@@ -1361,19 +1134,19 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 32,
+            "padding-block-end": 40,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {}
         },
-        "faq_1": {
+        "faq_a1": {
           "type": "accordion",
           "name": "FAQ 1",
           "settings": {
-            "heading": "Is SilkLift safe for all skin types?",
+            "heading": "How soon will I see results?",
             "heading_preset": "h5",
-            "open_by_default": false,
+            "open_by_default": true,
             "icon": "caret",
             "disclosure_heading_preset": "h6",
             "text_color": "",
@@ -1385,29 +1158,30 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "faq_1_text": {
+            "faq_a1_t": {
               "type": "text",
               "settings": {
-                "text": "<p>Yes. SilkLift is designed for all skin types including sensitive skin. The three intensity levels allow you to start low and gradually increase as your skin adapts. If you have any active skin conditions, implanted devices, or are pregnant, please consult a dermatologist before use.</p>",
+                "text": "<p>Most customers notice improved radiance and texture within 1–2 weeks. Visible lifting and firming appears within 4 weeks of consistent daily use. Results continue improving over 8–12 weeks.</p>",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "body-loose",
+                "text_color": "#8A7F78",
                 "padding-block-start": 12,
-                "padding-block-end": 16,
+                "padding-block-end": 20,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             }
           },
-          "block_order": ["faq_1_text"]
+          "block_order": ["faq_a1_t"]
         },
-        "faq_2": {
+        "faq_a2": {
           "type": "accordion",
           "name": "FAQ 2",
           "settings": {
-            "heading": "How soon will I see results?",
+            "heading": "Is it safe for all skin types?",
             "heading_preset": "h5",
             "open_by_default": false,
             "icon": "caret",
@@ -1421,29 +1195,30 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "faq_2_text": {
+            "faq_a2_t": {
               "type": "text",
               "settings": {
-                "text": "<p>Most customers notice improved skin texture and radiance within 1–2 weeks. Visible lifting and firming results typically appear within 4 weeks of consistent daily use (10 minutes, 3–5 times per week). Results improve further with continued use over 8–12 weeks.</p>",
+                "text": "<p>Yes. SilkLift has three intensity levels so you can start gently and build up. Safe for all skin types including sensitive skin. Avoid use if you have active skin conditions, implanted devices, or are pregnant.</p>",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "body-loose",
+                "text_color": "#8A7F78",
                 "padding-block-start": 12,
-                "padding-block-end": 16,
+                "padding-block-end": 20,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             }
           },
-          "block_order": ["faq_2_text"]
+          "block_order": ["faq_a2_t"]
         },
-        "faq_3": {
+        "faq_a3": {
           "type": "accordion",
           "name": "FAQ 3",
           "settings": {
-            "heading": "Can I use it with my existing skincare routine?",
+            "heading": "What's your return policy?",
             "heading_preset": "h5",
             "open_by_default": false,
             "icon": "caret",
@@ -1457,29 +1232,30 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "faq_3_text": {
+            "faq_a3_t": {
               "type": "text",
               "settings": {
-                "text": "<p>Absolutely. SilkLift works best with a water-based conductive serum or gel (not oil-based). Use it after cleansing and before moisturiser. It actually enhances serum absorption by up to 3×, making the rest of your routine more effective.</p>",
+                "text": "<p>30-day money-back guarantee. If you're not satisfied, contact us for a full refund — no questions asked. Every device also comes with a 1-year manufacturer's warranty.</p>",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "body-loose",
+                "text_color": "#8A7F78",
                 "padding-block-start": 12,
-                "padding-block-end": 16,
+                "padding-block-end": 20,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             }
           },
-          "block_order": ["faq_3_text"]
+          "block_order": ["faq_a3_t"]
         },
-        "faq_4": {
+        "faq_a4": {
           "type": "accordion",
           "name": "FAQ 4",
           "settings": {
-            "heading": "What's the difference between RF and microcurrent?",
+            "heading": "Do I need conductive gel?",
             "heading_preset": "h5",
             "open_by_default": false,
             "icon": "caret",
@@ -1493,81 +1269,40 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "faq_4_text": {
+            "faq_a4_t": {
               "type": "text",
               "settings": {
-                "text": "<p>RF (Radio Frequency) works at a deeper skin layer, heating tissue to stimulate collagen and elastin production — this is what firms and tightens the skin over time. Microcurrent works at the muscle level, mimicking the body's bioelectric field to tone and lift facial muscles — you see the sculpting effects more immediately. SilkLift combines both, plus EMS and therapeutic heat, for complete facial rejuvenation.</p>",
+                "text": "<p>A water-based serum or gel is required for optimal conductivity and results. You can use any water-based serum you already own, or add our Conductive Peptide Gel to your order.</p>",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "body-loose",
+                "text_color": "#8A7F78",
                 "padding-block-start": 12,
-                "padding-block-end": 16,
+                "padding-block-end": 20,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             }
           },
-          "block_order": ["faq_4_text"]
-        },
-        "faq_5": {
-          "type": "accordion",
-          "name": "FAQ 5",
-          "settings": {
-            "heading": "What is your return policy?",
-            "heading_preset": "h5",
-            "open_by_default": false,
-            "icon": "caret",
-            "disclosure_heading_preset": "h6",
-            "text_color": "",
-            "dividers": true,
-            "divider_color": "{{ settings.color_palette.color2 }}",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "faq_5_text": {
-              "type": "text",
-              "settings": {
-                "text": "<p>We offer a 30-day money-back guarantee. If you're not completely satisfied with your SilkLift device within 30 days of purchase, contact our team for a full refund — no questions asked. The device also comes with a 1-year manufacturer's warranty.</p>",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "body-loose",
-                "padding-block-start": 12,
-                "padding-block-end": 16,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": ["faq_5_text"]
+          "block_order": ["faq_a4_t"]
         }
       },
-      "block_order": [
-        "faq_heading",
-        "faq_1",
-        "faq_2",
-        "faq_3",
-        "faq_4",
-        "faq_5"
-      ],
+      "block_order": ["faq_head","faq_a1","faq_a2","faq_a3","faq_a4"],
       "name": "FAQ",
       "settings": {
-        "section_width": "content-center-aligned",
+        "section_width": "page-width",
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 80,
         "padding-block-end": 80
       }
     },
-    "section_email_signup": {
+
+    "email_section": {
       "type": "section",
       "blocks": {
-        "email_heading": {
+        "email_h": {
           "type": "text",
           "name": "Heading",
           "settings": {
@@ -1593,11 +1328,11 @@
           },
           "blocks": {}
         },
-        "email_subtext": {
+        "email_sub": {
           "type": "text",
-          "name": "Subtext",
+          "name": "Sub",
           "settings": {
-            "text": "<p>Join the SilkLift community for early access, skincare tips, and exclusive member offers.</p>",
+            "text": "<p>Join the SilkLift community. Early access, skincare tips, and member-only offers.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1613,7 +1348,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 12,
-            "padding-block-end": 24,
+            "padding-block-end": 28,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -1621,10 +1356,10 @@
         },
         "email_form": {
           "type": "email-signup",
-          "name": "Email form",
+          "name": "Form",
           "settings": {
             "placeholder": "your@email.com",
-            "button_label": "Claim My 10% Off",
+            "button_label": "GET 10% OFF",
             "style_class": "button",
             "custom_button_background": "{{ settings.color_palette.foreground }}",
             "custom_button_text": "{{ settings.color_palette.background }}",
@@ -1640,11 +1375,7 @@
           "blocks": {}
         }
       },
-      "block_order": [
-        "email_heading",
-        "email_subtext",
-        "email_form"
-      ],
+      "block_order": ["email_h","email_sub","email_form"],
       "name": "Email Signup",
       "settings": {
         "section_width": "content-center-aligned",
@@ -1653,16 +1384,16 @@
         "padding-block-end": 80
       }
     }
+
   },
   "order": [
-    "hero_main",
+    "product_hero",
     "marquee_trust",
-    "featured_product_hero",
-    "media_benefits",
-    "media_how_to_use",
-    "product_list_main",
-    "carousel_reviews",
-    "section_faq",
-    "section_email_signup"
+    "showcase_model1",
+    "showcase_model2",
+    "bundle_section",
+    "reviews_section",
+    "faq_section",
+    "email_section"
   ]
 }
