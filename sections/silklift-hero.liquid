@@ -1,18 +1,45 @@
 {%- assign sl_product = all_products['silklift-rf-pro'] -%}
-{%- assign hero_img = sl_product.featured_image -%}
 
 <div class="sl-hero">
   <div class="sl-hero__media">
-    {%- if hero_img -%}
-      <img
-        src="{{ hero_img | image_url: width: 1200 }}"
-        alt="{{ hero_img.alt | default: 'SilkLift RF Pro' }}"
-        loading="eager"
-        fetchpriority="high"
-        class="sl-hero__img"
-        width="{{ hero_img.width }}"
-        height="{{ hero_img.height }}"
-      >
+
+    {%- if sl_product.images.size > 0 -%}
+
+      <div class="sl-gallery" id="sl-gallery">
+        <div class="sl-gallery__slides">
+          {%- for img in sl_product.images -%}
+            <div class="sl-gallery__slide{% if forloop.first %} sl-gallery__slide--active{% endif %}">
+              <img
+                src="{{ img | image_url: width: 1200 }}"
+                alt="{{ img.alt | default: 'SilkLift RF Pro' }}"
+                loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                {% if forloop.first %}fetchpriority="high"{% endif %}
+                class="sl-hero__img"
+                width="{{ img.width }}"
+                height="{{ img.height }}"
+              >
+            </div>
+          {%- endfor -%}
+        </div>
+
+        {%- if sl_product.images.size > 1 -%}
+          <button class="sl-gallery__arrow sl-gallery__arrow--prev" onclick="slGalleryPrev()" aria-label="Previous">&#8592;</button>
+          <button class="sl-gallery__arrow sl-gallery__arrow--next" onclick="slGalleryNext()" aria-label="Next">&#8594;</button>
+
+          <div class="sl-gallery__thumbs">
+            {%- for img in sl_product.images -%}
+              <button
+                class="sl-gallery__thumb{% if forloop.first %} sl-gallery__thumb--active{% endif %}"
+                onclick="slGalleryGo({{ forloop.index0 }})"
+                aria-label="Photo {{ forloop.index }}"
+              >
+                <img src="{{ img | image_url: width: 120 }}" alt="" loading="lazy">
+              </button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
     {%- else -%}
       <img
         src="{{ 'info-dark-hero.webp' | asset_url }}"
@@ -24,6 +51,7 @@
         height="1496"
       >
     {%- endif -%}
+
   </div>
 
   <div class="sl-hero__content">
@@ -123,6 +151,31 @@
 </div>
 
 <script>
+// Gallery
+var slGalIdx = 0;
+function slGalleryGo(n) {
+  var slides = document.querySelectorAll('.sl-gallery__slide');
+  var thumbs = document.querySelectorAll('.sl-gallery__thumb');
+  if (!slides.length) return;
+  slGalIdx = (n + slides.length) % slides.length;
+  slides.forEach(function(s, i) { s.classList.toggle('sl-gallery__slide--active', i === slGalIdx); });
+  thumbs.forEach(function(t, i) { t.classList.toggle('sl-gallery__thumb--active', i === slGalIdx); });
+}
+function slGalleryNext() { slGalleryGo(slGalIdx + 1); }
+function slGalleryPrev() { slGalleryGo(slGalIdx - 1); }
+
+// Swipe support
+(function() {
+  var el = document.getElementById('sl-gallery');
+  if (!el) return;
+  var startX = 0;
+  el.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, {passive: true});
+  el.addEventListener('touchend', function(e) {
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 40) dx < 0 ? slGalleryNext() : slGalleryPrev();
+  }, {passive: true});
+})();
+
 function slSetColor(btn, name) {
   document.querySelectorAll('.sl-swatch').forEach(function(b){ b.classList.remove('sl-swatch--active'); });
   btn.classList.add('sl-swatch--active');
@@ -455,6 +508,92 @@ function slSetColor(btn, name) {
 }
 
 @keyframes sl-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+/* ── Gallery ─────────────────────────────────────── */
+.sl-gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sl-gallery__slides {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sl-gallery__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.sl-gallery__slide--active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+
+.sl-gallery__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.88);
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #2C2C2C;
+  z-index: 10;
+  transition: background 0.15s;
+  backdrop-filter: blur(4px);
+}
+
+.sl-gallery__arrow:hover { background: #fff; }
+.sl-gallery__arrow--prev { left: 12px; }
+.sl-gallery__arrow--next { right: 12px; }
+
+.sl-gallery__thumbs {
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px;
+  background: #FAF8F5;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+
+.sl-gallery__thumbs::-webkit-scrollbar { display: none; }
+
+.sl-gallery__thumb {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border: 2px solid transparent;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.sl-gallery__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.sl-gallery__thumb--active { border-color: #2C2C2C; }
 
 /* ── Mobile ──────────────────────────────────────── */
 @media screen and (max-width: 749px) {
