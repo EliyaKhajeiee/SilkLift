@@ -2,7 +2,11 @@
 
   <div class="sl-contact__hero">
     <div class="sl-contact__hero-inner">
-      <img src="{{ 'silklift-logo-new.png' | asset_url }}" alt="SilkLift" class="sl-contact__logo" loading="eager">
+      {%- if settings.logo -%}
+        <img src="{{ settings.logo | image_url: height: 80 }}" alt="SilkLift" class="sl-contact__logo" loading="eager">
+      {%- else -%}
+        <img src="{{ 'silklift-logo-new.png' | asset_url }}" alt="SilkLift" class="sl-contact__logo" loading="eager">
+      {%- endif -%}
       <h1 class="sl-contact__title">We're Here <em>For You</em></h1>
       <p class="sl-contact__subtitle">Questions, feedback, or just want to say hello — our team responds within 24 hours.</p>
     </div>
@@ -173,11 +177,10 @@
 }
 
 .sl-contact__logo {
-  height: 52px;
+  height: 64px;
   width: auto;
   display: block;
-  filter: brightness(0) invert(1) sepia(1) saturate(0.5) hue-rotate(0deg);
-  opacity: 0.9;
+  filter: brightness(0) invert(1);
 }
 
 .sl-contact__title {
