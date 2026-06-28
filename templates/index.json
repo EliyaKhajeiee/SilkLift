@@ -8,28 +8,29 @@
       "settings": {}
     },
 
-    "marquee_trust": {
-      "type": "marquee",
-      "blocks": {
-        "m1": { "type": "text", "settings": { "text": "<p>★★★★★ 4.9 / 5 Rating</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
-        "m2": { "type": "text", "settings": { "text": "<p>✦ Free Shipping Over $50</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
-        "m3": { "type": "text", "settings": { "text": "<p>✦ 30-Day Money-Back Guarantee</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
-        "m4": { "type": "text", "settings": { "text": "<p>✦ Authentic Korean RF Technology</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
-        "m5": { "type": "text", "settings": { "text": "<p>✦ 1-Year Warranty Included</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} }
-      },
-      "block_order": ["m1","m2","m3","m4","m5"],
-      "settings": {
-        "movement_direction": "left",
-        "gap_between_elements": 0,
-        "section_width": "full-width",
-        "background_color": "#2C2C2C",
-        "padding-block-start": 13,
-        "padding-block-end": 13
-      }
+    "sl_social_proof": {
+      "type": "silklift-social-proof",
+      "blocks": {},
+      "block_order": [],
+      "settings": {}
     },
 
     "sl_showcase_1": {
       "type": "silklift-showcase-1",
+      "blocks": {},
+      "block_order": [],
+      "settings": {}
+    },
+
+    "sl_kbeauty": {
+      "type": "silklift-kbeauty",
+      "blocks": {},
+      "block_order": [],
+      "settings": {}
+    },
+
+    "sl_colors": {
+      "type": "silklift-colors",
       "blocks": {},
       "block_order": [],
       "settings": {}
@@ -42,140 +43,18 @@
       "settings": {}
     },
 
-    "bundle_section": {
-      "type": "section",
-      "blocks": {
-        "bundle_eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Limited Offer</p>",
-            "width": "100%",
-            "alignment": "center",
-            "type_preset": "h6",
-            "font": "var(--font-body--family)",
-            "font_size": "0.75rem",
-            "letter_spacing": "0.15em",
-            "case": "uppercase",
-            "text_color": "#C9956A",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "bundle_heading": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>The Glass Skin Bundle</h2>",
-            "width": "100%",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "text_color": "#FAF8F5",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 8,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "bundle_sub": {
-          "type": "text",
-          "settings": {
-            "text": "<p>SilkLift RF Pro + Conductive Peptide Gel + Glass Skin Serum</p>",
-            "width": "100%",
-            "alignment": "center",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "text_color": "#E8DDD0",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 16,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "bundle_price": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>$219</strong> &nbsp; was $279 &nbsp; — SAVE $60</p>",
-            "width": "100%",
-            "alignment": "center",
-            "type_preset": "h3",
-            "font": "var(--font-body--family)",
-            "text_color": "#FAF8F5",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 20,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "bundle_includes": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✓ SilkLift RF Pro Device &nbsp; ✓ Conductive Peptide Gel (60ml) &nbsp; ✓ Glass Skin Serum (30ml)</p>",
-            "width": "100%",
-            "alignment": "center",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.875rem",
-            "text_color": "#8A7F78",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 16,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "bundle_cta": {
-          "type": "button",
-          "settings": {
-            "label": "ADD BUNDLE TO CART — $219",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "width_mobile": "fill"
-          },
-          "blocks": {}
-        },
-        "bundle_device_only": {
-          "type": "button",
-          "settings": {
-            "label": "Device Only — $179",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "width_mobile": "fill"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": ["bundle_eyebrow","bundle_heading","bundle_sub","bundle_price","bundle_includes","bundle_cta","bundle_device_only"],
-      "settings": {
-        "section_width": "content-center-aligned",
-        "background_color": "#1a1a1a",
-        "padding-block-start": 96,
-        "padding-block-end": 96
-      }
+    "sl_bundle": {
+      "type": "silklift-bundle",
+      "blocks": {},
+      "block_order": [],
+      "settings": {}
+    },
+
+    "sl_videos": {
+      "type": "silklift-videos",
+      "blocks": {},
+      "block_order": [],
+      "settings": {}
     },
 
     "sl_reviews": {
@@ -183,6 +62,25 @@
       "blocks": {},
       "block_order": [],
       "settings": {}
+    },
+
+    "marquee_trust": {
+      "type": "marquee",
+      "blocks": {
+        "m1": { "type": "text", "settings": { "text": "<p>★★★★★ 4.9 / 5 Rating</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
+        "m2": { "type": "text", "settings": { "text": "<p>✦ Free Shipping On All Orders</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
+        "m3": { "type": "text", "settings": { "text": "<p>✦ 30-Day Money-Back Guarantee</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
+        "m4": { "type": "text", "settings": { "text": "<p>✦ Seoul-Born Technology</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} }
+      },
+      "block_order": ["m1","m2","m3","m4"],
+      "settings": {
+        "movement_direction": "left",
+        "gap_between_elements": 0,
+        "section_width": "full-width",
+        "background_color": "#C9956A",
+        "padding-block-start": 13,
+        "padding-block-end": 13
+      }
     },
 
     "faq_section": {
@@ -220,102 +118,46 @@
           "blocks": {
             "row1": {
               "type": "_accordion-row",
-              "settings": {
-                "heading": "How soon will I see results?",
-                "open_by_default": true
-              },
+              "settings": { "heading": "How soon will I see results?", "open_by_default": true },
               "blocks": {
-                "text1": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Most customers notice improved radiance and texture within 1-2 weeks. Visible lifting and firming appears within 4 weeks of consistent daily use.</p>",
-                    "width": "100%",
-                    "type_preset": "paragraph",
-                    "text_color": "#8A7F78",
-                    "padding-block-start": 0,
-                    "padding-block-end": 16,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
+                "text1": { "type": "text", "settings": { "text": "<p>Most customers notice improved radiance and texture within 1-2 weeks. Visible lifting and firming appears within 4 weeks of consistent daily use.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
               },
               "block_order": ["text1"]
             },
             "row2": {
               "type": "_accordion-row",
-              "settings": {
-                "heading": "Is it safe for all skin types?",
-                "open_by_default": false
-              },
+              "settings": { "heading": "Is it safe for all skin types?", "open_by_default": false },
               "blocks": {
-                "text2": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Yes. SilkLift has three intensity levels. Safe for all skin types including sensitive. Avoid use if pregnant or if you have implanted devices.</p>",
-                    "width": "100%",
-                    "type_preset": "paragraph",
-                    "text_color": "#8A7F78",
-                    "padding-block-start": 0,
-                    "padding-block-end": 16,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
+                "text2": { "type": "text", "settings": { "text": "<p>Yes. SilkLift has three intensity levels. Safe for all skin types including sensitive. Avoid use if pregnant or if you have implanted devices.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
               },
               "block_order": ["text2"]
             },
             "row3": {
               "type": "_accordion-row",
-              "settings": {
-                "heading": "What is your return policy?",
-                "open_by_default": false
-              },
+              "settings": { "heading": "What is your return policy?", "open_by_default": false },
               "blocks": {
-                "text3": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>30-day money-back guarantee. If you are not satisfied, contact us for a full refund. Every device also includes a 1-year warranty.</p>",
-                    "width": "100%",
-                    "type_preset": "paragraph",
-                    "text_color": "#8A7F78",
-                    "padding-block-start": 0,
-                    "padding-block-end": 16,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
+                "text3": { "type": "text", "settings": { "text": "<p>30-day money-back guarantee. If you are not satisfied, contact us for a full refund. Every device also includes a 1-year warranty.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
               },
               "block_order": ["text3"]
             },
             "row4": {
               "type": "_accordion-row",
-              "settings": {
-                "heading": "Do I need conductive gel?",
-                "open_by_default": false
-              },
+              "settings": { "heading": "Can I mix colors in a bundle?", "open_by_default": false },
               "blocks": {
-                "text4": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>A water-based serum or gel is required for optimal conductivity. You can use any water-based serum you already own, or add our Conductive Peptide Gel to your order.</p>",
-                    "width": "100%",
-                    "type_preset": "paragraph",
-                    "text_color": "#8A7F78",
-                    "padding-block-start": 0,
-                    "padding-block-end": 16,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
+                "text4": { "type": "text", "settings": { "text": "<p>Yes. Bundle orders can include any mix of Obsidian Black and Pearl White. Just note your color preference at checkout or contact us after ordering.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
               },
               "block_order": ["text4"]
+            },
+            "row5": {
+              "type": "_accordion-row",
+              "settings": { "heading": "Do I need conductive gel?", "open_by_default": false },
+              "blocks": {
+                "text5": { "type": "text", "settings": { "text": "<p>A water-based serum or gel is required for optimal conductivity. You can use any water-based serum you already own.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
+              },
+              "block_order": ["text5"]
             }
           },
-          "block_order": ["row1","row2","row3","row4"]
+          "block_order": ["row1","row2","row3","row4","row5"]
         }
       },
       "block_order": ["faq_head","faq_accordion"],
@@ -395,11 +237,15 @@
   },
   "order": [
     "sl_hero",
-    "marquee_trust",
+    "sl_social_proof",
     "sl_showcase_1",
+    "sl_kbeauty",
+    "sl_colors",
     "sl_showcase_2",
-    "bundle_section",
+    "sl_bundle",
+    "sl_videos",
     "sl_reviews",
+    "marquee_trust",
     "faq_section",
     "email_section"
   ]

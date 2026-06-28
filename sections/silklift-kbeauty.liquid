@@ -1,0 +1,172 @@
+<div class="sl-kb">
+  <div class="sl-kb__media">
+    <img
+      src="{{ 'silklift-model-2.png' | asset_url }}"
+      alt="Korean beauty ritual with SilkLift"
+      loading="lazy"
+      class="sl-kb__img"
+      width="1086"
+      height="1448"
+    >
+  </div>
+  <div class="sl-kb__content">
+    <p class="sl-kb__flag">🇰🇷</p>
+    <p class="sl-kb__eyebrow">Korean Beauty Innovation</p>
+    <h2 class="sl-kb__heading">The Secret Behind<br><em>Glass Skin</em></h2>
+    <p class="sl-kb__body">Korea has led the world in skincare science for decades. SilkLift is engineered by Korean dermatologists and beauty technologists who combined 4 clinical-grade technologies into one device — making the $500 clinic treatment a daily 10-minute ritual.</p>
+
+    <div class="sl-kb__techs">
+      <div class="sl-kb__tech">
+        <span class="sl-kb__tech-icon">⚡</span>
+        <div>
+          <p class="sl-kb__tech-name">RF Energy</p>
+          <p class="sl-kb__tech-desc">Heats dermis to trigger collagen production</p>
+        </div>
+      </div>
+      <div class="sl-kb__tech">
+        <span class="sl-kb__tech-icon">〰</span>
+        <div>
+          <p class="sl-kb__tech-name">Microcurrent</p>
+          <p class="sl-kb__tech-desc">Sculpts and lifts facial muscles</p>
+        </div>
+      </div>
+      <div class="sl-kb__tech">
+        <span class="sl-kb__tech-icon">◈</span>
+        <div>
+          <p class="sl-kb__tech-name">EMS</p>
+          <p class="sl-kb__tech-desc">Tightens skin and firms contours</p>
+        </div>
+      </div>
+      <div class="sl-kb__tech">
+        <span class="sl-kb__tech-icon">✦</span>
+        <div>
+          <p class="sl-kb__tech-name">Gentle Heat</p>
+          <p class="sl-kb__tech-desc">Boosts serum absorption by 4x</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="/collections/all" class="sl-btn sl-btn--dark">Get SilkLift — $99 Free Shipping</a>
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-kb {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80svh;
+  background: #2C2C2C;
+}
+
+.sl-kb__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.sl-kb__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.sl-kb__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 56px;
+  gap: 0;
+}
+
+.sl-kb__flag {
+  font-size: 2rem;
+  margin: 0 0 12px;
+  line-height: 1;
+}
+
+.sl-kb__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 16px;
+}
+
+.sl-kb__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: #FAF8F5;
+  margin: 0 0 20px;
+}
+
+.sl-kb__heading em { font-style: italic; }
+
+.sl-kb__body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.975rem;
+  line-height: 1.75;
+  color: #E8DDD0;
+  margin: 0 0 32px;
+}
+
+.sl-kb__techs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 0 36px;
+}
+
+.sl-kb__tech {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.sl-kb__tech-icon {
+  font-size: 1.1rem;
+  color: #C9956A;
+  flex-shrink: 0;
+  margin-top: 2px;
+  width: 20px;
+  text-align: center;
+}
+
+.sl-kb__tech-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #FAF8F5;
+  margin: 0 0 2px;
+}
+
+.sl-kb__tech-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .sl-kb {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+  .sl-kb__media { height: 70vw; }
+  .sl-kb__content { padding: 40px 24px 48px; }
+  .sl-btn { width: 100%; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift K-Beauty",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift K-Beauty"}]
+}
+{% endschema %}

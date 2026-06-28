@@ -1,0 +1,171 @@
+<div class="sl-colors">
+  <div class="sl-colors__header">
+    <p class="sl-colors__eyebrow">Available In</p>
+    <h2 class="sl-colors__heading">Two Iconic <em>Colorways</em></h2>
+  </div>
+  <div class="sl-colors__grid">
+    <div class="sl-colors__card sl-colors__card--dark">
+      <div class="sl-colors__image-wrap">
+        <img
+          src="{{ 'silklift-model-3.png' | asset_url }}"
+          alt="SilkLift RF Pro in Obsidian Black"
+          loading="lazy"
+          class="sl-colors__img"
+          width="1086"
+          height="1448"
+        >
+      </div>
+      <div class="sl-colors__info">
+        <div class="sl-colors__swatch" style="background:#1a1a1a"></div>
+        <div>
+          <p class="sl-colors__name">Obsidian Black</p>
+          <p class="sl-colors__desc">Sleek, powerful, sophisticated</p>
+        </div>
+        <a href="/collections/all" class="sl-btn sl-btn--dark">Shop Black — $99</a>
+      </div>
+    </div>
+    <div class="sl-colors__card sl-colors__card--light">
+      <div class="sl-colors__image-wrap">
+        <img
+          src="{{ 'silklift-product.png' | asset_url }}"
+          alt="SilkLift RF Pro in Pearl White"
+          loading="lazy"
+          class="sl-colors__img"
+          width="2752"
+          height="1536"
+        >
+      </div>
+      <div class="sl-colors__info">
+        <div class="sl-colors__swatch" style="background:#F0EBE5;border:1px solid #D4CCC5"></div>
+        <div>
+          <p class="sl-colors__name">Pearl White</p>
+          <p class="sl-colors__desc">Clean, luminous, elegant</p>
+        </div>
+        <a href="/collections/all" class="sl-btn sl-btn--dark">Shop White — $99</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-colors {
+  background: #FAF8F5;
+  padding: 80px 40px;
+}
+
+.sl-colors__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sl-colors__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 12px;
+}
+
+.sl-colors__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: #2C2C2C;
+  margin: 0;
+}
+
+.sl-colors__heading em { font-style: italic; }
+
+.sl-colors__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sl-colors__card {
+  overflow: hidden;
+}
+
+.sl-colors__image-wrap {
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.sl-colors__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.sl-colors__card:hover .sl-colors__img {
+  transform: scale(1.04);
+}
+
+.sl-colors__card--dark .sl-colors__image-wrap {
+  background: #1a1a1a;
+}
+
+.sl-colors__card--light .sl-colors__image-wrap {
+  background: #F5F0EB;
+}
+
+.sl-colors__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 0 0;
+}
+
+.sl-colors__swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sl-colors__name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2C2C2C;
+  margin: 0;
+}
+
+.sl-colors__desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .sl-colors {
+    padding: 60px 24px;
+  }
+  .sl-colors__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .sl-colors__image-wrap {
+    aspect-ratio: 4/5;
+  }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift Colors",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift Colors"}]
+}
+{% endschema %}

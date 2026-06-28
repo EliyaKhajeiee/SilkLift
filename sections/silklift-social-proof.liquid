@@ -1,0 +1,92 @@
+<div class="sl-proof">
+  <div class="sl-proof__item">
+    <span class="sl-proof__number">4,800+</span>
+    <span class="sl-proof__label">Happy Customers</span>
+  </div>
+  <div class="sl-proof__divider"></div>
+  <div class="sl-proof__item">
+    <span class="sl-proof__number">★ 4.9</span>
+    <span class="sl-proof__label">Average Rating</span>
+  </div>
+  <div class="sl-proof__divider"></div>
+  <div class="sl-proof__item">
+    <span class="sl-proof__number">10 min</span>
+    <span class="sl-proof__label">Daily Routine</span>
+  </div>
+  <div class="sl-proof__divider"></div>
+  <div class="sl-proof__item">
+    <span class="sl-proof__number">4 Weeks</span>
+    <span class="sl-proof__label">To See Results</span>
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-proof {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: #2C2C2C;
+  padding: 28px 40px;
+}
+
+.sl-proof__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 48px;
+  text-align: center;
+}
+
+.sl-proof__number {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #E8DDD0;
+  font-style: italic;
+}
+
+.sl-proof__label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8A7F78;
+}
+
+.sl-proof__divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.12);
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .sl-proof {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 0;
+  }
+  .sl-proof__item {
+    padding: 24px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .sl-proof__item:nth-child(1),
+  .sl-proof__item:nth-child(3) {
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  .sl-proof__divider { display: none; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift Social Proof",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift Social Proof"}]
+}
+{% endschema %}

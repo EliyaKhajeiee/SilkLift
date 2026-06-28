@@ -2,7 +2,7 @@
   <div class="sl-hero__media">
     <img
       src="{{ 'silklift-model-1.png' | asset_url }}"
-      alt="SilkLift RF Pro device in use"
+      alt="SilkLift RF Pro — Korean beauty device"
       loading="eager"
       fetchpriority="high"
       class="sl-hero__img"
@@ -11,15 +11,37 @@
     >
   </div>
   <div class="sl-hero__content">
+    <p class="sl-hero__badge">🇰🇷 &nbsp;Seoul-Born Technology</p>
     <p class="sl-hero__eyebrow">RF · Microcurrent · EMS · Heat</p>
     <h1 class="sl-hero__title">SilkLift<br><em>RF Pro</em></h1>
     <p class="sl-hero__tagline">Clinic-grade lifting at home.<br>10 minutes. Real results.</p>
-    <p class="sl-hero__price"><strong>$179</strong> &nbsp;<s>$249</s></p>
-    <div class="sl-hero__actions">
-      <a href="/collections/all" class="sl-btn sl-btn--dark">Shop Now</a>
-      <a href="/collections/all" class="sl-btn sl-btn--outline">Bundle Deal — Save $60</a>
+
+    <div class="sl-hero__price-row">
+      <span class="sl-hero__price-now">$99</span>
+      <span class="sl-hero__price-was">$179</span>
+      <span class="sl-hero__price-tag">45% OFF</span>
     </div>
-    <p class="sl-hero__reviews">★★★★★ &nbsp;Loved by 4,800+ customers</p>
+    <p class="sl-hero__shipping">✓ &nbsp;Free Shipping &nbsp;·&nbsp; ✓ &nbsp;30-Day Guarantee &nbsp;·&nbsp; ✓ &nbsp;1-Year Warranty</p>
+
+    <div class="sl-hero__colors">
+      <p class="sl-hero__colors-label">Color</p>
+      <div class="sl-hero__color-options">
+        <button class="sl-color-btn sl-color-btn--dark sl-color-btn--active" aria-label="Obsidian Black">
+          <span class="sl-color-swatch" style="background:#1a1a1a"></span>
+          <span>Obsidian Black</span>
+        </button>
+        <button class="sl-color-btn sl-color-btn--light" aria-label="Pearl White">
+          <span class="sl-color-swatch" style="background:#F5F0EB"></span>
+          <span>Pearl White</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="sl-hero__actions">
+      <a href="/collections/all" class="sl-btn sl-btn--dark">Add to Cart — $99</a>
+      <a href="#sl-bundle" class="sl-btn sl-btn--outline">View Bundle Deals</a>
+    </div>
+    <p class="sl-hero__reviews">★★★★★ &nbsp;4,800+ happy customers</p>
   </div>
 </div>
 
@@ -48,8 +70,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 64px 56px 64px 52px;
+  padding: 60px 52px 60px 48px;
   gap: 0;
+}
+
+.sl-hero__badge {
+  display: inline-block;
+  background: #E8DDD0;
+  color: #2C2C2C;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  margin: 0 0 16px;
+  width: fit-content;
 }
 
 .sl-hero__eyebrow {
@@ -59,7 +94,7 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #C9956A;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
 }
 
 .sl-hero__title {
@@ -67,42 +102,110 @@
   font-size: clamp(3.5rem, 6vw, 6.5rem);
   font-weight: 300;
   line-height: 0.92;
-  letter-spacing: -0.01em;
   color: #2C2C2C;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
 }
 
-.sl-hero__title em {
-  font-style: italic;
-}
+.sl-hero__title em { font-style: italic; }
 
 .sl-hero__tagline {
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: #8A7F78;
-  margin: 0 0 28px;
+  margin: 0 0 24px;
 }
 
-.sl-hero__price {
+.sl-hero__price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 8px;
+}
+
+.sl-hero__price-now {
   font-family: 'DM Sans', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2.25rem;
+  font-weight: 700;
   color: #2C2C2C;
-  margin: 0 0 28px;
 }
 
-.sl-hero__price s {
+.sl-hero__price-was {
+  font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #8A7F78;
+  text-decoration: line-through;
+}
+
+.sl-hero__price-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: #C9956A;
+  color: #FAF8F5;
+  padding: 4px 10px;
+}
+
+.sl-hero__shipping {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  color: #8A7F78;
+  margin: 0 0 24px;
+  letter-spacing: 0.02em;
+}
+
+.sl-hero__colors { margin: 0 0 24px; }
+
+.sl-hero__colors-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2C2C2C;
+  margin: 0 0 10px;
+}
+
+.sl-hero__color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.sl-color-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1.5px solid #D4CCC5;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #2C2C2C;
+  transition: border-color 0.15s;
+}
+
+.sl-color-btn--active {
+  border-color: #2C2C2C;
+}
+
+.sl-color-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.15);
+  display: block;
+  flex-shrink: 0;
 }
 
 .sl-hero__actions {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin: 0 0 20px;
+  gap: 10px;
+  margin: 0 0 16px;
 }
 
 .sl-btn {
@@ -110,31 +213,21 @@
   align-items: center;
   justify-content: center;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 17px 32px;
+  padding: 18px 32px;
   transition: opacity 0.2s, transform 0.15s;
 }
 
-.sl-btn:hover {
-  opacity: 0.85;
-  transform: translateY(-1px);
-}
+.sl-btn:hover { opacity: 0.85; transform: translateY(-1px); }
 
-.sl-btn--dark {
-  background: #2C2C2C;
-  color: #FAF8F5;
-  border: 1px solid #2C2C2C;
-}
-
-.sl-btn--outline {
-  background: transparent;
-  color: #2C2C2C;
-  border: 1px solid #2C2C2C;
-}
+.sl-btn--dark { background: #2C2C2C; color: #FAF8F5; border: 2px solid #2C2C2C; }
+.sl-btn--outline { background: transparent; color: #2C2C2C; border: 2px solid #2C2C2C; }
+.sl-btn--gold { background: #C9956A; color: #FAF8F5; border: 2px solid #C9956A; }
+.sl-btn--ghost { background: transparent; color: #FAF8F5; border: 2px solid #FAF8F5; }
 
 .sl-hero__reviews {
   font-family: 'DM Sans', sans-serif;
@@ -146,22 +239,13 @@
 @media screen and (max-width: 749px) {
   .sl-hero {
     grid-template-columns: 1fr;
-    grid-template-rows: 60svh auto;
+    grid-template-rows: 65svh auto;
     min-height: unset;
   }
-
-  .sl-hero__content {
-    padding: 40px 24px 48px;
-  }
-
-  .sl-hero__title {
-    font-size: clamp(3rem, 13vw, 4rem);
-  }
-
-  .sl-btn {
-    width: 100%;
-    padding: 18px 24px;
-  }
+  .sl-hero__content { padding: 36px 24px 48px; }
+  .sl-hero__title { font-size: clamp(3rem, 13vw, 4rem); }
+  .sl-btn { width: 100%; padding: 18px 24px; }
+  .sl-hero__color-options { flex-wrap: wrap; }
 }
 {% endstylesheet %}
 

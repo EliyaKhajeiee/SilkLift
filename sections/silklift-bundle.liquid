@@ -1,0 +1,255 @@
+<div class="sl-bundle" id="sl-bundle">
+  <div class="sl-bundle__header">
+    <p class="sl-bundle__eyebrow">Limited Time Offer</p>
+    <h2 class="sl-bundle__heading">Stock Up &amp; <em>Save More</em></h2>
+    <p class="sl-bundle__sub">Free shipping on every order. 30-day money-back guarantee.</p>
+  </div>
+
+  <div class="sl-bundle__grid">
+
+    <div class="sl-bundle__card">
+      <p class="sl-bundle__qty">Solo</p>
+      <p class="sl-bundle__qty-sub">1 Device</p>
+      <div class="sl-bundle__price-wrap">
+        <span class="sl-bundle__price">$99</span>
+        <span class="sl-bundle__per">per device</span>
+      </div>
+      <ul class="sl-bundle__features">
+        <li>✓ SilkLift RF Pro (your choice of color)</li>
+        <li>✓ Free Shipping</li>
+        <li>✓ 30-Day Guarantee</li>
+        <li>✓ 1-Year Warranty</li>
+      </ul>
+      <a href="/collections/all" class="sl-btn sl-btn--outline-dark">Add to Cart</a>
+    </div>
+
+    <div class="sl-bundle__card sl-bundle__card--featured">
+      <div class="sl-bundle__badge">⭐ BEST SELLER</div>
+      <p class="sl-bundle__qty">Duo</p>
+      <p class="sl-bundle__qty-sub">2 Devices — You &amp; Family</p>
+      <div class="sl-bundle__price-wrap">
+        <span class="sl-bundle__price">$159</span>
+        <span class="sl-bundle__per">$79.50 per device</span>
+      </div>
+      <p class="sl-bundle__saving">You save $39</p>
+      <ul class="sl-bundle__features">
+        <li>✓ 2x SilkLift RF Pro (mix colors)</li>
+        <li>✓ Free Shipping</li>
+        <li>✓ 30-Day Guarantee</li>
+        <li>✓ 1-Year Warranty</li>
+        <li>✓ Gift wrapping available</li>
+      </ul>
+      <a href="/collections/all" class="sl-btn sl-btn--gold">Add Bundle to Cart</a>
+      <p class="sl-bundle__note">Perfect for you and someone you love</p>
+    </div>
+
+    <div class="sl-bundle__card">
+      <p class="sl-bundle__qty">Family Pack</p>
+      <p class="sl-bundle__qty-sub">3 Devices</p>
+      <div class="sl-bundle__price-wrap">
+        <span class="sl-bundle__price">$199</span>
+        <span class="sl-bundle__per">$66 per device</span>
+      </div>
+      <p class="sl-bundle__saving">You save $98</p>
+      <ul class="sl-bundle__features">
+        <li>✓ 3x SilkLift RF Pro (mix colors)</li>
+        <li>✓ Free Shipping</li>
+        <li>✓ 30-Day Guarantee</li>
+        <li>✓ 1-Year Warranty</li>
+        <li>✓ Gift wrapping available</li>
+      </ul>
+      <a href="/collections/all" class="sl-btn sl-btn--outline-dark">Add to Cart</a>
+    </div>
+
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-bundle {
+  background: #1a1a1a;
+  padding: 96px 40px;
+}
+
+.sl-bundle__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.sl-bundle__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 12px;
+}
+
+.sl-bundle__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: #FAF8F5;
+  margin: 0 0 12px;
+}
+
+.sl-bundle__heading em { font-style: italic; }
+
+.sl-bundle__sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+.sl-bundle__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 20px;
+  max-width: 980px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.sl-bundle__card {
+  background: #242424;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.sl-bundle__card--featured {
+  background: #2C2C2C;
+  border: 2px solid #C9956A;
+  padding: 44px 28px 36px;
+  margin-top: -12px;
+}
+
+.sl-bundle__badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #C9956A;
+  color: #FAF8F5;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 6px 18px;
+  white-space: nowrap;
+}
+
+.sl-bundle__qty {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #FAF8F5;
+  margin: 0;
+  line-height: 1;
+}
+
+.sl-bundle__qty-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+.sl-bundle__price-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.sl-bundle__price {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FAF8F5;
+  line-height: 1;
+}
+
+.sl-bundle__per {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #8A7F78;
+}
+
+.sl-bundle__saving {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #C9956A;
+  margin: 0;
+}
+
+.sl-bundle__features {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sl-bundle__features li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #E8DDD0;
+  line-height: 1.4;
+}
+
+.sl-bundle__note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  color: #8A7F78;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+
+.sl-btn--outline-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 24px;
+  background: transparent;
+  color: #FAF8F5;
+  border: 2px solid rgba(255,255,255,0.3);
+  transition: border-color 0.2s, opacity 0.2s;
+  text-align: center;
+}
+
+.sl-btn--outline-dark:hover { border-color: #FAF8F5; opacity: 0.9; }
+
+@media screen and (max-width: 749px) {
+  .sl-bundle { padding: 60px 24px; }
+  .sl-bundle__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .sl-bundle__card--featured { margin-top: 0; }
+  .sl-btn, .sl-btn--outline-dark { width: 100%; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift Bundle",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift Bundle"}]
+}
+{% endschema %}
