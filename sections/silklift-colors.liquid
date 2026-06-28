@@ -10,6 +10,8 @@
 {%- assign color_bgs    = '#111111,#F0EBE3,#F8F8F8,#F0F5F0' | split: ',' -%}
 {%- assign color_params = 'black,white,silver,green' | split: ',' -%}
 {%- assign color_assets = 'device-obsidian-black.webp,device-pearl-white.webp,info-silver.webp,device-forest-green.webp' | split: ',' -%}
+{%- comment -%} Image indices mapped to actual Shopify media order: Green=0, Black=1, Silver=2, White=3 {%- endcomment -%}
+{%- assign color_img_indices = '1,3,2,0' | split: ',' -%}
 
 <div class="sl-colors">
   <div class="sl-colors__header">
@@ -28,13 +30,14 @@
       {%- assign cparam  = color_params[i] -%}
       {%- assign casset  = color_assets[i] -%}
 
-      {%- assign product_img = sl_product.images[i] -%}
+      {%- assign img_idx = color_img_indices[i] | times: 1 -%}
+      {%- assign product_img = sl_product.images[img_idx] -%}
 
       <div class="sl-colors__card">
         <a href="/products/silklift-rf-pro?color={{ cparam }}" class="sl-colors__img-link">
           <div class="sl-colors__img-wrap" style="background:{{ cbg }}">
             {%- if product_img -%}
-              <img src="{{ product_img | image_url: width: 1200 }}"
+              <img src="{{ product_img | image_url: width: 2000 }}"
                    alt="SilkLift RF Pro — {{ cname }}"
                    loading="lazy" class="sl-colors__img">
             {%- else -%}

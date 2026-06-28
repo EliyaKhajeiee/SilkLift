@@ -10,7 +10,7 @@
           {%- for img in sl_product.images -%}
             <div class="sl-gallery__slide{% if forloop.first %} sl-gallery__slide--active{% endif %}">
               <img
-                src="{{ img | image_url: width: 1800 }}"
+                src="{{ img | image_url: width: 2400 }}"
                 alt="{{ img.alt | default: 'SilkLift RF Pro' }}"
                 loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
                 {% if forloop.first %}fetchpriority="high"{% endif %}
@@ -84,10 +84,10 @@
     <div class="sl-hero__colors">
       <p class="sl-hero__colors-label">Color — <strong id="sl-selected-color">Obsidian Black</strong></p>
       <div class="sl-hero__swatches">
-        <button class="sl-swatch sl-swatch--active" aria-label="Obsidian Black" onclick="slSetColor(this,'Obsidian Black',0)" style="background:#1a1a1a"></button>
-        <button class="sl-swatch" aria-label="Pearl White" onclick="slSetColor(this,'Pearl White',1)" style="background:#F5F0EB;border-color:#ccc"></button>
+        <button class="sl-swatch sl-swatch--active" aria-label="Obsidian Black" onclick="slSetColor(this,'Obsidian Black',1)" style="background:#1a1a1a"></button>
+        <button class="sl-swatch" aria-label="Pearl White" onclick="slSetColor(this,'Pearl White',3)" style="background:#F5F0EB;border-color:#ccc"></button>
         <button class="sl-swatch" aria-label="Brushed Silver" onclick="slSetColor(this,'Brushed Silver',2)" style="background:#C0C0C0"></button>
-        <button class="sl-swatch" aria-label="Forest Green" onclick="slSetColor(this,'Forest Green',3)" style="background:#2D5E3A"></button>
+        <button class="sl-swatch" aria-label="Forest Green" onclick="slSetColor(this,'Forest Green',0)" style="background:#2D5E3A"></button>
       </div>
     </div>
 
