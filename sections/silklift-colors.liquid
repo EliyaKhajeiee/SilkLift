@@ -28,25 +28,13 @@
       {%- assign cparam  = color_params[i] -%}
       {%- assign casset  = color_assets[i] -%}
 
-      {%- comment -%} Find a matching variant image by color option value {%- endcomment -%}
-      {%- assign variant_img = nil -%}
-      {%- for variant in sl_product.variants -%}
-        {%- for opt in variant.options -%}
-          {%- if opt contains cname or opt == cparam -%}
-            {%- if variant.image -%}
-              {%- assign variant_img = variant.image -%}
-            {%- endif -%}
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
-        {%- if variant_img -%}{%- break -%}{%- endif -%}
-      {%- endfor -%}
+      {%- assign product_img = sl_product.images[i] -%}
 
       <div class="sl-colors__card">
         <a href="/products/silklift-rf-pro?color={{ cparam }}" class="sl-colors__img-link">
           <div class="sl-colors__img-wrap" style="background:{{ cbg }}">
-            {%- if variant_img -%}
-              <img src="{{ variant_img | image_url: width: 800 }}"
+            {%- if product_img -%}
+              <img src="{{ product_img | image_url: width: 800 }}"
                    alt="SilkLift RF Pro — {{ cname }}"
                    loading="lazy" class="sl-colors__img">
             {%- else -%}
