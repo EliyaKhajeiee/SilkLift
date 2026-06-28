@@ -8,7 +8,7 @@
       <div class="sl-gallery" id="sl-gallery">
         <div class="sl-gallery__slides">
           {%- for img in sl_product.images -%}
-            <div class="sl-gallery__slide{% if forloop.first %} sl-gallery__slide--active{% endif %}">
+            <div class="sl-gallery__slide{% if forloop.index0 == 1 %} sl-gallery__slide--active{% endif %}">
               <img
                 src="{{ img | image_url: width: 2400 }}"
                 alt="{{ img.alt | default: 'SilkLift RF Pro' }}"
@@ -29,7 +29,7 @@
           <div class="sl-gallery__thumbs">
             {%- for img in sl_product.images -%}
               <button
-                class="sl-gallery__thumb{% if forloop.first %} sl-gallery__thumb--active{% endif %}"
+                class="sl-gallery__thumb{% if forloop.index0 == 1 %} sl-gallery__thumb--active{% endif %}"
                 onclick="slGalleryGo({{ forloop.index0 }})"
                 aria-label="Photo {{ forloop.index }}"
               >
@@ -157,7 +157,7 @@
 
 <script>
 // Gallery
-var slGalIdx = 0;
+var slGalIdx = 1;
 function slGalleryGo(n) {
   var slides = document.querySelectorAll('.sl-gallery__slide');
   var thumbs = document.querySelectorAll('.sl-gallery__thumb');
