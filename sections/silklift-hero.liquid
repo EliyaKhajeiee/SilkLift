@@ -8,7 +8,7 @@
       <div class="sl-gallery" id="sl-gallery">
         <div class="sl-gallery__slides">
           {%- for img in sl_product.images -%}
-            <div class="sl-gallery__slide{% if forloop.index0 == 1 %} sl-gallery__slide--active{% endif %}">
+            <div class="sl-gallery__slide{% if forloop.index0 == 0 %} sl-gallery__slide--active{% endif %}">
               <img
                 src="{{ img | image_url: width: 2400 }}"
                 alt="{{ img.alt | default: 'SilkLift RF Pro' }}"
@@ -29,7 +29,7 @@
           <div class="sl-gallery__thumbs">
             {%- for img in sl_product.images -%}
               <button
-                class="sl-gallery__thumb{% if forloop.index0 == 1 %} sl-gallery__thumb--active{% endif %}"
+                class="sl-gallery__thumb{% if forloop.index0 == 0 %} sl-gallery__thumb--active{% endif %}"
                 onclick="slGalleryGo({{ forloop.index0 }})"
                 aria-label="Photo {{ forloop.index }}"
               >
@@ -82,12 +82,12 @@
     </div>
 
     <div class="sl-hero__colors">
-      <p class="sl-hero__colors-label">Color — <strong id="sl-selected-color">Obsidian Black</strong></p>
+      <p class="sl-hero__colors-label">Color — <strong id="sl-selected-color">Forest Green</strong></p>
       <div class="sl-hero__swatches">
-        <button class="sl-swatch sl-swatch--active" aria-label="Obsidian Black" onclick="slSetColor(this,'Obsidian Black',1)" style="background:#1a1a1a"></button>
-        <button class="sl-swatch" aria-label="Pearl White" onclick="slSetColor(this,'Pearl White',3)" style="background:#F5F0EB;border-color:#ccc"></button>
-        <button class="sl-swatch" aria-label="Brushed Silver" onclick="slSetColor(this,'Brushed Silver',2)" style="background:#C0C0C0"></button>
-        <button class="sl-swatch" aria-label="Forest Green" onclick="slSetColor(this,'Forest Green',0)" style="background:#2D5E3A"></button>
+        <button class="sl-swatch sl-swatch--sold-out" aria-label="Obsidian Black (Sold Out)" onclick="slSetColor(this,'Obsidian Black',1,false)" style="background:#1a1a1a" data-available="false"></button>
+        <button class="sl-swatch sl-swatch--sold-out" aria-label="Pearl White (Sold Out)" onclick="slSetColor(this,'Pearl White',3,false)" style="background:#F5F0EB;border-color:#ccc" data-available="false"></button>
+        <button class="sl-swatch sl-swatch--sold-out" aria-label="Brushed Silver (Sold Out)" onclick="slSetColor(this,'Brushed Silver',2,false)" style="background:#C0C0C0" data-available="false"></button>
+        <button class="sl-swatch sl-swatch--active" aria-label="Forest Green" onclick="slSetColor(this,'Forest Green',0,true)" style="background:#2D5E3A" data-available="true"></button>
       </div>
     </div>
 
@@ -157,7 +157,7 @@
 
 <script>
 // Gallery
-var slGalIdx = 1;
+var slGalIdx = 0;
 function slGalleryGo(n) {
   var slides = document.querySelectorAll('.sl-gallery__slide');
   var thumbs = document.querySelectorAll('.sl-gallery__thumb');
@@ -181,11 +181,25 @@ function slGalleryPrev() { slGalleryGo(slGalIdx - 1); }
   }, {passive: true});
 })();
 
-function slSetColor(btn, name, idx) {
+var slColorAvailable = true;
+function slSetColor(btn, name, idx, available) {
   document.querySelectorAll('.sl-swatch').forEach(function(b){ b.classList.remove('sl-swatch--active'); });
   btn.classList.add('sl-swatch--active');
+  slColorAvailable = available;
   var el = document.getElementById('sl-selected-color');
-  if (el) el.textContent = name;
+  if (el) el.textContent = available ? name : name + ' — Sold Out';
+  var cta = document.getElementById('sl-hero-cta');
+  if (cta) {
+    var checked = document.querySelector('input[name="sl-hero-qty"]:checked');
+    if (!available) {
+      cta.textContent = 'Sold Out — Choose Another Color';
+      cta.disabled = true;
+    } else {
+      cta.disabled = false;
+      var label = checked ? checked.getAttribute('data-label') : 'Buy Now';
+      cta.textContent = label + '  →';
+    }
+  }
   if (typeof idx !== 'undefined') slGalleryGo(idx);
 }
 
@@ -205,17 +219,13 @@ function slSetColor(btn, name, idx) {
 
   if (cta) {
     cta.addEventListener('click', function() {
-      var variantId = cta.getAttribute('data-variant');
+      if (!slColorAvailable || cta.disabled) return;
       var checked = document.querySelector('input[name="sl-hero-qty"]:checked');
       var qty = checked ? parseInt(checked.value) : 1;
-      if (variantId && variantId !== '' && variantId !== 'nil') {
-        cta.textContent = 'Going to checkout…';
-        cta.disabled = true;
-        window.location.href = '/cart/add?id=' + variantId + '&quantity=' + qty + '&return_to=/checkout';
-      } else {
-        window.location.href = '/products/silklift-rf-pro';
-      }
+      window.location.href = '/products/silklift-rf-pro?color=Forest+Green&quantity=' + qty;
     });
+    // Init: Green is in stock
+    slColorAvailable = true;
   }
 })();
 </script>
@@ -390,6 +400,20 @@ function slSetColor(btn, name, idx) {
 
 .sl-swatch--active {
   outline-color: #2C2C2C;
+}
+
+.sl-swatch--sold-out {
+  position: relative;
+  opacity: 0.5;
+}
+
+.sl-swatch--sold-out::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 45%, #999 45%, #999 55%, transparent 55%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 /* ── Bundle selector ─────────────────────────────── */
