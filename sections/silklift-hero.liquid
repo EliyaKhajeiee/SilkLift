@@ -1,14 +1,29 @@
+{%- assign sl_product = all_products['silklift-rf-pro'] -%}
+{%- assign hero_img = sl_product.featured_image -%}
+
 <div class="sl-hero">
   <div class="sl-hero__media">
-    <img
-      src="{{ 'info-dark-hero.webp' | asset_url }}"
-      alt="SilkLift RF Pro"
-      loading="eager"
-      fetchpriority="high"
-      class="sl-hero__img"
-      width="996"
-      height="1496"
-    >
+    {%- if hero_img -%}
+      <img
+        src="{{ hero_img | image_url: width: 1200 }}"
+        alt="{{ hero_img.alt | default: 'SilkLift RF Pro' }}"
+        loading="eager"
+        fetchpriority="high"
+        class="sl-hero__img"
+        width="{{ hero_img.width }}"
+        height="{{ hero_img.height }}"
+      >
+    {%- else -%}
+      <img
+        src="{{ 'info-dark-hero.webp' | asset_url }}"
+        alt="SilkLift RF Pro"
+        loading="eager"
+        fetchpriority="high"
+        class="sl-hero__img"
+        width="996"
+        height="1496"
+      >
+    {%- endif -%}
   </div>
 
   <div class="sl-hero__content">

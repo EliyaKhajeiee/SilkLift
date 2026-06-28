@@ -1,3 +1,16 @@
+{%- assign sl_product = all_products['silklift-rf-pro'] -%}
+
+{%- comment -%}
+  Color config — swatch color, bg, label, url param, fallback asset
+{%- endcomment -%}
+
+{%- assign color_names  = 'Obsidian Black,Pearl White,Brushed Silver,Forest Green' | split: ',' -%}
+{%- assign color_descs  = 'Sleek. Powerful. Iconic.,Clean. Luminous. Elegant.,Modern. Refined. Minimal.,Bold. Fresh. Confident.' | split: ',' -%}
+{%- assign color_swatches = '#1a1a1a,#F5F0EB,#C0C0C0,#2D5E3A' | split: ',' -%}
+{%- assign color_bgs    = '#111111,#F0EBE3,#F8F8F8,#F0F5F0' | split: ',' -%}
+{%- assign color_params = 'black,white,silver,green' | split: ',' -%}
+{%- assign color_assets = 'device-obsidian-black.webp,device-pearl-white.webp,info-silver.webp,device-forest-green.webp' | split: ',' -%}
+
 <div class="sl-colors">
   <div class="sl-colors__header">
     <p class="sl-colors__eyebrow">4 Exclusive Colorways</p>
@@ -7,69 +20,52 @@
 
   <div class="sl-colors__grid">
 
-    <div class="sl-colors__card">
-      <div class="sl-colors__img-wrap" style="background:#111111">
-        <img src="{{ 'device-obsidian-black.webp' | asset_url }}"
-             alt="SilkLift RF Pro — Obsidian Black"
-             loading="lazy" class="sl-colors__img sl-colors__img--device" width="2752" height="1536">
-      </div>
-      <div class="sl-colors__info">
-        <span class="sl-colors__dot" style="background:#1a1a1a;border:2px solid #555"></span>
-        <div class="sl-colors__text">
-          <p class="sl-colors__name">Obsidian Black</p>
-          <p class="sl-colors__desc">Sleek. Powerful. Iconic.</p>
-        </div>
-        <a href="/products/silklift-rf-pro?color=black" class="sl-colors__cta">Shop Black →</a>
-      </div>
-    </div>
+    {%- for i in (0..3) -%}
+      {%- assign cname   = color_names[i] -%}
+      {%- assign cdesc   = color_descs[i] -%}
+      {%- assign cswatch = color_swatches[i] -%}
+      {%- assign cbg     = color_bgs[i] -%}
+      {%- assign cparam  = color_params[i] -%}
+      {%- assign casset  = color_assets[i] -%}
 
-    <div class="sl-colors__card">
-      <div class="sl-colors__img-wrap" style="background:#F0EBE3">
-        <img src="{{ 'device-pearl-white.webp' | asset_url }}"
-             alt="SilkLift RF Pro — Pearl White"
-             loading="lazy" class="sl-colors__img sl-colors__img--device" width="2752" height="1536">
-      </div>
-      <div class="sl-colors__info">
-        <span class="sl-colors__dot" style="background:#F5F0EB;border:2px solid #ccc"></span>
-        <div class="sl-colors__text">
-          <p class="sl-colors__name">Pearl White</p>
-          <p class="sl-colors__desc">Clean. Luminous. Elegant.</p>
-        </div>
-        <a href="/products/silklift-rf-pro?color=white" class="sl-colors__cta">Shop White →</a>
-      </div>
-    </div>
+      {%- comment -%} Find a matching variant image by color option value {%- endcomment -%}
+      {%- assign variant_img = nil -%}
+      {%- for variant in sl_product.variants -%}
+        {%- for opt in variant.options -%}
+          {%- if opt contains cname or opt == cparam -%}
+            {%- if variant.image -%}
+              {%- assign variant_img = variant.image -%}
+            {%- endif -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if variant_img -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
 
-    <div class="sl-colors__card">
-      <div class="sl-colors__img-wrap" style="background:#F8F8F8">
-        <img src="{{ 'info-silver.webp' | asset_url }}"
-             alt="SilkLift RF Pro — Brushed Silver"
-             loading="lazy" class="sl-colors__img" width="466" height="700">
-      </div>
-      <div class="sl-colors__info">
-        <span class="sl-colors__dot" style="background:#C0C0C0;border:2px solid #999"></span>
-        <div class="sl-colors__text">
-          <p class="sl-colors__name">Brushed Silver</p>
-          <p class="sl-colors__desc">Modern. Refined. Minimal.</p>
+      <div class="sl-colors__card">
+        <a href="/products/silklift-rf-pro?color={{ cparam }}" class="sl-colors__img-link">
+          <div class="sl-colors__img-wrap" style="background:{{ cbg }}">
+            {%- if variant_img -%}
+              <img src="{{ variant_img | image_url: width: 800 }}"
+                   alt="SilkLift RF Pro — {{ cname }}"
+                   loading="lazy" class="sl-colors__img">
+            {%- else -%}
+              <img src="{{ casset | asset_url }}"
+                   alt="SilkLift RF Pro — {{ cname }}"
+                   loading="lazy" class="sl-colors__img">
+            {%- endif -%}
+          </div>
+        </a>
+        <div class="sl-colors__info">
+          <span class="sl-colors__dot" style="background:{{ cswatch }}"></span>
+          <div class="sl-colors__text">
+            <p class="sl-colors__name">{{ cname }}</p>
+            <p class="sl-colors__desc">{{ cdesc }}</p>
+          </div>
+          <a href="/products/silklift-rf-pro?color={{ cparam }}" class="sl-colors__cta">Shop {{ cname | split: ' ' | last }} →</a>
         </div>
-        <a href="/products/silklift-rf-pro?color=silver" class="sl-colors__cta">Shop Silver →</a>
       </div>
-    </div>
-
-    <div class="sl-colors__card">
-      <div class="sl-colors__img-wrap" style="background:#F0F5F0">
-        <img src="{{ 'device-forest-green.webp' | asset_url }}"
-             alt="SilkLift RF Pro — Forest Green"
-             loading="lazy" class="sl-colors__img" width="900" height="1200">
-      </div>
-      <div class="sl-colors__info">
-        <span class="sl-colors__dot" style="background:#2D5E3A;border:2px solid #1B3A25"></span>
-        <div class="sl-colors__text">
-          <p class="sl-colors__name">Forest Green</p>
-          <p class="sl-colors__desc">Bold. Fresh. Confident.</p>
-        </div>
-        <a href="/products/silklift-rf-pro?color=green" class="sl-colors__cta">Shop Green →</a>
-      </div>
-    </div>
+    {%- endfor -%}
 
   </div>
 
