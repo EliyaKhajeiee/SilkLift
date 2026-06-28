@@ -364,10 +364,15 @@
   margin: 0;
 }
 
-@media screen and (max-width: 749px) {
-  .sl-reviews { padding: 60px 24px; }
-  .sl-fb-grid { grid-template-columns: 1fr; }
+@media screen and (max-width: 1023px) {
+  .sl-fb-grid { grid-template-columns: 1fr; max-width: 600px; }
   .sl-review-cards { grid-template-columns: 1fr 1fr; gap: 12px; }
+}
+
+@media screen and (max-width: 749px) {
+  .sl-reviews { padding: 60px 20px; }
+  .sl-fb-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .sl-review-cards { grid-template-columns: 1fr; gap: 10px; }
   .sl-btn { width: 100%; }
 }
 {% endstylesheet %}
