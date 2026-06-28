@@ -241,7 +241,7 @@
 
 .sl-fb-post__image-wrap {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/4;
   overflow: hidden;
   border-radius: 4px;
 }
@@ -365,14 +365,14 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .sl-fb-grid { grid-template-columns: 1fr; max-width: 600px; }
+  .sl-fb-grid { grid-template-columns: 1fr; max-width: 520px; }
   .sl-review-cards { grid-template-columns: 1fr 1fr; gap: 12px; }
 }
 
 @media screen and (max-width: 749px) {
   .sl-reviews { padding: 60px 20px; }
-  .sl-fb-grid { grid-template-columns: 1fr; max-width: 100%; }
-  .sl-review-cards { grid-template-columns: 1fr; gap: 10px; }
+  .sl-fb-grid { max-width: 100%; }
+  .sl-review-cards { grid-template-columns: 1fr 1fr; gap: 10px; }
   .sl-btn { width: 100%; }
 }
 {% endstylesheet %}
