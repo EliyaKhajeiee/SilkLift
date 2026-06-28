@@ -1,0 +1,114 @@
+<div class="sl-reviews">
+  <div class="sl-reviews__header">
+    <h2 class="sl-reviews__heading">Real People. <em>Real Results.</em></h2>
+    <p class="sl-reviews__sub">★★★★★ &nbsp; Rated 4.9/5 by 847 verified customers</p>
+  </div>
+  <div class="sl-reviews__grid">
+    <div class="sl-review">
+      <p class="sl-review__stars">★★★★★</p>
+      <p class="sl-review__quote">"My skin hasn't looked this good since my 20s. After 4 weeks of daily use, my jawline is visibly tighter and my friends keep asking what I'm doing differently."</p>
+      <p class="sl-review__author">— Jennifer L., 38 &nbsp; ✓ Verified</p>
+    </div>
+    <div class="sl-review">
+      <p class="sl-review__stars">★★★★★</p>
+      <p class="sl-review__quote">"Better than my $300 spa facial. I use it every morning while my coffee brews. Skin is firmer, pores look smaller, and I genuinely look more rested."</p>
+      <p class="sl-review__author">— Michelle T., 44 &nbsp; ✓ Verified</p>
+    </div>
+    <div class="sl-review">
+      <p class="sl-review__stars">★★★★★</p>
+      <p class="sl-review__quote">"My husband noticed before I even told him I was using it. Three weeks in and my skin is genuinely different. This is my forever product."</p>
+      <p class="sl-review__author">— Sarah K., 35 &nbsp; ✓ Verified</p>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-reviews {
+  background: #FAF8F5;
+  padding: 80px 40px;
+}
+
+.sl-reviews__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sl-reviews__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: #2C2C2C;
+  margin: 0 0 12px;
+}
+
+.sl-reviews__heading em {
+  font-style: italic;
+}
+
+.sl-reviews__sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+.sl-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sl-review {
+  background: #ffffff;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sl-review__stars {
+  color: #C9956A;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.sl-review__quote {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2C2C2C;
+  margin: 0;
+  flex: 1;
+}
+
+.sl-review__author {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .sl-reviews {
+    padding: 60px 24px;
+  }
+
+  .sl-reviews__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift Reviews",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift Reviews"}]
+}
+{% endschema %}
