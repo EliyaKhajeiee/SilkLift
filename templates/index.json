@@ -120,30 +120,14 @@
             },
             "row3": {
               "type": "_accordion-row",
-              "settings": { "heading": "What is your return policy?", "open_by_default": false },
-              "blocks": {
-                "text3": { "type": "text", "settings": { "text": "<p>30-day money-back guarantee. If you are not satisfied, contact us for a full refund. Every device also includes a 1-year warranty.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
-              },
-              "block_order": ["text3"]
-            },
-            "row4": {
-              "type": "_accordion-row",
-              "settings": { "heading": "Can I mix colors in a bundle?", "open_by_default": false },
-              "blocks": {
-                "text4": { "type": "text", "settings": { "text": "<p>Yes. Bundle orders can include any mix of Obsidian Black and Pearl White. Just note your color preference at checkout or contact us after ordering.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
-              },
-              "block_order": ["text4"]
-            },
-            "row5": {
-              "type": "_accordion-row",
               "settings": { "heading": "Do I need conductive gel?", "open_by_default": false },
               "blocks": {
-                "text5": { "type": "text", "settings": { "text": "<p>A water-based serum or gel is required for optimal conductivity. You can use any water-based serum you already own.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
+                "text3": { "type": "text", "settings": { "text": "<p>Not necessary, but helpful. A water-based serum enhances conductivity and results — you can use any serum you already own.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
               },
-              "block_order": ["text5"]
+              "block_order": ["text3"]
             }
           },
-          "block_order": ["row1","row2","row3","row4","row5"]
+          "block_order": ["row1","row2","row3"]
         }
       },
       "block_order": ["faq_head","faq_accordion"],
