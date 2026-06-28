@@ -29,12 +29,6 @@
 
     <div class="sl-hero__sale-banner">🔥 &nbsp;SPRING SALE — 45% OFF &nbsp;·&nbsp; Ends Soon</div>
 
-    <div class="sl-hero__price-row">
-      <span class="sl-hero__price-now">$99</span>
-      <span class="sl-hero__price-was">$179</span>
-      <span class="sl-hero__price-tag">SAVE $80</span>
-    </div>
-
     <div class="sl-hero__colors">
       <p class="sl-hero__colors-label">Color — <strong id="sl-selected-color">Obsidian Black</strong></p>
       <div class="sl-hero__color-options">
@@ -57,7 +51,55 @@
       </div>
     </div>
 
-    <a href="/products/silklift-rf-pro" class="sl-btn sl-btn--dark sl-btn--big">Buy Now — $99 &nbsp;→</a>
+    <!-- Inline bundle quantity selector -->
+    <div class="sl-hero__bundle">
+      <label class="sl-hbopt">
+        <input type="radio" name="sl-hero-qty" value="1" data-label="Buy Now — $99">
+        <div class="sl-hbopt__inner">
+          <div class="sl-hbopt__left">
+            <span class="sl-hbopt__qty">1 Device</span>
+            <span class="sl-hbopt__for">For Yourself</span>
+          </div>
+          <div class="sl-hbopt__right">
+            <span class="sl-hbopt__price">$99</span>
+            <span class="sl-hbopt__save">Save $80</span>
+          </div>
+        </div>
+      </label>
+
+      <label class="sl-hbopt sl-hbopt--featured">
+        <div class="sl-hbopt__badge">⭐ BEST VALUE</div>
+        <input type="radio" name="sl-hero-qty" value="2" data-label="Buy Now — $159" checked>
+        <div class="sl-hbopt__inner">
+          <div class="sl-hbopt__left">
+            <span class="sl-hbopt__qty">2 Devices</span>
+            <span class="sl-hbopt__for">You &amp; Family</span>
+          </div>
+          <div class="sl-hbopt__right">
+            <span class="sl-hbopt__price sl-hbopt__price--gold">$159</span>
+            <span class="sl-hbopt__save sl-hbopt__save--gold">Save $199</span>
+          </div>
+        </div>
+      </label>
+
+      <label class="sl-hbopt">
+        <input type="radio" name="sl-hero-qty" value="3" data-label="Buy Now — $199">
+        <div class="sl-hbopt__inner">
+          <div class="sl-hbopt__left">
+            <span class="sl-hbopt__qty">3 Devices</span>
+            <span class="sl-hbopt__for">Family Pack</span>
+          </div>
+          <div class="sl-hbopt__right">
+            <span class="sl-hbopt__price">$199</span>
+            <span class="sl-hbopt__save">Save $338</span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <a href="/products/silklift-rf-pro" class="sl-btn sl-btn--dark sl-btn--big sl-btn--full" id="sl-hero-cta">
+      Buy Now — $159 &nbsp;→
+    </a>
 
     <div class="sl-hero__trust">
       <span>✓ Free Shipping</span>
@@ -73,12 +115,8 @@
     <div class="sl-hero__payments">
       <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecef9f9174a8d.svg" alt="Apple Pay" class="sl-payment-icon">
       <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e.svg" alt="Google Pay" class="sl-payment-icon">
-      <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce76d657d08be8af951.svg" alt="Visa" class="sl-payment-icon" onerror="this.style.display='none'">
-      <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b0a8d0b0b0b0a0b0a0b0a0b.svg" alt="Mastercard" class="sl-payment-icon" onerror="this.style.display='none'">
-      <span class="sl-hero__payments-label">& more</span>
+      <span class="sl-hero__payments-label">Visa · Mastercard · & more</span>
     </div>
-
-    <a href="#sl-bundle" class="sl-hero__bundle-link">📦 &nbsp;Buy 2–3 and save up to $338 →</a>
 
   </div>
 </div>
@@ -90,6 +128,26 @@ function slSetColor(btn, name) {
   var el = document.getElementById('sl-selected-color');
   if (el) el.textContent = name;
 }
+
+(function() {
+  var radios = document.querySelectorAll('input[name="sl-hero-qty"]');
+  var cta = document.getElementById('sl-hero-cta');
+
+  function updateHeroBundle() {
+    radios.forEach(function(r) {
+      var lbl = r.closest('.sl-hbopt');
+      if (r.checked) {
+        lbl.classList.add('sl-hbopt--selected');
+        if (cta) cta.textContent = r.getAttribute('data-label') + '  →';
+      } else {
+        lbl.classList.remove('sl-hbopt--selected');
+      }
+    });
+  }
+
+  radios.forEach(function(r) { r.addEventListener('change', updateHeroBundle); });
+  updateHeroBundle();
+})();
 </script>
 
 {% stylesheet %}
@@ -117,8 +175,9 @@ function slSetColor(btn, name) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 48px 40px 44px;
-  gap: 14px;
+  padding: 32px 44px 32px 40px;
+  gap: 12px;
+  overflow-y: auto;
 }
 
 .sl-hero__rating {
@@ -151,7 +210,7 @@ function slSetColor(btn, name) {
 
 .sl-hero__title {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  font-size: clamp(2.4rem, 4.5vw, 4.5rem);
   font-weight: 300;
   line-height: 0.92;
   color: #2C2C2C;
@@ -166,12 +225,12 @@ function slSetColor(btn, name) {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 5px;
 }
 
 .sl-hero__bullets li {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #2C2C2C;
   line-height: 1.4;
 }
@@ -183,39 +242,8 @@ function slSetColor(btn, name) {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  padding: 10px 16px;
+  padding: 8px 16px;
   text-align: center;
-}
-
-.sl-hero__price-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0;
-}
-
-.sl-hero__price-now {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #2C2C2C;
-}
-
-.sl-hero__price-was {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  color: #8A7F78;
-  text-decoration: line-through;
-}
-
-.sl-hero__price-tag {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  background: #C9956A;
-  color: #FAF8F5;
-  padding: 4px 10px;
 }
 
 .sl-hero__colors { margin: 0; }
@@ -224,7 +252,7 @@ function slSetColor(btn, name) {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.82rem;
   color: #2C2C2C;
-  margin: 0 0 8px;
+  margin: 0 0 7px;
 }
 
 .sl-hero__color-options {
@@ -237,12 +265,12 @@ function slSetColor(btn, name) {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border: 1.5px solid #D4CCC5;
   background: transparent;
   cursor: pointer;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: #2C2C2C;
   transition: border-color 0.15s;
@@ -258,6 +286,119 @@ function slSetColor(btn, name) {
   flex-shrink: 0;
 }
 
+/* Hero inline bundle */
+.sl-hero__bundle {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 2px 0;
+}
+
+.sl-hbopt {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  border: 1.5px solid rgba(44,44,44,0.15);
+  background: #fff;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.sl-hbopt input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sl-hbopt--featured {
+  border-color: rgba(201,149,106,0.5);
+  background: #FDF7F2;
+}
+
+.sl-hbopt--selected {
+  border-color: #2C2C2C !important;
+  background: #F6F4F2 !important;
+}
+
+.sl-hbopt--featured.sl-hbopt--selected {
+  border-color: #C9956A !important;
+  background: #FDF2E8 !important;
+}
+
+.sl-hbopt:hover { border-color: rgba(44,44,44,0.4); }
+
+.sl-hbopt__badge {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: #C9956A;
+  color: #FAF8F5;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 2px 10px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.sl-hbopt__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  gap: 12px;
+}
+
+.sl-hbopt__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.sl-hbopt__qty {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #2C2C2C;
+}
+
+.sl-hbopt__for {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  color: #8A7F78;
+}
+
+.sl-hbopt__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sl-hbopt__price {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #2C2C2C;
+}
+
+.sl-hbopt__price--gold { color: #C9956A; }
+
+.sl-hbopt__save {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #8A7F78;
+  background: #F0EBE3;
+  padding: 2px 7px;
+}
+
+.sl-hbopt__save--gold {
+  color: #C9956A;
+  background: #FDE8D5;
+}
+
+/* Buttons */
 .sl-btn {
   display: inline-flex;
   align-items: center;
@@ -273,21 +414,20 @@ function slSetColor(btn, name) {
 }
 
 .sl-btn--big { font-size: 0.9rem; padding: 20px 32px; }
+.sl-btn--full { width: 100%; }
 .sl-btn:hover { opacity: 0.85; transform: translateY(-1px); }
 .sl-btn--dark { background: #2C2C2C; color: #FAF8F5; border: 2px solid #2C2C2C; }
 .sl-btn--outline { background: transparent; color: #2C2C2C; border: 2px solid #2C2C2C; }
 .sl-btn--gold { background: #C9956A; color: #FAF8F5; border: 2px solid #C9956A; }
 .sl-btn--ghost { background: transparent; color: #FAF8F5; border: 2px solid rgba(255,255,255,0.5); }
-.sl-btn--light {
-  background: #FAF8F5; color: #2C2C2C; border: 1px solid #FAF8F5;
-}
+.sl-btn--light { background: #FAF8F5; color: #2C2C2C; border: 1px solid #FAF8F5; }
 
 .sl-hero__trust {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   flex-wrap: wrap;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   color: #8A7F78;
 }
 
@@ -296,7 +436,7 @@ function slSetColor(btn, name) {
   align-items: center;
   gap: 8px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: #2C2C2C;
   font-weight: 500;
 }
@@ -324,7 +464,7 @@ function slSetColor(btn, name) {
 }
 
 .sl-payment-icon {
-  height: 24px;
+  height: 22px;
   width: auto;
   opacity: 0.65;
   filter: grayscale(1);
@@ -332,31 +472,28 @@ function slSetColor(btn, name) {
 
 .sl-hero__payments-label {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   color: #8A7F78;
 }
 
-.sl-hero__bundle-link {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #C9956A;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+@media screen and (max-width: 1100px) {
+  .sl-hero__content { padding: 28px 32px 28px 28px; gap: 10px; }
+  .sl-hero__title { font-size: clamp(2rem, 3.5vw, 3.5rem); }
 }
 
 @media screen and (max-width: 749px) {
   .sl-hero {
     grid-template-columns: 1fr;
-    grid-template-rows: 65svh auto;
+    grid-template-rows: 60svh auto;
     min-height: unset;
   }
-  .sl-hero__content { padding: 32px 24px 48px; gap: 12px; }
-  .sl-hero__title { font-size: clamp(2.8rem, 12vw, 3.5rem); }
+  .sl-hero__content { padding: 28px 20px 44px; gap: 10px; }
+  .sl-hero__title { font-size: clamp(2.4rem, 10vw, 3rem); }
   .sl-btn { width: 100%; }
-  .sl-hero__trust { gap: 10px; }
+  .sl-hero__trust { gap: 8px; }
   .sl-hero__color-options { gap: 4px; }
-  .sl-color-btn { padding: 5px 10px; font-size: 0.72rem; }
+  .sl-color-btn { padding: 4px 8px; font-size: 0.7rem; }
+  .sl-hbopt__inner { padding: 9px 12px; }
 }
 {% endstylesheet %}
 

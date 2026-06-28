@@ -36,13 +36,6 @@
       "settings": {}
     },
 
-    "sl_showcase_2": {
-      "type": "silklift-showcase-2",
-      "blocks": {},
-      "block_order": [],
-      "settings": {}
-    },
-
     "sl_bundle": {
       "type": "silklift-bundle",
       "blocks": {},
@@ -241,7 +234,6 @@
     "sl_showcase_1",
     "sl_kbeauty",
     "sl_colors",
-    "sl_showcase_2",
     "sl_bundle",
     "sl_videos",
     "sl_reviews",
