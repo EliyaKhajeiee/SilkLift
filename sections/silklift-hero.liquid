@@ -1,13 +1,13 @@
 <div class="sl-hero">
   <div class="sl-hero__media">
     <img
-      src="{{ 'review-amy.png' | asset_url }}"
-      alt="SilkLift RF Pro — Korean beauty device"
+      src="{{ 'info-dark-hero.webp' | asset_url }}"
+      alt="SilkLift RF Pro — Advanced Skin Lifting Device"
       loading="eager"
       fetchpriority="high"
       class="sl-hero__img"
-      width="1086"
-      height="1448"
+      width="996"
+      height="1496"
     >
   </div>
   <div class="sl-hero__content">
@@ -36,20 +36,28 @@
     </div>
 
     <div class="sl-hero__colors">
-      <p class="sl-hero__colors-label">Color — <strong>Obsidian Black</strong></p>
+      <p class="sl-hero__colors-label">Color — <strong id="sl-selected-color">Obsidian Black</strong></p>
       <div class="sl-hero__color-options">
-        <button class="sl-color-btn sl-color-btn--active" aria-label="Obsidian Black">
+        <button class="sl-color-btn sl-color-btn--active" aria-label="Obsidian Black" onclick="slSetColor(this,'Obsidian Black')">
           <span class="sl-color-swatch" style="background:#1a1a1a"></span>
           <span>Black</span>
         </button>
-        <button class="sl-color-btn" aria-label="Pearl White">
+        <button class="sl-color-btn" aria-label="Pearl White" onclick="slSetColor(this,'Pearl White')">
           <span class="sl-color-swatch" style="background:#F5F0EB;border:1px solid #ccc"></span>
           <span>White</span>
+        </button>
+        <button class="sl-color-btn" aria-label="Forest Green" onclick="slSetColor(this,'Forest Green')">
+          <span class="sl-color-swatch" style="background:#2D5E3A"></span>
+          <span>Green</span>
+        </button>
+        <button class="sl-color-btn" aria-label="Brushed Silver" onclick="slSetColor(this,'Brushed Silver')">
+          <span class="sl-color-swatch" style="background:#C0C0C0"></span>
+          <span>Silver</span>
         </button>
       </div>
     </div>
 
-    <a href="/collections/all" class="sl-btn sl-btn--dark sl-btn--big">Add to Cart — $99</a>
+    <a href="/products/silklift-rf-pro" class="sl-btn sl-btn--dark sl-btn--big">Buy Now — $99 &nbsp;→</a>
 
     <div class="sl-hero__trust">
       <span>✓ Free Shipping</span>
@@ -65,21 +73,29 @@
     <div class="sl-hero__payments">
       <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecef9f9174a8d.svg" alt="Apple Pay" class="sl-payment-icon">
       <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e.svg" alt="Google Pay" class="sl-payment-icon">
-      <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/paypal-791bf8e26545d7b5a5e0a5a0f0a5b8ff8d30892c8b1b4f0a35b7b5b0e0e0e0e.svg" alt="PayPal" class="sl-payment-icon" onerror="this.style.display='none'">
       <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce76d657d08be8af951.svg" alt="Visa" class="sl-payment-icon" onerror="this.style.display='none'">
       <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b0a8d0b0b0b0a0b0a0b0a0b.svg" alt="Mastercard" class="sl-payment-icon" onerror="this.style.display='none'">
       <span class="sl-hero__payments-label">& more</span>
     </div>
 
-    <a href="#sl-bundle" class="sl-hero__bundle-link">📦 &nbsp;Buy 2–3 and save up to $98 →</a>
+    <a href="#sl-bundle" class="sl-hero__bundle-link">📦 &nbsp;Buy 2–3 and save up to $338 →</a>
 
   </div>
 </div>
 
+<script>
+function slSetColor(btn, name) {
+  document.querySelectorAll('.sl-color-btn').forEach(function(b){ b.classList.remove('sl-color-btn--active'); });
+  btn.classList.add('sl-color-btn--active');
+  var el = document.getElementById('sl-selected-color');
+  if (el) el.textContent = name;
+}
+</script>
+
 {% stylesheet %}
 .sl-hero {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 52% 48%;
   min-height: 100svh;
   background: #FAF8F5;
 }
@@ -213,19 +229,20 @@
 
 .sl-hero__color-options {
   display: flex;
-  gap: 8px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .sl-color-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
+  gap: 5px;
+  padding: 6px 12px;
   border: 1.5px solid #D4CCC5;
   background: transparent;
   cursor: pointer;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 500;
   color: #2C2C2C;
   transition: border-color 0.15s;
@@ -234,8 +251,8 @@
 .sl-color-btn--active { border-color: #2C2C2C; }
 
 .sl-color-swatch {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   display: block;
   flex-shrink: 0;
@@ -261,6 +278,9 @@
 .sl-btn--outline { background: transparent; color: #2C2C2C; border: 2px solid #2C2C2C; }
 .sl-btn--gold { background: #C9956A; color: #FAF8F5; border: 2px solid #C9956A; }
 .sl-btn--ghost { background: transparent; color: #FAF8F5; border: 2px solid rgba(255,255,255,0.5); }
+.sl-btn--light {
+  background: #FAF8F5; color: #2C2C2C; border: 1px solid #FAF8F5;
+}
 
 .sl-hero__trust {
   display: flex;
@@ -335,6 +355,8 @@
   .sl-hero__title { font-size: clamp(2.8rem, 12vw, 3.5rem); }
   .sl-btn { width: 100%; }
   .sl-hero__trust { gap: 10px; }
+  .sl-hero__color-options { gap: 4px; }
+  .sl-color-btn { padding: 5px 10px; font-size: 0.72rem; }
 }
 {% endstylesheet %}
 

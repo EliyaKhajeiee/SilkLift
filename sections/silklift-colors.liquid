@@ -1,49 +1,81 @@
 <div class="sl-colors">
   <div class="sl-colors__header">
-    <p class="sl-colors__eyebrow">Available In</p>
-    <h2 class="sl-colors__heading">Two Iconic <em>Colorways</em></h2>
+    <p class="sl-colors__eyebrow">4 Exclusive Colorways</p>
+    <h2 class="sl-colors__heading">One Device. <em>Your Shade.</em></h2>
+    <p class="sl-colors__sub">All colors, same clinic-grade technology. Free shipping on every order.</p>
   </div>
+
   <div class="sl-colors__grid">
-    <div class="sl-colors__card sl-colors__card--dark">
-      <div class="sl-colors__image-wrap">
-        <img
-          src="{{ 'device-obsidian-black.png' | asset_url }}"
-          alt="SilkLift RF Pro in Obsidian Black"
-          loading="lazy"
-          class="sl-colors__img sl-colors__img--product"
-          width="2752"
-          height="1536"
-        >
+
+    <div class="sl-colors__card">
+      <div class="sl-colors__img-wrap" style="background:#111111">
+        <img src="{{ 'device-obsidian-black.png' | asset_url }}"
+             alt="SilkLift RF Pro — Obsidian Black"
+             loading="lazy" class="sl-colors__img" width="2752" height="1536">
       </div>
       <div class="sl-colors__info">
-        <div class="sl-colors__swatch" style="background:#1a1a1a"></div>
-        <div>
+        <span class="sl-colors__dot" style="background:#1a1a1a;border:2px solid #555"></span>
+        <div class="sl-colors__text">
           <p class="sl-colors__name">Obsidian Black</p>
-          <p class="sl-colors__desc">Sleek, powerful, sophisticated</p>
+          <p class="sl-colors__desc">Sleek. Powerful. Iconic.</p>
         </div>
-        <a href="/collections/all" class="sl-btn sl-btn--dark">Shop Black — $99</a>
+        <a href="/products/silklift-rf-pro?color=black" class="sl-colors__cta">Shop Black →</a>
       </div>
     </div>
-    <div class="sl-colors__card sl-colors__card--light">
-      <div class="sl-colors__image-wrap">
-        <img
-          src="{{ 'device-pearl-white.png' | asset_url }}"
-          alt="SilkLift RF Pro in Pearl White"
-          loading="lazy"
-          class="sl-colors__img sl-colors__img--product"
-          width="2752"
-          height="1536"
-        >
+
+    <div class="sl-colors__card">
+      <div class="sl-colors__img-wrap" style="background:#F0EBE3">
+        <img src="{{ 'device-pearl-white.png' | asset_url }}"
+             alt="SilkLift RF Pro — Pearl White"
+             loading="lazy" class="sl-colors__img" width="2752" height="1536">
       </div>
       <div class="sl-colors__info">
-        <div class="sl-colors__swatch" style="background:#F0EBE5;border:1px solid #D4CCC5"></div>
-        <div>
+        <span class="sl-colors__dot" style="background:#F5F0EB;border:2px solid #ccc"></span>
+        <div class="sl-colors__text">
           <p class="sl-colors__name">Pearl White</p>
-          <p class="sl-colors__desc">Clean, luminous, elegant</p>
+          <p class="sl-colors__desc">Clean. Luminous. Elegant.</p>
         </div>
-        <a href="/collections/all" class="sl-btn sl-btn--dark">Shop White — $99</a>
+        <a href="/products/silklift-rf-pro?color=white" class="sl-colors__cta">Shop White →</a>
       </div>
     </div>
+
+    <div class="sl-colors__card">
+      <div class="sl-colors__img-wrap" style="background:#F8F8F8">
+        <img src="{{ 'info-silver.webp' | asset_url }}"
+             alt="SilkLift RF Pro — Brushed Silver"
+             loading="lazy" class="sl-colors__img" width="466" height="700">
+      </div>
+      <div class="sl-colors__info">
+        <span class="sl-colors__dot" style="background:#C0C0C0;border:2px solid #999"></span>
+        <div class="sl-colors__text">
+          <p class="sl-colors__name">Brushed Silver</p>
+          <p class="sl-colors__desc">Modern. Refined. Minimal.</p>
+        </div>
+        <a href="/products/silklift-rf-pro?color=silver" class="sl-colors__cta">Shop Silver →</a>
+      </div>
+    </div>
+
+    <div class="sl-colors__card">
+      {%- comment -%} Replace 'review-sofia.png' with 'info-green.webp' once the -6 file is added to assets {%- endcomment -%}
+      <div class="sl-colors__img-wrap" style="background:#1B3A25">
+        <img src="{{ 'review-sofia.png' | asset_url }}"
+             alt="SilkLift RF Pro — Forest Green"
+             loading="lazy" class="sl-colors__img sl-colors__img--cover" width="1086" height="1448">
+      </div>
+      <div class="sl-colors__info">
+        <span class="sl-colors__dot" style="background:#2D5E3A;border:2px solid #1B3A25"></span>
+        <div class="sl-colors__text">
+          <p class="sl-colors__name">Forest Green</p>
+          <p class="sl-colors__desc">Bold. Fresh. Confident.</p>
+        </div>
+        <a href="/products/silklift-rf-pro?color=green" class="sl-colors__cta">Shop Green →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sl-colors__footer">
+    <a href="/products/silklift-rf-pro" class="sl-btn sl-btn--dark">View All Colors — $99 + Free Shipping</a>
   </div>
 </div>
 
@@ -55,7 +87,7 @@
 
 .sl-colors__header {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 52px;
 }
 
 .sl-colors__eyebrow {
@@ -74,97 +106,122 @@
   font-weight: 300;
   line-height: 1.05;
   color: #2C2C2C;
-  margin: 0;
+  margin: 0 0 10px;
 }
 
 .sl-colors__heading em { font-style: italic; }
 
-.sl-colors__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.sl-colors__card {
-  overflow: hidden;
-}
-
-.sl-colors__image-wrap {
-  width: 100%;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-}
-
-.sl-colors__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.sl-colors__img--product {
-  object-fit: contain;
-  object-position: center center;
-  padding: 20px;
-  background: inherit;
-}
-
-.sl-colors__card:hover .sl-colors__img {
-  transform: scale(1.04);
-}
-
-.sl-colors__card--dark .sl-colors__image-wrap {
-  background: #1a1a1a;
-}
-
-.sl-colors__card--light .sl-colors__image-wrap {
-  background: #F5F0EB;
-}
-
-.sl-colors__info {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 24px 0 0;
-}
-
-.sl-colors__swatch {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.sl-colors__name {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #2C2C2C;
-  margin: 0;
-}
-
-.sl-colors__desc {
+.sl-colors__sub {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.875rem;
   color: #8A7F78;
   margin: 0;
 }
 
+.sl-colors__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto 48px;
+}
+
+.sl-colors__card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.07);
+  transition: box-shadow 0.25s;
+}
+
+.sl-colors__card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.sl-colors__img-wrap {
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sl-colors__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.sl-colors__img--cover {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.sl-colors__card:hover .sl-colors__img {
+  transform: scale(1.03);
+}
+
+.sl-colors__info {
+  padding: 18px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+}
+
+.sl-colors__dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: block;
+  flex-shrink: 0;
+}
+
+.sl-colors__name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0;
+}
+
+.sl-colors__desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+.sl-colors__cta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #C9956A;
+  text-decoration: none;
+  margin-top: 4px;
+  transition: opacity 0.2s;
+}
+
+.sl-colors__cta:hover { opacity: 0.75; }
+
+.sl-colors__footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .sl-colors__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
 @media screen and (max-width: 749px) {
-  .sl-colors {
-    padding: 60px 24px;
-  }
-  .sl-colors__grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .sl-colors__image-wrap {
-    aspect-ratio: 4/5;
-  }
+  .sl-colors { padding: 60px 20px; }
+  .sl-colors__grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .sl-btn { width: 100%; }
 }
 {% endstylesheet %}
 
