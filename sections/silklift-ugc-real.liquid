@@ -1,0 +1,218 @@
+<div class="sl-ugcr">
+  <div class="sl-ugcr__header">
+    <p class="sl-ugcr__eyebrow">Real Customers · Real Photos</p>
+    <h2 class="sl-ugcr__heading">The SilkLift <em>Community</em></h2>
+    <p class="sl-ugcr__sub">Thousands of women across the world. Every skin tone. Every age. One device.</p>
+  </div>
+
+  <div class="sl-ugcr__grid">
+
+    <div class="sl-ugcr__item">
+      <img src="{{ 'ugc-photo-1.png' | asset_url }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      <div class="sl-ugcr__caption">
+        <span class="sl-ugcr__stars">★★★★★</span>
+        <span class="sl-ugcr__name">Yuki M. &middot; Verified</span>
+      </div>
+    </div>
+
+    <div class="sl-ugcr__item">
+      <img src="{{ 'ugc-photo-2.png' | asset_url }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      <div class="sl-ugcr__caption">
+        <span class="sl-ugcr__stars">★★★★★</span>
+        <span class="sl-ugcr__name">Cassidy R. &middot; Verified</span>
+      </div>
+    </div>
+
+    <div class="sl-ugcr__item">
+      <img src="{{ 'ugc-photo-3.png' | asset_url }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      <div class="sl-ugcr__caption">
+        <span class="sl-ugcr__stars">★★★★★</span>
+        <span class="sl-ugcr__name">Amara J. &middot; Verified</span>
+      </div>
+    </div>
+
+    <div class="sl-ugcr__item">
+      <img src="{{ 'ugc-photo-4.png' | asset_url }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      <div class="sl-ugcr__caption">
+        <span class="sl-ugcr__stars">★★★★★</span>
+        <span class="sl-ugcr__name">Priya S. &middot; Verified</span>
+      </div>
+    </div>
+
+    <div class="sl-ugcr__item">
+      <img src="{{ 'ugc-photo-5.png' | asset_url }}" alt="SilkLift customer using device" loading="lazy" class="sl-ugcr__img">
+      <div class="sl-ugcr__caption">
+        <span class="sl-ugcr__stars">★★★★★</span>
+        <span class="sl-ugcr__name">Leila K. &middot; Verified</span>
+      </div>
+    </div>
+
+    <div class="sl-ugcr__item">
+      <img src="{{ 'ugc-photo-6.png' | asset_url }}" alt="SilkLift customer with green device" loading="lazy" class="sl-ugcr__img">
+      <div class="sl-ugcr__caption">
+        <span class="sl-ugcr__stars">★★★★★</span>
+        <span class="sl-ugcr__name">Sara A. &middot; Verified</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sl-ugcr__cta">
+    <a href="/products/silklift-rf-pro" class="sl-btn sl-btn--dark sl-btn--big">Join the Community — $99 →</a>
+    <p class="sl-ugcr__stats">★★★★★ Rated 4.9/5 &nbsp;·&nbsp; 4,800+ Happy Customers &nbsp;·&nbsp; Free Shipping</p>
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-ugcr {
+  background: #FAF8F5;
+  padding: 80px 40px;
+  border-top: 1px solid #E8DDD0;
+}
+
+.sl-ugcr__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sl-ugcr__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 12px;
+}
+
+.sl-ugcr__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: #2C2C2C;
+  margin: 0 0 10px;
+}
+
+.sl-ugcr__heading em { font-style: italic; }
+
+.sl-ugcr__sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+.sl-ugcr__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  max-width: 1100px;
+  margin: 0 auto 48px;
+}
+
+.sl-ugcr__item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  cursor: pointer;
+}
+
+.sl-ugcr__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.sl-ugcr__item:hover .sl-ugcr__img {
+  transform: scale(1.04);
+}
+
+.sl-ugcr__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+  padding: 36px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transform: translateY(4px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sl-ugcr__item:hover .sl-ugcr__caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sl-ugcr__stars {
+  color: #C9956A;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+}
+
+.sl-ugcr__name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #FAF8F5;
+}
+
+.sl-ugcr__cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.sl-ugcr__stats {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+.sl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 32px;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.sl-btn--big { font-size: 0.9rem; padding: 20px 40px; }
+.sl-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.sl-btn--dark { background: #2C2C2C; color: #FAF8F5; border: 2px solid #2C2C2C; }
+
+@media screen and (max-width: 749px) {
+  .sl-ugcr { padding: 60px 16px; }
+  .sl-ugcr__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+  }
+  .sl-ugcr__item:nth-child(5) { display: none; }
+  .sl-ugcr__caption { opacity: 1; transform: none; }
+  .sl-btn { width: 100%; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift UGC Real",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift UGC Real"}]
+}
+{% endschema %}

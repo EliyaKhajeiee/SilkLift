@@ -1,0 +1,453 @@
+<div class="sl-contact">
+
+  <div class="sl-contact__hero">
+    <div class="sl-contact__hero-inner">
+      <img src="{{ 'silklift-logo-new.png' | asset_url }}" alt="SilkLift" class="sl-contact__logo" loading="eager">
+      <h1 class="sl-contact__title">We're Here <em>For You</em></h1>
+      <p class="sl-contact__subtitle">Questions, feedback, or just want to say hello — our team responds within 24 hours.</p>
+    </div>
+  </div>
+
+  <div class="sl-contact__body">
+
+    <div class="sl-contact__info">
+
+      <div class="sl-contact__info-block">
+        <div class="sl-contact__info-icon">✉</div>
+        <div>
+          <p class="sl-contact__info-label">Email</p>
+          <a href="mailto:hello@silklift.co" class="sl-contact__info-value">hello@silklift.co</a>
+        </div>
+      </div>
+
+      <div class="sl-contact__info-block">
+        <div class="sl-contact__info-icon">⏱</div>
+        <div>
+          <p class="sl-contact__info-label">Response Time</p>
+          <p class="sl-contact__info-value">Within 24 hours</p>
+        </div>
+      </div>
+
+      <div class="sl-contact__info-block">
+        <div class="sl-contact__info-icon">📦</div>
+        <div>
+          <p class="sl-contact__info-label">Order Support</p>
+          <p class="sl-contact__info-value">Track, change, or return any order hassle-free.</p>
+        </div>
+      </div>
+
+      <div class="sl-contact__info-block">
+        <div class="sl-contact__info-icon">🇰🇷</div>
+        <div>
+          <p class="sl-contact__info-label">Headquartered</p>
+          <p class="sl-contact__info-value">Seoul-Born Technology · Global Shipping</p>
+        </div>
+      </div>
+
+      <div class="sl-contact__promises">
+        <div class="sl-contact__promise">
+          <span class="sl-contact__promise-icon">✓</span>
+          <span>30-Day Money-Back Guarantee</span>
+        </div>
+        <div class="sl-contact__promise">
+          <span class="sl-contact__promise-icon">✓</span>
+          <span>1-Year Device Warranty</span>
+        </div>
+        <div class="sl-contact__promise">
+          <span class="sl-contact__promise-icon">✓</span>
+          <span>Free Shipping on Every Order</span>
+        </div>
+        <div class="sl-contact__promise">
+          <span class="sl-contact__promise-icon">✓</span>
+          <span>Secure & Encrypted Checkout</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sl-contact__form-wrap">
+      {% form 'contact' %}
+
+        {% if form.posted_successfully? %}
+          <div class="sl-contact__success">
+            <p class="sl-contact__success-icon">✓</p>
+            <h3 class="sl-contact__success-title">Message Sent!</h3>
+            <p class="sl-contact__success-text">We'll get back to you within 24 hours. Thank you for reaching out.</p>
+          </div>
+        {% else %}
+
+          <h2 class="sl-contact__form-title">Send a Message</h2>
+          <p class="sl-contact__form-sub">Tell us how we can help — we read every message personally.</p>
+
+          {% if form.errors %}
+            <div class="sl-contact__error">
+              Please check your details and try again.
+            </div>
+          {% endif %}
+
+          <div class="sl-contact__field">
+            <label class="sl-contact__label" for="contact-name">Full Name</label>
+            <input
+              id="contact-name"
+              class="sl-contact__input"
+              type="text"
+              name="contact[name]"
+              placeholder="Your name"
+              value="{{ form.name }}"
+              autocomplete="name"
+            >
+          </div>
+
+          <div class="sl-contact__field">
+            <label class="sl-contact__label" for="contact-email">Email Address</label>
+            <input
+              id="contact-email"
+              class="sl-contact__input"
+              type="email"
+              name="contact[email]"
+              placeholder="your@email.com"
+              value="{{ form.email }}"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="sl-contact__field">
+            <label class="sl-contact__label" for="contact-subject">Subject</label>
+            <select id="contact-subject" class="sl-contact__input sl-contact__select" name="contact[body_subject]">
+              <option value="">Select a topic...</option>
+              <option value="Order question">Order Question</option>
+              <option value="Returns & refunds">Returns &amp; Refunds</option>
+              <option value="Product question">Product Question</option>
+              <option value="Shipping">Shipping</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="sl-contact__field">
+            <label class="sl-contact__label" for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              class="sl-contact__input sl-contact__textarea"
+              name="contact[body]"
+              placeholder="How can we help?"
+              rows="5"
+            >{{ form.body }}</textarea>
+          </div>
+
+          <button type="submit" class="sl-btn sl-btn--dark sl-btn--full sl-btn--big">
+            Send Message →
+          </button>
+
+          <p class="sl-contact__privacy">We respect your privacy. Your information is never shared or sold.</p>
+
+        {% endif %}
+
+      {% endform %}
+    </div>
+
+  </div>
+
+</div>
+
+{% stylesheet %}
+.sl-contact {
+  background: #FAF8F5;
+  min-height: 80vh;
+}
+
+/* Hero header */
+.sl-contact__hero {
+  background: #2C2C2C;
+  padding: 72px 40px 64px;
+  text-align: center;
+}
+
+.sl-contact__hero-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sl-contact__logo {
+  height: 52px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1) sepia(1) saturate(0.5) hue-rotate(0deg);
+  opacity: 0.9;
+}
+
+.sl-contact__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.0;
+  color: #FAF8F5;
+  margin: 0;
+}
+
+.sl-contact__title em {
+  font-style: italic;
+  color: #C9956A;
+}
+
+.sl-contact__subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #8A7F78;
+  margin: 0;
+}
+
+/* Body layout */
+.sl-contact__body {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 72px 40px;
+  align-items: start;
+}
+
+/* Info column */
+.sl-contact__info {
+  padding-right: 56px;
+  border-right: 1px solid #E8DDD0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sl-contact__info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.sl-contact__info-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+  width: 28px;
+  text-align: center;
+}
+
+.sl-contact__info-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 3px;
+}
+
+.sl-contact__info-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #2C2C2C;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+a.sl-contact__info-value:hover { text-decoration: underline; }
+
+.sl-contact__promises {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid #E8DDD0;
+  padding-top: 28px;
+  margin-top: 4px;
+}
+
+.sl-contact__promise {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #5A5350;
+}
+
+.sl-contact__promise-icon {
+  color: #4CAF50;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Form column */
+.sl-contact__form-wrap {
+  padding-left: 56px;
+}
+
+.sl-contact__form-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #2C2C2C;
+  margin: 0 0 8px;
+}
+
+.sl-contact__form-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  color: #8A7F78;
+  margin: 0 0 32px;
+}
+
+.sl-contact__error {
+  background: #FDE8D5;
+  border-left: 3px solid #C9956A;
+  padding: 12px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #2C2C2C;
+  margin-bottom: 20px;
+}
+
+.sl-contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.sl-contact__label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2C2C2C;
+}
+
+.sl-contact__input {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #2C2C2C;
+  background: #ffffff;
+  border: 1.5px solid #D4CCC5;
+  padding: 14px 16px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.sl-contact__input:focus {
+  border-color: #2C2C2C;
+}
+
+.sl-contact__input::placeholder {
+  color: #B5AFA9;
+}
+
+.sl-contact__select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232C2C2C' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.sl-contact__textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.sl-contact__privacy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  color: #B5AFA9;
+  margin: 14px 0 0;
+  text-align: center;
+}
+
+/* Success state */
+.sl-contact__success {
+  text-align: center;
+  padding: 48px 24px;
+  background: #F0FAF0;
+  border: 1px solid #C3E6C3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.sl-contact__success-icon {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin: 0;
+}
+
+.sl-contact__success-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #2C2C2C;
+  margin: 0;
+}
+
+.sl-contact__success-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #5A5350;
+  margin: 0;
+}
+
+/* Buttons */
+.sl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 32px;
+  transition: opacity 0.2s, transform 0.15s;
+  cursor: pointer;
+  border: none;
+}
+.sl-btn--big { font-size: 0.9rem; padding: 20px 32px; }
+.sl-btn--full { width: 100%; }
+.sl-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.sl-btn--dark { background: #2C2C2C; color: #FAF8F5; border: 2px solid #2C2C2C; }
+
+@media screen and (max-width: 749px) {
+  .sl-contact__hero { padding: 52px 24px 48px; }
+  .sl-contact__body {
+    grid-template-columns: 1fr;
+    padding: 48px 24px;
+    gap: 48px;
+  }
+  .sl-contact__info {
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid #E8DDD0;
+    padding-bottom: 40px;
+  }
+  .sl-contact__form-wrap { padding-left: 0; }
+  .sl-btn { width: 100%; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift Contact",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift Contact"}]
+}
+{% endschema %}

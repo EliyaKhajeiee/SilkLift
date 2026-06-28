@@ -1,0 +1,185 @@
+<div class="sl-modes">
+  <div class="sl-modes__inner">
+
+    <div class="sl-modes__media">
+      <img src="{{ 'info-3modes.webp' | asset_url }}" alt="SilkLift 3 Advanced Modes — RF, UP, LF" loading="lazy" class="sl-modes__img" width="731" height="1200">
+    </div>
+
+    <div class="sl-modes__content">
+      <p class="sl-modes__eyebrow">The Technology</p>
+      <h2 class="sl-modes__heading">3 Modes.<br><em>One Device.</em></h2>
+      <p class="sl-modes__intro">SilkLift combines three professional-grade technologies into a single 10-minute routine. The same technologies used in $300+ clinic treatments — in your hands.</p>
+
+      <div class="sl-modes__list">
+
+        <div class="sl-mode-item">
+          <div class="sl-mode-item__icon">RF</div>
+          <div class="sl-mode-item__text">
+            <p class="sl-mode-item__name">Radiofrequency</p>
+            <p class="sl-mode-item__desc">Heats deep skin layers to stimulate collagen production. Firms and tightens over time.</p>
+          </div>
+        </div>
+
+        <div class="sl-mode-item">
+          <div class="sl-mode-item__icon">UP</div>
+          <div class="sl-mode-item__text">
+            <p class="sl-mode-item__name">Microcurrent</p>
+            <p class="sl-mode-item__desc">Gentle electrical pulses re-educate facial muscles. Lifts and defines contours naturally.</p>
+          </div>
+        </div>
+
+        <div class="sl-mode-item">
+          <div class="sl-mode-item__icon">LF</div>
+          <div class="sl-mode-item__text">
+            <p class="sl-mode-item__name">Light Therapy</p>
+            <p class="sl-mode-item__desc">Revitalizes skin cells to improve texture, reduce redness and boost overall radiance.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/products/silklift-rf-pro" class="sl-btn sl-btn--gold sl-btn--big">Shop SilkLift — $99 →</a>
+      <p class="sl-modes__note">✓ Free shipping &nbsp;·&nbsp; ✓ 30-Day Guarantee</p>
+    </div>
+
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-modes {
+  background: #FAF8F5;
+  padding: 80px 40px;
+}
+
+.sl-modes__inner {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.sl-modes__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.sl-modes__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+.sl-modes__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 16px;
+}
+
+.sl-modes__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.0;
+  color: #2C2C2C;
+  margin: 0 0 20px;
+}
+
+.sl-modes__heading em { font-style: italic; }
+
+.sl-modes__intro {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #5A5350;
+  margin: 0 0 36px;
+}
+
+.sl-modes__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.sl-mode-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.sl-mode-item__icon {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: #2C2C2C;
+  color: #C9956A;
+  padding: 8px 10px;
+  flex-shrink: 0;
+  min-width: 42px;
+  text-align: center;
+}
+
+.sl-mode-item__name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin: 0 0 4px;
+}
+
+.sl-mode-item__desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #8A7F78;
+  margin: 0;
+}
+
+.sl-modes__note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #8A7F78;
+  margin: 12px 0 0;
+}
+
+.sl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 32px;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.sl-btn--big { font-size: 0.9rem; padding: 20px 40px; }
+.sl-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.sl-btn--gold { background: #C9956A; color: #FAF8F5; border: 2px solid #C9956A; }
+
+@media screen and (max-width: 749px) {
+  .sl-modes { padding: 60px 20px; }
+  .sl-modes__inner { grid-template-columns: 1fr; gap: 36px; }
+  .sl-modes__media { max-width: 400px; margin: 0 auto; }
+  .sl-btn { width: 100%; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift 3 Modes",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift 3 Modes"}]
+}
+{% endschema %}
