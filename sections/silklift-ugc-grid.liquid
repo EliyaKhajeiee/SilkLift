@@ -1,0 +1,186 @@
+<div class="sl-ugc">
+  <div class="sl-ugc__header">
+    <p class="sl-ugc__eyebrow">4,800+ Happy Customers</p>
+    <h2 class="sl-ugc__heading">Real Women. <em>Real Skin.</em></h2>
+    <p class="sl-ugc__sub">No filters. No clinic. Just 10 minutes a day.</p>
+  </div>
+  <div class="sl-ugc__grid">
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-amy.png' | asset_url }}" alt="Amy using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Amy, 32 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-priya.png' | asset_url }}" alt="Priya using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Priya, 28 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-leah.png' | asset_url }}" alt="Leah using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Leah, 38 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-diana.png' | asset_url }}" alt="Diana using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Diana, 35 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-keisha.png' | asset_url }}" alt="Keisha using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Keisha, 41 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-sofia.png' | asset_url }}" alt="Sofia using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Sofia, 27 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-taylor.png' | asset_url }}" alt="Taylor using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Taylor, 34 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-chloe.png' | asset_url }}" alt="Chloe using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Chloe, 30 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-maya.png' | asset_url }}" alt="Maya using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Maya, 33 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-nadia.png' | asset_url }}" alt="Nadia using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Nadia, 29 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-zara.png' | asset_url }}" alt="Zara using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Zara, 26 ★★★★★</span></div>
+    </div>
+    <div class="sl-ugc__item">
+      <img src="{{ 'review-yuna.png' | asset_url }}" alt="Yuna using SilkLift" loading="lazy" class="sl-ugc__img">
+      <div class="sl-ugc__overlay"><span>Yuna, 47 ★★★★★</span></div>
+    </div>
+  </div>
+  <div class="sl-ugc__cta">
+    <a href="/collections/all" class="sl-btn sl-btn--dark">Join Them — $99 + Free Shipping</a>
+    <p class="sl-ugc__guarantee">★★★★★ 4.9/5 · 30-Day Money-Back Guarantee</p>
+  </div>
+</div>
+
+{% stylesheet %}
+.sl-ugc {
+  background: #FAF8F5;
+  padding: 80px 40px;
+}
+
+.sl-ugc__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sl-ugc__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9956A;
+  margin: 0 0 12px;
+}
+
+.sl-ugc__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: #2C2C2C;
+  margin: 0 0 10px;
+}
+
+.sl-ugc__heading em { font-style: italic; }
+
+.sl-ugc__sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+.sl-ugc__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto 48px;
+}
+
+.sl-ugc__item {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sl-ugc__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.sl-ugc__item:hover .sl-ugc__img {
+  transform: scale(1.04);
+}
+
+.sl-ugc__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 12px 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sl-ugc__item:hover .sl-ugc__overlay {
+  opacity: 1;
+}
+
+.sl-ugc__overlay span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #FAF8F5;
+  letter-spacing: 0.04em;
+}
+
+.sl-ugc__cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.sl-ugc__guarantee {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  color: #8A7F78;
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .sl-ugc { padding: 60px 16px; }
+  .sl-ugc__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  .sl-ugc__overlay { opacity: 1; }
+  .sl-btn { width: 100%; }
+}
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "SilkLift UGC Grid",
+  "tag": "section",
+  "settings": [],
+  "presets": [{"name": "SilkLift UGC Grid"}]
+}
+{% endschema %}

@@ -7,12 +7,12 @@
     <div class="sl-colors__card sl-colors__card--dark">
       <div class="sl-colors__image-wrap">
         <img
-          src="{{ 'silklift-model-3.png' | asset_url }}"
+          src="{{ 'device-obsidian-black.png' | asset_url }}"
           alt="SilkLift RF Pro in Obsidian Black"
           loading="lazy"
-          class="sl-colors__img"
-          width="1086"
-          height="1448"
+          class="sl-colors__img sl-colors__img--product"
+          width="2752"
+          height="1536"
         >
       </div>
       <div class="sl-colors__info">
@@ -27,10 +27,10 @@
     <div class="sl-colors__card sl-colors__card--light">
       <div class="sl-colors__image-wrap">
         <img
-          src="{{ 'silklift-product.png' | asset_url }}"
+          src="{{ 'device-pearl-white.png' | asset_url }}"
           alt="SilkLift RF Pro in Pearl White"
           loading="lazy"
-          class="sl-colors__img"
+          class="sl-colors__img sl-colors__img--product"
           width="2752"
           height="1536"
         >
@@ -104,6 +104,13 @@
   object-position: center top;
   display: block;
   transition: transform 0.5s ease;
+}
+
+.sl-colors__img--product {
+  object-fit: contain;
+  object-position: center center;
+  padding: 20px;
+  background: inherit;
 }
 
 .sl-colors__card:hover .sl-colors__img {
