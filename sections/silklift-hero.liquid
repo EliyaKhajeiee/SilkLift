@@ -2,7 +2,7 @@
   <div class="sl-hero__media">
     <img
       src="{{ 'info-dark-hero.webp' | asset_url }}"
-      alt="SilkLift RF Pro — Advanced Skin Lifting Device"
+      alt="SilkLift RF Pro"
       loading="eager"
       fetchpriority="high"
       class="sl-hero__img"
@@ -10,74 +10,66 @@
       height="1496"
     >
   </div>
+
   <div class="sl-hero__content">
 
-    <div class="sl-hero__rating">
-      <span class="sl-hero__stars">★★★★★</span>
-      <span class="sl-hero__rating-text">4.9/5 (4,800+ Reviews)</span>
+    <div class="sl-hero__top">
+      <div class="sl-hero__stars">★★★★★</div>
+      <span class="sl-hero__rating-text">4.9 / 5 &nbsp;·&nbsp; 4,800+ Reviews</span>
     </div>
 
-    <p class="sl-hero__eyebrow">🇰🇷 &nbsp;Seoul-Born Technology</p>
-    <h1 class="sl-hero__title">SilkLift<br><em>RF Pro</em></h1>
+    <div class="sl-hero__title-block">
+      <p class="sl-hero__eyebrow">Seoul-Born Technology</p>
+      <h1 class="sl-hero__title">SilkLift RF&nbsp;Pro</h1>
+      <p class="sl-hero__tagline">Clinic-grade lifting. At-home convenience.</p>
+    </div>
 
-    <ul class="sl-hero__bullets">
-      <li>✦ &nbsp;Clinic-grade RF lifting — no appointments needed</li>
-      <li>⚡ &nbsp;4-in-1: RF, Microcurrent, EMS &amp; Heat</li>
-      <li>🕐 &nbsp;10 minutes a day — results in 4 weeks</li>
-      <li>🌿 &nbsp;Safe for all skin types</li>
-    </ul>
+    <div class="sl-hero__features">
+      <div class="sl-hero__feature">RF + Microcurrent + EMS + Heat</div>
+      <div class="sl-hero__feature">10 minutes a day · Results in 4 weeks</div>
+      <div class="sl-hero__feature">Safe for all skin types · Dermatologist tested</div>
+    </div>
 
-    <div class="sl-hero__sale-banner">🔥 &nbsp;SPRING SALE — 45% OFF &nbsp;·&nbsp; Ends Soon</div>
+    <div class="sl-hero__divider"></div>
+
+    <div class="sl-hero__price-row">
+      <span class="sl-hero__price">$99</span>
+      <span class="sl-hero__price-was">$179</span>
+      <span class="sl-hero__badge">45% OFF</span>
+    </div>
 
     <div class="sl-hero__colors">
       <p class="sl-hero__colors-label">Color — <strong id="sl-selected-color">Obsidian Black</strong></p>
-      <div class="sl-hero__color-options">
-        <button class="sl-color-btn sl-color-btn--active" aria-label="Obsidian Black" onclick="slSetColor(this,'Obsidian Black')">
-          <span class="sl-color-swatch" style="background:#1a1a1a"></span>
-          <span>Black</span>
-        </button>
-        <button class="sl-color-btn" aria-label="Pearl White" onclick="slSetColor(this,'Pearl White')">
-          <span class="sl-color-swatch" style="background:#F5F0EB;border:1px solid #ccc"></span>
-          <span>White</span>
-        </button>
-        <button class="sl-color-btn" aria-label="Forest Green" onclick="slSetColor(this,'Forest Green')">
-          <span class="sl-color-swatch" style="background:#2D5E3A"></span>
-          <span>Green</span>
-        </button>
-        <button class="sl-color-btn" aria-label="Brushed Silver" onclick="slSetColor(this,'Brushed Silver')">
-          <span class="sl-color-swatch" style="background:#C0C0C0"></span>
-          <span>Silver</span>
-        </button>
+      <div class="sl-hero__swatches">
+        <button class="sl-swatch sl-swatch--active" aria-label="Obsidian Black" onclick="slSetColor(this,'Obsidian Black')" style="background:#1a1a1a"></button>
+        <button class="sl-swatch" aria-label="Pearl White" onclick="slSetColor(this,'Pearl White')" style="background:#F5F0EB;border-color:#ccc"></button>
+        <button class="sl-swatch" aria-label="Forest Green" onclick="slSetColor(this,'Forest Green')" style="background:#2D5E3A"></button>
+        <button class="sl-swatch" aria-label="Brushed Silver" onclick="slSetColor(this,'Brushed Silver')" style="background:#C0C0C0"></button>
       </div>
     </div>
 
-    <!-- Inline bundle quantity selector -->
     <div class="sl-hero__bundle">
       <label class="sl-hbopt">
         <input type="radio" name="sl-hero-qty" value="1" data-label="Buy Now — $99">
         <div class="sl-hbopt__inner">
-          <div class="sl-hbopt__left">
-            <span class="sl-hbopt__qty">1 Device</span>
-            <span class="sl-hbopt__for">For Yourself</span>
-          </div>
+          <span class="sl-hbopt__qty">1 Device</span>
+          <span class="sl-hbopt__mid">For Yourself</span>
           <div class="sl-hbopt__right">
             <span class="sl-hbopt__price">$99</span>
-            <span class="sl-hbopt__save">Save $80</span>
+            <span class="sl-hbopt__save">–$80</span>
           </div>
         </div>
       </label>
 
-      <label class="sl-hbopt sl-hbopt--featured">
-        <div class="sl-hbopt__badge">⭐ BEST VALUE</div>
+      <label class="sl-hbopt sl-hbopt--popular">
+        <span class="sl-hbopt__badge">BEST VALUE</span>
         <input type="radio" name="sl-hero-qty" value="2" data-label="Buy Now — $159" checked>
         <div class="sl-hbopt__inner">
-          <div class="sl-hbopt__left">
-            <span class="sl-hbopt__qty">2 Devices</span>
-            <span class="sl-hbopt__for">You &amp; Family</span>
-          </div>
+          <span class="sl-hbopt__qty">2 Devices</span>
+          <span class="sl-hbopt__mid">You &amp; Family</span>
           <div class="sl-hbopt__right">
             <span class="sl-hbopt__price sl-hbopt__price--gold">$159</span>
-            <span class="sl-hbopt__save sl-hbopt__save--gold">Save $199</span>
+            <span class="sl-hbopt__save sl-hbopt__save--gold">–$199</span>
           </div>
         </div>
       </label>
@@ -85,37 +77,31 @@
       <label class="sl-hbopt">
         <input type="radio" name="sl-hero-qty" value="3" data-label="Buy Now — $199">
         <div class="sl-hbopt__inner">
-          <div class="sl-hbopt__left">
-            <span class="sl-hbopt__qty">3 Devices</span>
-            <span class="sl-hbopt__for">Family Pack</span>
-          </div>
+          <span class="sl-hbopt__qty">3 Devices</span>
+          <span class="sl-hbopt__mid">Family Pack</span>
           <div class="sl-hbopt__right">
             <span class="sl-hbopt__price">$199</span>
-            <span class="sl-hbopt__save">Save $338</span>
+            <span class="sl-hbopt__save">–$338</span>
           </div>
         </div>
       </label>
     </div>
 
-    <a href="/products/silklift-rf-pro" class="sl-btn sl-btn--dark sl-btn--big sl-btn--full" id="sl-hero-cta">
+    <a href="/products/silklift-rf-pro" class="sl-hero__cta" id="sl-hero-cta">
       Buy Now — $159 &nbsp;→
     </a>
 
     <div class="sl-hero__trust">
-      <span>✓ Free Shipping</span>
-      <span>✓ 30-Day Guarantee</span>
-      <span>✓ 1-Year Warranty</span>
+      <span>Free Shipping</span>
+      <span class="sl-trust-dot"></span>
+      <span>30-Day Guarantee</span>
+      <span class="sl-trust-dot"></span>
+      <span>1-Year Warranty</span>
     </div>
 
     <div class="sl-hero__stock">
-      <span class="sl-hero__stock-dot"></span>
-      In Stock &nbsp;·&nbsp; Ships in 1–3 business days
-    </div>
-
-    <div class="sl-hero__payments">
-      <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecef9f9174a8d.svg" alt="Apple Pay" class="sl-payment-icon">
-      <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e.svg" alt="Google Pay" class="sl-payment-icon">
-      <span class="sl-hero__payments-label">Visa · Mastercard · & more</span>
+      <span class="sl-stock-dot"></span>
+      In Stock · Ships in 1–3 days
     </div>
 
   </div>
@@ -123,8 +109,8 @@
 
 <script>
 function slSetColor(btn, name) {
-  document.querySelectorAll('.sl-color-btn').forEach(function(b){ b.classList.remove('sl-color-btn--active'); });
-  btn.classList.add('sl-color-btn--active');
+  document.querySelectorAll('.sl-swatch').forEach(function(b){ b.classList.remove('sl-swatch--active'); });
+  btn.classList.add('sl-swatch--active');
   var el = document.getElementById('sl-selected-color');
   if (el) el.textContent = name;
 }
@@ -132,25 +118,20 @@ function slSetColor(btn, name) {
 (function() {
   var radios = document.querySelectorAll('input[name="sl-hero-qty"]');
   var cta = document.getElementById('sl-hero-cta');
-
-  function updateHeroBundle() {
+  function update() {
     radios.forEach(function(r) {
       var lbl = r.closest('.sl-hbopt');
-      if (r.checked) {
-        lbl.classList.add('sl-hbopt--selected');
-        if (cta) cta.textContent = r.getAttribute('data-label') + '  →';
-      } else {
-        lbl.classList.remove('sl-hbopt--selected');
-      }
+      lbl.classList.toggle('sl-hbopt--selected', r.checked);
+      if (r.checked && cta) cta.textContent = r.getAttribute('data-label') + '  →';
     });
   }
-
-  radios.forEach(function(r) { r.addEventListener('change', updateHeroBundle); });
-  updateHeroBundle();
+  radios.forEach(function(r) { r.addEventListener('change', update); });
+  update();
 })();
 </script>
 
 {% stylesheet %}
+/* ── Hero Layout ─────────────────────────────────── */
 .sl-hero {
   display: grid;
   grid-template-columns: 52% 48%;
@@ -158,10 +139,7 @@ function slSetColor(btn, name) {
   background: #FAF8F5;
 }
 
-.sl-hero__media {
-  position: relative;
-  overflow: hidden;
-}
+.sl-hero__media { overflow: hidden; }
 
 .sl-hero__img {
   width: 100%;
@@ -175,12 +153,13 @@ function slSetColor(btn, name) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 32px 44px 32px 40px;
-  gap: 12px;
+  padding: 40px 48px 40px 40px;
+  gap: 16px;
   overflow-y: auto;
 }
 
-.sl-hero__rating {
+/* ── Top strip ───────────────────────────────────── */
+.sl-hero__top {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -188,21 +167,24 @@ function slSetColor(btn, name) {
 
 .sl-hero__stars {
   color: #C9956A;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  font-size: 0.82rem;
+  letter-spacing: 2px;
 }
 
 .sl-hero__rating-text {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: #8A7F78;
 }
 
+/* ── Title block ─────────────────────────────────── */
+.sl-hero__title-block { display: flex; flex-direction: column; gap: 6px; }
+
 .sl-hero__eyebrow {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #C9956A;
   margin: 0;
@@ -210,174 +192,178 @@ function slSetColor(btn, name) {
 
 .sl-hero__title {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(2.4rem, 4.5vw, 4.5rem);
+  font-size: clamp(2.8rem, 5vw, 5rem);
   font-weight: 300;
-  line-height: 0.92;
+  line-height: 0.95;
   color: #2C2C2C;
   margin: 0;
+  letter-spacing: -0.01em;
 }
 
-.sl-hero__title em { font-style: italic; }
-
-.sl-hero__bullets {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.sl-hero__bullets li {
+.sl-hero__tagline {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
-  color: #2C2C2C;
+  font-size: 0.9rem;
+  color: #5A5350;
+  margin: 0;
   line-height: 1.4;
 }
 
-.sl-hero__sale-banner {
-  background: #2C2C2C;
-  color: #E8DDD0;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 8px 16px;
-  text-align: center;
-}
-
-.sl-hero__colors { margin: 0; }
-
-.sl-hero__colors-label {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.82rem;
-  color: #2C2C2C;
-  margin: 0 0 7px;
-}
-
-.sl-hero__color-options {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.sl-color-btn {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 5px 10px;
-  border: 1.5px solid #D4CCC5;
-  background: transparent;
-  cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #2C2C2C;
-  transition: border-color 0.15s;
-}
-
-.sl-color-btn--active { border-color: #2C2C2C; }
-
-.sl-color-swatch {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: block;
-  flex-shrink: 0;
-}
-
-/* Hero inline bundle */
-.sl-hero__bundle {
+/* ── Feature pills ───────────────────────────────── */
+.sl-hero__features {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
+}
+
+.sl-hero__feature {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  color: #5A5350;
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.sl-hero__feature::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 1px;
+  background: #C9956A;
+}
+
+/* ── Divider ─────────────────────────────────────── */
+.sl-hero__divider {
+  height: 1px;
+  background: #E8DDD0;
   margin: 2px 0;
 }
 
-.sl-hbopt {
-  position: relative;
-  display: block;
+/* ── Price ───────────────────────────────────────── */
+.sl-hero__price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sl-hero__price {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #2C2C2C;
+  line-height: 1;
+}
+
+.sl-hero__price-was {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #B5AFA9;
+  text-decoration: line-through;
+}
+
+.sl-hero__badge {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: #2C2C2C;
+  color: #C9956A;
+  padding: 4px 10px;
+}
+
+/* ── Color swatches ──────────────────────────────── */
+.sl-hero__colors { display: flex; flex-direction: column; gap: 8px; }
+
+.sl-hero__colors-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #2C2C2C;
+  margin: 0;
+}
+
+.sl-hero__swatches { display: flex; gap: 8px; }
+
+.sl-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   cursor: pointer;
-  border: 1.5px solid rgba(44,44,44,0.15);
+  transition: outline-color 0.15s;
+  padding: 0;
+}
+
+.sl-swatch--active {
+  outline-color: #2C2C2C;
+}
+
+/* ── Bundle selector ─────────────────────────────── */
+.sl-hero__bundle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sl-hbopt {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border: 1.5px solid #E8DDD0;
   background: #fff;
-  transition: border-color 0.15s, background 0.15s;
+  transition: border-color 0.15s;
 }
 
-.sl-hbopt input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+.sl-hbopt input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
 
-.sl-hbopt--featured {
-  border-color: rgba(201,149,106,0.5);
-  background: #FDF7F2;
-}
-
-.sl-hbopt--selected {
-  border-color: #2C2C2C !important;
-  background: #F6F4F2 !important;
-}
-
-.sl-hbopt--featured.sl-hbopt--selected {
-  border-color: #C9956A !important;
-  background: #FDF2E8 !important;
-}
-
-.sl-hbopt:hover { border-color: rgba(44,44,44,0.4); }
+.sl-hbopt--popular { border-color: rgba(201,149,106,0.4); background: #FDFAF7; }
+.sl-hbopt--selected { border-color: #2C2C2C !important; background: #F6F4F1 !important; }
+.sl-hbopt--popular.sl-hbopt--selected { border-color: #C9956A !important; background: #FEF5ED !important; }
+.sl-hbopt:hover:not(.sl-hbopt--selected) { border-color: #B5AFA9; }
 
 .sl-hbopt__badge {
   position: absolute;
-  top: -10px;
-  left: 12px;
+  top: -9px;
+  left: 10px;
   background: #C9956A;
-  color: #FAF8F5;
+  color: #fff;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   font-weight: 800;
   letter-spacing: 0.1em;
-  padding: 2px 10px;
-  white-space: nowrap;
-  z-index: 1;
+  padding: 2px 8px;
 }
 
 .sl-hbopt__inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 14px;
-  gap: 12px;
-}
-
-.sl-hbopt__left {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
+  padding: 9px 14px;
+  gap: 10px;
 }
 
 .sl-hbopt__qty {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #2C2C2C;
 }
 
-.sl-hbopt__for {
+.sl-hbopt__mid {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.7rem;
-  color: #8A7F78;
+  font-size: 0.72rem;
+  color: #B5AFA9;
 }
 
-.sl-hbopt__right {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+.sl-hbopt__right { display: flex; align-items: center; gap: 6px; }
 
 .sl-hbopt__price {
   font-family: 'DM Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 800;
   color: #2C2C2C;
 }
@@ -387,113 +373,85 @@ function slSetColor(btn, name) {
 .sl-hbopt__save {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.68rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #8A7F78;
   background: #F0EBE3;
-  padding: 2px 7px;
+  padding: 2px 6px;
 }
 
-.sl-hbopt__save--gold {
-  color: #C9956A;
-  background: #FDE8D5;
-}
+.sl-hbopt__save--gold { color: #C9956A; background: #FDE8D5; }
 
-/* Buttons */
-.sl-btn {
-  display: inline-flex;
+/* ── CTA Button ──────────────────────────────────── */
+.sl-hero__cta {
+  display: flex;
   align-items: center;
   justify-content: center;
+  background: #2C2C2C;
+  color: #FAF8F5;
   font-family: 'DM Sans', sans-serif;
   font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 18px 32px;
-  transition: opacity 0.2s, transform 0.15s;
+  padding: 18px 24px;
+  transition: background 0.2s;
 }
 
-.sl-btn--big { font-size: 0.9rem; padding: 20px 32px; }
-.sl-btn--full { width: 100%; }
-.sl-btn:hover { opacity: 0.85; transform: translateY(-1px); }
-.sl-btn--dark { background: #2C2C2C; color: #FAF8F5; border: 2px solid #2C2C2C; }
-.sl-btn--outline { background: transparent; color: #2C2C2C; border: 2px solid #2C2C2C; }
-.sl-btn--gold { background: #C9956A; color: #FAF8F5; border: 2px solid #C9956A; }
-.sl-btn--ghost { background: transparent; color: #FAF8F5; border: 2px solid rgba(255,255,255,0.5); }
-.sl-btn--light { background: #FAF8F5; color: #2C2C2C; border: 1px solid #FAF8F5; }
+.sl-hero__cta:hover { background: #1a1a1a; }
 
+/* ── Trust bar ───────────────────────────────────── */
 .sl-hero__trust {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.75rem;
-  color: #8A7F78;
-}
-
-.sl-hero__stock {
   display: flex;
   align-items: center;
   gap: 8px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  color: #8A7F78;
+  flex-wrap: wrap;
+}
+
+.sl-trust-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #D4CCC5;
+  flex-shrink: 0;
+}
+
+/* ── Stock ───────────────────────────────────────── */
+.sl-hero__stock {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
   color: #2C2C2C;
   font-weight: 500;
 }
 
-.sl-hero__stock-dot {
-  width: 8px;
-  height: 8px;
+.sl-stock-dot {
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: #4CAF50;
-  display: block;
   flex-shrink: 0;
-  animation: pulse-dot 2s ease-in-out infinite;
+  animation: sl-pulse 2s ease-in-out infinite;
 }
 
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
+@keyframes sl-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-.sl-hero__payments {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.sl-payment-icon {
-  height: 22px;
-  width: auto;
-  opacity: 0.65;
-  filter: grayscale(1);
-}
-
-.sl-hero__payments-label {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.75rem;
-  color: #8A7F78;
-}
-
-@media screen and (max-width: 1100px) {
-  .sl-hero__content { padding: 28px 32px 28px 28px; gap: 10px; }
-  .sl-hero__title { font-size: clamp(2rem, 3.5vw, 3.5rem); }
-}
-
+/* ── Mobile ──────────────────────────────────────── */
 @media screen and (max-width: 749px) {
-  .sl-hero {
-    grid-template-columns: 1fr;
-    grid-template-rows: 60svh auto;
-    min-height: unset;
-  }
-  .sl-hero__content { padding: 28px 20px 44px; gap: 10px; }
-  .sl-hero__title { font-size: clamp(2.4rem, 10vw, 3rem); }
-  .sl-btn { width: 100%; }
-  .sl-hero__trust { gap: 8px; }
-  .sl-hero__color-options { gap: 4px; }
-  .sl-color-btn { padding: 4px 8px; font-size: 0.7rem; }
-  .sl-hbopt__inner { padding: 9px 12px; }
+  .sl-hero { grid-template-columns: 1fr; grid-template-rows: 58svh auto; min-height: unset; }
+  .sl-hero__content { padding: 28px 20px 44px; gap: 13px; }
+  .sl-hero__title { font-size: clamp(2.2rem, 9vw, 2.8rem); }
+  .sl-hero__cta { font-size: 0.85rem; }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 750px) {
+  .sl-hero__content { padding: 28px 32px 28px 28px; gap: 12px; }
+  .sl-hero__title { font-size: clamp(2.2rem, 3.5vw, 3.5rem); }
 }
 {% endstylesheet %}
 

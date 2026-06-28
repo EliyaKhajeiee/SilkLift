@@ -15,22 +15,8 @@
       "settings": {}
     },
 
-    "sl_showcase_1": {
-      "type": "silklift-showcase-1",
-      "blocks": {},
-      "block_order": [],
-      "settings": {}
-    },
-
     "sl_before_after": {
       "type": "silklift-before-after",
-      "blocks": {},
-      "block_order": [],
-      "settings": {}
-    },
-
-    "sl_kbeauty": {
-      "type": "silklift-kbeauty",
       "blocks": {},
       "block_order": [],
       "settings": {}
@@ -59,13 +45,6 @@
 
     "sl_bundle": {
       "type": "silklift-bundle",
-      "blocks": {},
-      "block_order": [],
-      "settings": {}
-    },
-
-    "sl_videos": {
-      "type": "silklift-videos",
       "blocks": {},
       "block_order": [],
       "settings": {}
@@ -252,14 +231,11 @@
   "order": [
     "sl_hero",
     "sl_social_proof",
-    "sl_showcase_1",
     "sl_before_after",
-    "sl_kbeauty",
     "sl_modes",
     "sl_colors",
     "sl_ugc_real",
     "sl_bundle",
-    "sl_videos",
     "sl_reviews",
     "marquee_trust",
     "faq_section",
