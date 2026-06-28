@@ -50,23 +50,11 @@
       "settings": {}
     },
 
-    "marquee_trust": {
-      "type": "marquee",
-      "blocks": {
-        "m1": { "type": "text", "settings": { "text": "<p>★★★★★ 4.9 / 5 Rating</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
-        "m2": { "type": "text", "settings": { "text": "<p>✦ Free Shipping On All Orders</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
-        "m3": { "type": "text", "settings": { "text": "<p>✦ 30-Day Money-Back Guarantee</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} },
-        "m4": { "type": "text", "settings": { "text": "<p>✦ Seoul-Born Technology</p>", "width": "fit-content", "alignment": "left", "type_preset": "paragraph", "font": "var(--font-body--family)", "font_size": "0.8rem", "letter_spacing": "0.08em", "wrap": "nowrap", "background": false, "background_color": "#00000026", "corner_radius": 0, "padding-block-start": 0, "padding-block-end": 0, "padding-inline-start": 40, "padding-inline-end": 40 }, "blocks": {} }
-      },
-      "block_order": ["m1","m2","m3","m4"],
-      "settings": {
-        "movement_direction": "left",
-        "gap_between_elements": 0,
-        "section_width": "full-width",
-        "background_color": "#C9956A",
-        "padding-block-start": 13,
-        "padding-block-end": 13
-      }
+    "sl_ticker": {
+      "type": "silklift-ticker",
+      "blocks": {},
+      "block_order": [],
+      "settings": {}
     },
 
     "faq_section": {
@@ -213,7 +201,7 @@
     "sl_colors",
     "sl_reviews",
     "sl_ugc_real",
-    "marquee_trust",
+    "sl_ticker",
     "faq_section",
     "email_section"
   ]
