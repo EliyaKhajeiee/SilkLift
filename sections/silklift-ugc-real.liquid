@@ -1,3 +1,7 @@
+{%- assign sl_product = all_products['silklift-rf-pro'] -%}
+{%- assign new_photo_1 = sl_product.images[4] -%}
+{%- assign new_photo_2 = sl_product.images[5] -%}
+
 <div class="sl-ugcr">
   <div class="sl-ugcr__header">
     <p class="sl-ugcr__eyebrow">Real Customers · Real Photos</p>
@@ -16,10 +20,14 @@
     </div>
 
     <div class="sl-ugcr__item">
-      <img src="{{ 'ugc-photo-2.png' | asset_url }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      {%- if new_photo_1 -%}
+        <img src="{{ new_photo_1 | image_url: width: 800 }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      {%- else -%}
+        <img src="{{ 'ugc-photo-2.png' | asset_url }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      {%- endif -%}
       <div class="sl-ugcr__caption">
         <span class="sl-ugcr__stars">★★★★★</span>
-        <span class="sl-ugcr__name">Cassidy R. &middot; Verified</span>
+        <span class="sl-ugcr__name">Maya T. &middot; Verified</span>
       </div>
     </div>
 
@@ -40,15 +48,19 @@
     </div>
 
     <div class="sl-ugcr__item">
-      <img src="{{ 'ugc-photo-5.png' | asset_url }}" alt="SilkLift customer using device" loading="lazy" class="sl-ugcr__img">
+      {%- if new_photo_2 -%}
+        <img src="{{ new_photo_2 | image_url: width: 800 }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      {%- else -%}
+        <img src="{{ 'ugc-photo-5.png' | asset_url }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
+      {%- endif -%}
       <div class="sl-ugcr__caption">
         <span class="sl-ugcr__stars">★★★★★</span>
-        <span class="sl-ugcr__name">Leila K. &middot; Verified</span>
+        <span class="sl-ugcr__name">Nadia R. &middot; Verified</span>
       </div>
     </div>
 
     <div class="sl-ugcr__item">
-      <img src="{{ 'ugc-photo-6.png' | asset_url }}" alt="SilkLift customer with green device" loading="lazy" class="sl-ugcr__img">
+      <img src="{{ 'ugc-photo-6.png' | asset_url }}" alt="SilkLift customer" loading="lazy" class="sl-ugcr__img">
       <div class="sl-ugcr__caption">
         <span class="sl-ugcr__stars">★★★★★</span>
         <span class="sl-ugcr__name">Sara A. &middot; Verified</span>
