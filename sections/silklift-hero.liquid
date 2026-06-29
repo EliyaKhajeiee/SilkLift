@@ -222,7 +222,7 @@ function slSetColor(btn, name, idx, available) {
       if (!slColorAvailable || cta.disabled) return;
       var checked = document.querySelector('input[name="sl-hero-qty"]:checked');
       var qty = checked ? parseInt(checked.value) : 1;
-      window.location.href = '/products/silklift-rf-pro?color=Forest+Green&quantity=' + qty;
+      window.location.href = '/products/silklift-rf-pro';
     });
     // Init: Green is in stock
     slColorAvailable = true;
