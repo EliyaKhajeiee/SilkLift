@@ -63,7 +63,7 @@
         "faq_head": {
           "type": "text",
           "settings": {
-            "text": "<h2>Questions? Answered.</h2>",
+            "text": "<h2>The Truth About Your Skin.</h2>",
             "width": "100%",
             "alignment": "left",
             "type_preset": "h2",
@@ -92,30 +92,46 @@
           "blocks": {
             "row1": {
               "type": "_accordion-row",
-              "settings": { "heading": "How soon will I see results?", "open_by_default": true },
+              "settings": { "heading": "Why not just get Botox?", "open_by_default": true },
               "blocks": {
-                "text1": { "type": "text", "settings": { "text": "<p>Most customers notice improved radiance and texture within 1-2 weeks. Visible lifting and firming appears within 4 weeks of consistent daily use.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
+                "text1": { "type": "text", "settings": { "text": "<p>Botox averages $500–$1,000 per session and wears off in 90 days — that's $2,000–$4,000 per year, minimum. It also carries real risks: drooping eyelids, uneven results, and nerve complications. Most importantly, Botox freezes muscles. It doesn't repair or heal. SilkLift stimulates your skin to produce its own collagen — the results improve over time, not diminish. One device. One payment. No needles.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
               },
               "block_order": ["text1"]
             },
             "row2": {
               "type": "_accordion-row",
-              "settings": { "heading": "Is it safe for all skin types?", "open_by_default": false },
+              "settings": { "heading": "Can it actually reverse sun damage?", "open_by_default": false },
               "blocks": {
-                "text2": { "type": "text", "settings": { "text": "<p>Yes. SilkLift has three intensity levels. Safe for all skin types including sensitive. Avoid use if pregnant or if you have implanted devices.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
+                "text2": { "type": "text", "settings": { "text": "<p>Yes. UV exposure is the #1 cause of premature skin aging — it breaks down collagen 10× faster than time alone. SilkLift's 630–850nm red light therapy penetrates 5–10mm beneath the skin surface, directly targeting UV-damaged cells. Clinical studies show red light therapy reduces hyperpigmentation, rebuilds collagen in sun-damaged skin, and calms chronic UV-induced inflammation. This is the same wavelength range used in dermatology clinics and originally developed by NASA for wound healing.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
               },
               "block_order": ["text2"]
             },
             "row3": {
               "type": "_accordion-row",
-              "settings": { "heading": "Do I need conductive gel?", "open_by_default": false },
+              "settings": { "heading": "How soon will I see results?", "open_by_default": false },
               "blocks": {
-                "text3": { "type": "text", "settings": { "text": "<p>Not necessary, but helpful. A water-based serum enhances conductivity and results — you can use any serum you already own.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
+                "text3": { "type": "text", "settings": { "text": "<p>Most customers notice improved glow and skin texture within the first week. Visible lifting and firming within 2–3 weeks. Significant collagen rebuilding and reduction in fine lines by week 4. Results continue to improve with consistent daily use — unlike Botox, which fades.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
               },
               "block_order": ["text3"]
+            },
+            "row4": {
+              "type": "_accordion-row",
+              "settings": { "heading": "Why don't my serums and creams work?", "open_by_default": false },
+              "blocks": {
+                "text4": { "type": "text", "settings": { "text": "<p>Topical products — no matter how expensive — can only penetrate 0.1mm into skin. Collagen lives in the dermis, 1–4mm deep. That's why your $200 serum feels good but doesn't change your skin structure. SilkLift's RF energy reaches 3–5mm deep, and red light reaches 5–10mm — directly where collagen is produced and where sun damage accumulates. Skincare products work on the surface. SilkLift works underneath it.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
+              },
+              "block_order": ["text4"]
+            },
+            "row5": {
+              "type": "_accordion-row",
+              "settings": { "heading": "Is it safe for all skin types?", "open_by_default": false },
+              "blocks": {
+                "text5": { "type": "text", "settings": { "text": "<p>Yes. SilkLift has three intensity levels and is safe for all skin types including sensitive. Dermatologist tested. Avoid use if pregnant or if you have implanted electronic devices.</p>", "width": "100%", "type_preset": "paragraph", "text_color": "#8A7F78", "padding-block-start": 0, "padding-block-end": 16, "padding-inline-start": 0, "padding-inline-end": 0 }, "blocks": {} }
+              },
+              "block_order": ["text5"]
             }
           },
-          "block_order": ["row1","row2","row3"]
+          "block_order": ["row1","row2","row3","row4","row5"]
         }
       },
       "block_order": ["faq_head","faq_accordion"],
