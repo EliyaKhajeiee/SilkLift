@@ -105,26 +105,26 @@
       </label>
 
       <label class="sl-hbopt sl-hbopt--popular">
-        <span class="sl-hbopt__badge">MOST POPULAR</span>
-        <input type="radio" name="sl-hero-qty" value="2" data-label="Buy Now — $198" checked>
+        <span class="sl-hbopt__badge">BEST VALUE</span>
+        <input type="radio" name="sl-hero-qty" value="2" data-label="Buy Now — $159" checked>
         <div class="sl-hbopt__inner">
           <span class="sl-hbopt__qty">2 Devices</span>
-          <span class="sl-hbopt__mid">You &amp; Someone You Love</span>
+          <span class="sl-hbopt__mid">You &amp; Family</span>
           <div class="sl-hbopt__right">
-            <span class="sl-hbopt__price sl-hbopt__price--gold">$198</span>
-            <span class="sl-hbopt__save sl-hbopt__save--gold">Save $160</span>
+            <span class="sl-hbopt__price sl-hbopt__price--gold">$159</span>
+            <span class="sl-hbopt__save sl-hbopt__save--gold">–$199</span>
           </div>
         </div>
       </label>
 
       <label class="sl-hbopt">
-        <input type="radio" name="sl-hero-qty" value="3" data-label="Buy Now — $297">
+        <input type="radio" name="sl-hero-qty" value="3" data-label="Buy Now — $199">
         <div class="sl-hbopt__inner">
           <span class="sl-hbopt__qty">3 Devices</span>
-          <span class="sl-hbopt__mid">Gift the Whole Family</span>
+          <span class="sl-hbopt__mid">Family Pack</span>
           <div class="sl-hbopt__right">
-            <span class="sl-hbopt__price">$297</span>
-            <span class="sl-hbopt__save">Save $240</span>
+            <span class="sl-hbopt__price">$199</span>
+            <span class="sl-hbopt__save">–$338</span>
           </div>
         </div>
       </label>
@@ -235,7 +235,7 @@ function slSetColor(btn, name, idx, available) {
       var qty = checked ? parseInt(checked.value) : 1;
       cta.textContent = 'Loading checkout…';
       cta.disabled = true;
-      window.location.href = '/cart/' + vid + ':' + qty + '?channel=buy_button';
+      window.location.href = '/cart/' + vid + ':' + qty;
     });
     // Init: Green is in stock
     slColorAvailable = true;
